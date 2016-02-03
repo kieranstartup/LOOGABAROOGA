@@ -166,6 +166,8 @@ a:visited {
 .underline{
     border-bottom: 2px solid #000;
     /*text-decoration: underline;*/
+        cursor: pointer;
+
 }
 
 .footnote-text {
@@ -186,12 +188,16 @@ a:visited {
 
 
 .close-image{
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-image: url("images/Crosshair-Black.png");
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
 }
 
 
@@ -201,8 +207,8 @@ img.landscape {
     width: 100%;
 }
 .image-container{
-        width: 800px;
-    height: auto;
+    max-width: 800px;
+    width: 70%;
     top: 50%;
     left: 50%;
     transform:translate(-50%,-50%);
