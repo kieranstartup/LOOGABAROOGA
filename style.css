@@ -16,7 +16,9 @@ h3,
 h4,
 h5,
 h6,
+
 /*p,*/
+
 blockquote,
 pre,
 a,
@@ -140,35 +142,32 @@ a:visited {
 }
 
 
-
 /*------------------------------------------------------
 ################### Begin Styling ######################
 -------------------------------------------------------*/
 
-
-#text-container{
+#text-container {
     position: relative;
     height: 100%;
     width: 618px;
     margin: 0 auto;
 }
 
-.large-text{
+.large-text {
     text-align: center;
     font-size: 22px;
     letter-spacing: 2px;
 }
 
-.small-text{
+.small-text {
     font-size: 18px;
-    letter-spacing: 0px; 
+    letter-spacing: 0px;
 }
 
-.underline{
+.underline {
     border-bottom: 2px solid #000;
     /*text-decoration: underline;*/
-        cursor: pointer;
-
+    cursor: pointer;
 }
 
 .footnote-text {
@@ -178,8 +177,9 @@ a:visited {
     top: -8px;
     padding-left: 1px;
 }
+
 .chapter-spacing {
-padding-top: 57px;
+    padding-top: 57px;
     padding-bottom: 40px;
 }
 
@@ -187,12 +187,11 @@ padding-top: 57px;
     padding-top: 47px;
 }
 
-#chapter-6{
+#chapter-6 {
     padding-bottom: 40px;
 }
 
-
-.close-image{
+.close-image {
     width: 30px;
     height: 30px;
     background-size: cover;
@@ -205,23 +204,21 @@ padding-top: 57px;
     cursor: pointer;
 }
 
-
-
-
 img.landscape {
     width: 100%;
 }
-img.portrait{
+
+img.portrait {
     height: 100%;
 }
 
-.image-container{
+.image-container {
     max-width: 800px;
     width: 70%;
     height: auto;
     top: 50%;
     left: 50%;
-    transform:translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     position: fixed;
 }
 
@@ -230,8 +227,8 @@ img.portrait{
 ################### Three Images ######################
 -------------------------------------------------------*/
 
-.extended{
-    max-width: 1200px !important;
+.extended {
+    max-width: 1064px !important;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
@@ -252,15 +249,59 @@ img.portrait{
     align-items: flex-start;
 }
 
-.image-1{
-    width: 33%;
+.image-1 {
+    width: 30%;
     height: auto;
 }
-.image-2{
-    width: 33%;
+
+.image-2 {
+    width: 30%;
     height: auto;
 }
-.image-3{
-    width: 33%;
+
+.image-3 {
+    width: 30%;
     height: auto;
+}
+
+.close-image-1 {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("images/Crosshair-Black.png");
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.close-image-2 {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("images/Crosshair-Black.png");
+    position: absolute;
+    top: 15px;
+    margin-left: -100px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.close-image-3 {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("images/Crosshair-Black.png");
+    position: absolute;
+    top: 15px;
+    margin-left: -100px;
+    cursor: pointer;
+    z-index: 999;
 }

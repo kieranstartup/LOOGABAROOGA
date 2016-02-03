@@ -58,7 +58,7 @@ disableScroll();
 function portraitCSS(){
 jQuery('.image-container').css("width","auto");
 jQuery('.image-container').css("max-width","none");
-jQuery('.image-container').css("height","600");
+jQuery('.image-container').css("height","620");
 disableScroll();
 }
 
@@ -94,15 +94,26 @@ addPortraitClass();
 jQuery('.image-container').show();
 });
 
-// Test 3 Images
+// 3 Portrait Images
 jQuery('span#image-3').click(function() {
-jQuery('.image-container').removeClass('extended');
+jQuery('.image-container').addClass('extended');
+jQuery('.close-image').removeClass('close-image').addClass('close-image-1');
+
+
 jQuery('img.reference-image').attr('src', 'images/2.jpeg');
 jQuery('img.reference-image').addClass('image-1');
+
+
 jQuery('.image-container').append('<img class="reference-image image-2"/>');
+jQuery('img.reference-image.image-2').before('<div class="close-image-2"></div>');
 jQuery('img.reference-image.image-2').attr('src', 'images/2.jpeg');
+// jQuery('img.reference-image.image-2').wrap('<div id="image-2-container"></div>');
+
+
 jQuery('.image-container').append('<img class="reference-image image-3"/>');
+jQuery('img.reference-image.image-3').before('<div class="close-image-3"></div>');
 jQuery('img.reference-image.image-3').attr('src', 'images/2.jpeg');
+
 threeImageCSS();
 addPortraitClass();
 jQuery('.image-container').show();
@@ -177,16 +188,29 @@ jQuery('.image-container').show();
 });
 
 
-jQuery('.close-image').click(function() {
-    jQuery('.image-container').css("display","none");
-    jQuery('img').attr('src', '');
-    jQuery('img').removeClass("portrait");
-    jQuery('img').removeClass("landscape");
-    jQuery('img').removeClass("extended");
-    jQuery('img').removeClass("image-1");
-    jQuery('img.reference-image.image-2').remove();
-    jQuery('img.reference-image.image-3').remove();
-    enableScroll();
+jQuery('.close-image-1').click(function() {
+    jQuery('img.image-3').css("display","none");
+    console.log("clicked 1");
 });
+jQuery('.close-image-2').click(function() {
+    jQuery('img.image-1').css("display","none");
+});
+jQuery('.close-image-3').click(function() {
+    jQuery('img.image-2').css("display","none");
+});
+
+
+
+// jQuery('.close-image').click(function() {
+//     jQuery('.image-container').css("display","none");
+//     jQuery('img').attr('src', '');
+//     jQuery('img').removeClass("portrait");
+//     jQuery('img').removeClass("landscape");
+//     jQuery('.image-container').removeClass('extended');
+//     jQuery('img').removeClass("image-1");
+//     jQuery('img.reference-image.image-2').remove();
+//     jQuery('img.reference-image.image-3').remove();
+//     enableScroll();
+// });
 
 });
