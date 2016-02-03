@@ -3,8 +3,6 @@ jQuery(document).ready(function() {
 jQuery(".image-container").css("display","none");
 
 
-if(jQuery(window).width() > 414){
-
 // left: 37, up: 38, right: 39, down: 40,
 // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
 var keys = {37: 1, 38: 1, 39: 1, 40: 1};
@@ -42,12 +40,6 @@ function enableScroll() {
 }
 
 
-
-
-
-
-
-
 function resetCSS(){
 jQuery('.image-container').css("width","70%");
 jQuery('.image-container').css("max-width","800");
@@ -62,16 +54,13 @@ jQuery('.image-container').css("height","620");
 disableScroll();
 }
 
-
-
+/* Portrait Mobile Image Sizing */
 function portraitCSSMobile(){
 jQuery('.image-container').css("width","auto");
 jQuery('.image-container').css("max-width","none");
 jQuery('.image-container').css("height","320");
 disableScroll();
 }
-
-
 
 function threeImageCSS(){
 jQuery('.image-container').css("width","90%");
@@ -87,6 +76,9 @@ jQuery('img.reference-image').addClass('landscape');
 function addPortraitClass(){
 jQuery('img.reference-image').addClass('portrait');
 }
+
+
+if(jQuery(window).width() > 414){
 
 // Landscape Image
 jQuery('span#image-1').click(function() {
@@ -226,6 +218,7 @@ jQuery('.close-image').click(function() {
 
 }
 
+
 if (jQuery(window).width() < 414){
 jQuery('#image-2').bind('inview', function (event, visible) {
   if (visible === true) {
@@ -233,12 +226,12 @@ jQuery('#image-2').bind('inview', function (event, visible) {
 jQuery('img.reference-image').attr('src', 'images/2.jpeg');
 portraitCSSMobile();
 addPortraitClass();
-jQuery('.image-container').fadeIn(3000);
+jQuery('.image-container').fadeIn(1500);
 enableScroll();
 
   } else {
 
-jQuery('.image-container').fadeOut(3000);
+jQuery('.image-container').fadeOut(1500);
 
   }
 });
