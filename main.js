@@ -3,7 +3,7 @@ jQuery(document).ready(function() {
 jQuery(".image-container").css("display","none");
 
 
-
+if(jQuery(window).width() > 414){
 
 // left: 37, up: 38, right: 39, down: 40,
 // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
@@ -61,6 +61,17 @@ jQuery('.image-container').css("max-width","none");
 jQuery('.image-container').css("height","620");
 disableScroll();
 }
+
+
+
+function portraitCSSMobile(){
+jQuery('.image-container').css("width","auto");
+jQuery('.image-container').css("max-width","none");
+jQuery('.image-container').css("height","320");
+disableScroll();
+}
+
+
 
 function threeImageCSS(){
 jQuery('.image-container').css("width","90%");
@@ -212,5 +223,25 @@ jQuery('.close-image').click(function() {
     jQuery('img.reference-image.image-3').remove();
     enableScroll();
 });
+
+}
+
+if (jQuery(window).width() < 414){
+jQuery('#image-2').bind('inview', function (event, visible) {
+  if (visible === true) {
+
+jQuery('img.reference-image').attr('src', 'images/2.jpeg');
+portraitCSSMobile();
+addPortraitClass();
+jQuery('.image-container').fadeIn(3000);
+enableScroll();
+
+  } else {
+
+jQuery('.image-container').fadeOut(3000);
+
+  }
+});
+}
 
 });
