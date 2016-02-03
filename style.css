@@ -206,9 +206,14 @@ a:visited {
 img.landscape {
     width: 100%;
 }
+img.portrait{
+    height: 100%;
+}
+
 .image-container{
     max-width: 800px;
     width: 70%;
+    height: 600px;
     top: 50%;
     left: 50%;
     transform:translate(-50%,-50%);
