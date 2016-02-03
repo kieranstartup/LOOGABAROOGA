@@ -13,7 +13,7 @@ function preventDefault(e) {
   e = e || window.event;
   if (e.preventDefault)
       e.preventDefault();
-  e.returnValue = false;  
+  e.returnValue = false;
 }
 
 function preventDefaultForScrollKeys(e) {
@@ -52,13 +52,13 @@ function resetCSS(){
 jQuery('.image-container').css("width","70%");
 jQuery('.image-container').css("max-width","800");
 jQuery('.image-container').css("height","auto");
+disableScroll();
 }
 
 function portraitCSS(){
 jQuery('.image-container').css("width","auto");
 jQuery('.image-container').css("max-width","none");
 jQuery('.image-container').css("height","600");
-
 disableScroll();
 }
 
@@ -66,7 +66,6 @@ function threeImageCSS(){
 jQuery('.image-container').css("width","90%");
 jQuery('.image-container').css("max-width","1200");
 jQuery('.image-container').css("height","auto");
-
 disableScroll();
 }
 
@@ -97,7 +96,7 @@ jQuery('.image-container').show();
 
 // Test 3 Images
 jQuery('span#image-3').click(function() {
-jQuery('.image-container').addClass('extended');
+jQuery('.image-container').removeClass('extended');
 jQuery('img.reference-image').attr('src', 'images/2.jpeg');
 jQuery('img.reference-image').addClass('image-1');
 jQuery('.image-container').append('<img class="reference-image image-2"/>');

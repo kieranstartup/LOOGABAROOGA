@@ -118,9 +118,10 @@ body {
     width: 100%;
     height: 100%;
     color: #000;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 22px;
+    line-height: 28px;
     font-family: Make-Do;
+    letter-spacing: 0.5px;
 }
 
 ol,
@@ -148,19 +149,19 @@ a:visited {
 #text-container{
     position: relative;
     height: 100%;
-    width: 700px;
+    width: 618px;
     margin: 0 auto;
 }
 
 .large-text{
     text-align: center;
-    font-size: 25px;
+    font-size: 22px;
     letter-spacing: 2px;
 }
 
 .small-text{
     font-size: 18px;
-    letter-spacing: 0.5px; 
+    letter-spacing: 0px; 
 }
 
 .underline{
@@ -178,8 +179,12 @@ a:visited {
     padding-left: 1px;
 }
 .chapter-spacing {
-    padding-top: 40px;
+padding-top: 57px;
     padding-bottom: 40px;
+}
+
+#chapter-1-heading {
+    padding-top: 47px;
 }
 
 #chapter-6{
