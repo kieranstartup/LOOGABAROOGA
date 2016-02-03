@@ -1,0 +1,6 @@
+*.log
+.htaccess
+webfonts/
+images/
+*.sql
+*.zip
