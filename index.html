@@ -157,7 +157,7 @@ By looking at the materials and forms at hand in a place, the byproducts of huma
 In Belco, Northern Ireland the local authorities felt that it was necessary to bring new life to the high street ahead of the 39th G8 summit where it would be on show to world leaders and press. 
 <br>
 <br>
-In a number of shops the authorities installed printed vinyl in the windows which showed busy vibrant shops. The shop shown here was once a butcher shop but had gone out of business. 
+In a number of shops the authorities installed printed vinyl in the windows which showed busy vibrant shops. The shop shown <span class="underline" id="image-1">here</span> was once a butcher shop but had gone out of business. 
 <br>
 <br>
 Whilst we really enjoy this Potemkin village, this brilliantly executed illusion, we suspect it wasn’t intended in this spirit. Instead it shows a more somber longing for another time, a time when the high streets role within society served a different level of importance. By pretending like time and change hasn’t happened it feels like history is being denied. Pretending like nothing has changed since the 50s is not celebrating history, instead it denies the layers of change and complexity that make something old. 
@@ -165,10 +165,6 @@ Whilst we really enjoy this Potemkin village, this brilliantly executed illusion
 <br>
 Ironically the official theme of the 2013 summit was transparency.
 </div>
-
-
-
-
 
 <div id="chapter-6-heading" class="large-text chapter-spacing">
 ENCOUNTERS
@@ -184,6 +180,28 @@ Our method of working in and understanding Loughborough has been through a metho
 
 </div>
 
+<div id="image-1-container" class="image-container">
+<div class="close-image"></div>
+<img class="landscape" src="images/1.jpg">
+</div>
+
+
+<script type="text/javascript">
+jQuery(document).ready(function() {
+
+jQuery("#image-1-container").hide();
+
+jQuery('span#image-1').click(function() {
+jQuery('#image-1-container').show();
+});
+
+
+jQuery('.close-image').click(function() {
+    jQuery('img').hide();
+    jQuery('.close-image').hide();
+});
+});
+</script>
 
 </body>
 </html>
