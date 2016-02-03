@@ -2,16 +2,46 @@ jQuery(document).ready(function() {
 
 jQuery(".image-container").css("display","none");
 
-jQuery('span#image-1').click(function() {
-jQuery('img.reference-image').attr('src', 'images/1.jpg');
+
+
+function resetCSS(){
+jQuery('.image-container').css("width","70%");
+jQuery('.image-container').css("max-width","800");
+jQuery('.image-container').css("height","auto");
+}
+
+function portraitCSS(){
+jQuery('.image-container').css("width","auto");
+jQuery('.image-container').css("max-width","none");
+jQuery('.image-container').css("height","600");
+}
+
+function addLandscapeClass(){
 jQuery('img.reference-image').addClass('landscape');
+}
+
+function addPortraitClass(){
+jQuery('img.reference-image').addClass('portrait');
+}
+
+// Landscape Image
+jQuery('span#image-1').click(function() {
+resetCSS();
+jQuery('img.reference-image').attr('src', 'images/1.jpg');
+addLandscapeClass();
 jQuery('.image-container').show();
 });
+
+
+// Portrait Image
 jQuery('span#image-2').click(function() {
 jQuery('img.reference-image').attr('src', 'images/2.jpeg');
-jQuery('img.reference-image').addClass('portrait');
+portraitCSS();
+addPortraitClass();
 jQuery('.image-container').show();
 });
+
+
 jQuery('span#image-3').click(function() {
 jQuery('#image-3-container').show();
 });
@@ -69,6 +99,8 @@ jQuery('#image-20-container').show();
 
 jQuery('.close-image').click(function() {
     jQuery('.image-container').css("display","none");
+    jQuery('img').removeClass("portrait");
+    jQuery('img').removeClass("landscape");
 });
 
 });

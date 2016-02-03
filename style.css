@@ -212,8 +212,8 @@ img.portrait{
 
 .image-container{
     max-width: 800px;
-/*    width: 70%;
-*/    height: 600px;
+    width: 70%;
+    height: auto;
     top: 50%;
     left: 50%;
     transform:translate(-50%,-50%);
