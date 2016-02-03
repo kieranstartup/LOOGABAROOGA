@@ -201,16 +201,16 @@ jQuery('.close-image-3').click(function() {
 
 
 
-// jQuery('.close-image').click(function() {
-//     jQuery('.image-container').css("display","none");
-//     jQuery('img').attr('src', '');
-//     jQuery('img').removeClass("portrait");
-//     jQuery('img').removeClass("landscape");
-//     jQuery('.image-container').removeClass('extended');
-//     jQuery('img').removeClass("image-1");
-//     jQuery('img.reference-image.image-2').remove();
-//     jQuery('img.reference-image.image-3').remove();
-//     enableScroll();
-// });
+jQuery('.close-image').click(function() {
+    jQuery('.image-container').css("display","none");
+    jQuery('img').attr('src', '');
+    jQuery('img').removeClass("portrait");
+    jQuery('img').removeClass("landscape");
+    jQuery('.image-container').removeClass('extended');
+    jQuery('img').removeClass("image-1");
+    jQuery('img.reference-image.image-2').remove();
+    jQuery('img.reference-image.image-3').remove();
+    enableScroll();
+});
 
 });
