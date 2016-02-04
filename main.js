@@ -1,5 +1,7 @@
 jQuery(document).ready(function() {
 
+// This all works below
+
 jQuery(".image-container").css("display","none");
 
 
@@ -236,6 +238,9 @@ jQuery('.close-image').click(function() {
     enableScroll();
 });
 
+});
+
+jQuery(window).load(function() {
 
 // Testing Out Scrolling
 jQuery.fn.moveIt = function(){
@@ -267,5 +272,4 @@ moveItItem.prototype.update = function(scrollTop){
 jQuery(function(){
   jQuery('[data-scroll-speed]').moveIt();
 });
-
 });
