@@ -175,6 +175,10 @@ a:visited {
 ################### Begin Styling ######################
 -------------------------------------------------------*/
 
+#wrapper {
+    overflow: hidden;
+}
+
 #text-container {
     position: relative;
     height: 100%;
