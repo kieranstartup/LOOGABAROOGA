@@ -222,15 +222,15 @@ a:visited {
 }
 
 .close-image {
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 15px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("images/Crosshair-Black.png");
+    background-image: url("images/Closing-Cross.png");
     position: absolute;
-    right: 20px;
-    top: 15px;
+    right: 8px;
+    top: 8px;
     cursor: pointer;
 }
 
@@ -250,6 +250,7 @@ img.portrait {
     left: 50%;
     transform: translate(-50%, -50%);
     position: fixed;
+    z-index: 99999999;
 }
 
 
@@ -295,40 +296,40 @@ img.portrait {
 }
 
 .close-image-1 {
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 15px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("images/Crosshair-Black.png");
+    background-image: url("images/Closing-Cross.png");
     position: absolute;
     right: 20px;
-    top: 15px;
+    top: 8px;
     cursor: pointer;
     z-index: 999;
 }
 
 .close-image-2 {
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 15px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("images/Crosshair-Black.png");
+    background-image: url("images/Closing-Cross.png");
     position: absolute;
-    top: 15px;
+    top: 8px;
     margin-left: -100px;
     cursor: pointer;
     z-index: 999;
 }
 
 .close-image-3 {
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 8px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("images/Crosshair-Black.png");
+    background-image: url("images/Closing-Cross.png");
     position: absolute;
     top: 15px;
     margin-left: -100px;

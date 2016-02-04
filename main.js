@@ -228,7 +228,7 @@ jQuery('.image-container').fadeOut(1500);
 
 jQuery('.close-image').click(function() {
     jQuery('.image-container').css("display","none");
-    jQuery('img').attr('src', '');
+    jQuery('img.reference-image').attr('src', '');
     jQuery('img').removeClass("portrait");
     jQuery('img').removeClass("landscape");
     jQuery('.image-container').removeClass('extended');
