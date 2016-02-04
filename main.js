@@ -67,7 +67,7 @@ disableScroll();
 function threeImageCSS(){
 jQuery('.image-container').css("width","90%");
 jQuery('.image-container').css("max-width","1200");
-jQuery('.image-container').css("height","486");
+jQuery('.image-container').css("height","100%");
 disableScroll();
 }
 
@@ -199,15 +199,27 @@ jQuery('.image-container').show();
 });
 
 jQuery(document.body).on('click', '.close-image-1' ,function(){
-    jQuery('.image-1-container').css("display","none");
+    // jQuery('.image-1-container').css("display","none");
+    jQuery('.image-1-container').remove();
+if ( jQuery('.image-container.extended').children().length === 0 ) {
+enableScroll();
+}
 });
 
 jQuery(document.body).on('click', '.close-image-2' ,function(){
-    jQuery('.image-2-container').css("display","none");
+    // jQuery('.image-2-container').css("display","none");
+    jQuery('.image-2-container').remove();
+if ( jQuery('.image-container.extended').children().length === 0 ) {
+enableScroll();
+}
 });
 
 jQuery(document.body).on('click', '.close-image-3' ,function(){
-    jQuery('.image-3-container').css("display","none");
+    // jQuery('.image-3-container').css("display","none");
+    jQuery('.image-3-container').remove();
+if ( jQuery('.image-container.extended').children().length === 0 ) {
+enableScroll();
+}
 });
 
 }
