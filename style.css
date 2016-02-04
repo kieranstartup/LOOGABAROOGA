@@ -276,7 +276,7 @@ img.portrait {
 
 .extended {
     max-width: 1064px !important;
-    display: -ms-flexbox;
+/*    display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: row;
@@ -293,21 +293,22 @@ img.portrait {
     align-content: flex-start;
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
-    align-items: flex-start;
+    align-items: flex-start;*/
+/*    display: inline-block;*/
 }
 
 .image-1 {
-    width: 30%;
+    width: 100%;
     height: auto;
 }
 
 .image-2 {
-    width: 30%;
+    width: 100%;
     height: auto;
 }
 
 .image-3 {
-    width: 30%;
+    width: 100%;
     height: auto;
 }
 
@@ -319,7 +320,7 @@ img.portrait {
     background-position: center;
     background-image: url("images/Closing-Cross.png");
     position: absolute;
-    right: 20px;
+    right: 8px;
     top: 8px;
     cursor: pointer;
     z-index: 999;
@@ -334,28 +335,40 @@ img.portrait {
     background-image: url("images/Closing-Cross.png");
     position: absolute;
     top: 8px;
-    margin-left: -100px;
+    right: 8px;
     cursor: pointer;
     z-index: 999;
 }
 
 .close-image-3 {
     width: 15px;
-    height: 8px;
+    height: 15px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-image: url("images/Closing-Cross.png");
     position: absolute;
-    top: 15px;
-    margin-left: -100px;
+    top: 8px;
+    right: 8px;
     cursor: pointer;
     z-index: 999;
 }
 
-
-
-
+.image-1-container{
+    width: 30%;
+    position: absolute;
+    left: 0;
+}
+.image-2-container{
+    width: 30%;
+    position: absolute;
+    left: 33%;
+}
+.image-3-container{
+    width: 30%;
+    position: absolute;
+    left: 66%;
+}
 
 
 

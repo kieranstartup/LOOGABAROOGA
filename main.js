@@ -67,7 +67,7 @@ disableScroll();
 function threeImageCSS(){
 jQuery('.image-container').css("width","90%");
 jQuery('.image-container').css("max-width","1200");
-jQuery('.image-container').css("height","auto");
+jQuery('.image-container').css("height","486");
 disableScroll();
 }
 
@@ -102,22 +102,28 @@ jQuery('.image-container').show();
 // 3 Portrait Images
 jQuery('span#image-3').click(function() {
 jQuery('.image-container').addClass('extended');
-// jQuery('.close-image').removeClass('close-image').addClass('close-image-1');
+
+// This removes the old cross and adds in functionality for a new cross
+jQuery('.close-image').remove();
 
 
 jQuery('img.reference-image').attr('src', 'images/2.jpeg');
 jQuery('img.reference-image').addClass('image-1');
+jQuery('img.reference-image').before('<div class="close-image-1"></div>');
+jQuery('.close-image-1, img.reference-image.image-1').wrapAll('<div class="image-1-container">');
 
 
 jQuery('.image-container').append('<img class="reference-image image-2"/>');
-// jQuery('img.reference-image.image-2').before('<div class="close-image-2"></div>');
+jQuery('img.reference-image.image-2').before('<div class="close-image-2"></div>');
 jQuery('img.reference-image.image-2').attr('src', 'images/2.jpeg');
-// jQuery('img.reference-image.image-2').wrap('<div id="image-2-container"></div>');
+jQuery('.close-image-2, img.reference-image.image-2').wrapAll('<div class="image-2-container">');
 
 
 jQuery('.image-container').append('<img class="reference-image image-3"/>');
-// jQuery('img.reference-image.image-3').before('<div class="close-image-3"></div>');
+jQuery('img.reference-image.image-3').before('<div class="close-image-3"></div>');
 jQuery('img.reference-image.image-3').attr('src', 'images/2.jpeg');
+jQuery('.close-image-3, img.reference-image.image-3').wrapAll('<div class="image-3-container">');
+
 
 threeImageCSS();
 addPortraitClass();
@@ -192,17 +198,17 @@ jQuery('span#image-20').click(function() {
 jQuery('.image-container').show();
 });
 
+jQuery(document.body).on('click', '.close-image-1' ,function(){
+    jQuery('.image-1-container').css("display","none");
+});
 
-// jQuery('.close-image-1').click(function() {
-//     jQuery('img.image-3').css("display","none");
-//     console.log("clicked 1");
-// });
-// jQuery('.close-image-2').click(function() {
-//     jQuery('img.image-1').css("display","none");
-// });
-// jQuery('.close-image-3').click(function() {
-//     jQuery('img.image-2').css("display","none");
-// });
+jQuery(document.body).on('click', '.close-image-2' ,function(){
+    jQuery('.image-2-container').css("display","none");
+});
+
+jQuery(document.body).on('click', '.close-image-3' ,function(){
+    jQuery('.image-3-container').css("display","none");
+});
 
 }
 
