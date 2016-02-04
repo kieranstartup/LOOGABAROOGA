@@ -79,6 +79,19 @@ function addPortraitClass(){
 jQuery('img.reference-image').addClass('portrait');
 }
 
+function threeImageContainerClear(){
+jQuery('.image-container').removeClass('extended');
+jQuery('.image-container').append('<div class="close-image"></div>');
+jQuery('.close-image').after('<img class="reference-image" src=""/>');
+jQuery('.image-container').css("display","none");
+
+enableScroll();
+
+}
+
+
+
+
 
 if(jQuery(window).width() > 414){
 
@@ -199,28 +212,28 @@ jQuery('.image-container').show();
 });
 
 jQuery(document.body).on('click', '.close-image-1' ,function(){
-    // jQuery('.image-1-container').css("display","none");
     jQuery('.image-1-container').remove();
 if ( jQuery('.image-container.extended').children().length === 0 ) {
-enableScroll();
+threeImageContainerClear();
 }
 });
 
 jQuery(document.body).on('click', '.close-image-2' ,function(){
-    // jQuery('.image-2-container').css("display","none");
     jQuery('.image-2-container').remove();
 if ( jQuery('.image-container.extended').children().length === 0 ) {
-enableScroll();
+threeImageContainerClear();
 }
 });
 
 jQuery(document.body).on('click', '.close-image-3' ,function(){
-    // jQuery('.image-3-container').css("display","none");
     jQuery('.image-3-container').remove();
 if ( jQuery('.image-container.extended').children().length === 0 ) {
-enableScroll();
+threeImageContainerClear();
 }
 });
+
+
+
 
 }
 
@@ -244,7 +257,7 @@ jQuery('.image-container').fadeOut(1000);
 }
 
 
-jQuery('.close-image').click(function() {
+jQuery(document.body).on('click', '.close-image' ,function(){
     jQuery('.image-container').css("display","none");
     jQuery('img.reference-image').attr('src', '');
     jQuery('img').removeClass("portrait");
