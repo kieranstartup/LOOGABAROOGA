@@ -180,6 +180,7 @@ a:visited {
     height: 100%;
     width: 618px;
     margin: 0 auto;
+    z-index: 999;
 }
 
 .large-text {
@@ -352,11 +353,26 @@ img.portrait {
     width: 600px;
     height: auto;
     margin-left: -550px;
-    margin-top: 0;
+    margin-top: 100px;
 }
 
+#orange{
+    position: absolute;
+    z-index: -100;
+    width: 300px;
+    height: auto;
+    margin-left: 600px;
+    margin-top: 100px;
+}
 
-
+#grapes{
+    position: absolute;
+    z-index: -100;
+    width: 700px;
+    height: auto;
+    margin-left: 370px;
+    margin-top: 100px;  
+}
 
 
 /*------------------------------------------------------
