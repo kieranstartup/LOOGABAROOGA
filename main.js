@@ -67,7 +67,7 @@ disableScroll();
 function threeImageCSS(){
 jQuery('.image-container').css("width","90%");
 jQuery('.image-container').css("max-width","1200");
-jQuery('.image-container').css("height","100%");
+// jQuery('.image-container').css("height","100%");
 disableScroll();
 }
 
