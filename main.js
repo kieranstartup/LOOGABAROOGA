@@ -214,12 +214,12 @@ jQuery('#image-2').bind('inview', function (event, visible) {
 jQuery('img.reference-image').attr('src', 'images/2.jpeg');
 portraitCSSMobile();
 addPortraitClass();
-jQuery('.image-container').fadeIn(1500);
+jQuery('.image-container').fadeIn(1000);
 enableScroll();
 
   } else {
 
-jQuery('.image-container').fadeOut(1500);
+jQuery('.image-container').fadeOut(1000);
 
   }
 });
