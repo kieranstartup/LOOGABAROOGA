@@ -80,11 +80,11 @@ jQuery('img.reference-image').addClass('portrait');
 }
 
 function threeImageContainerClear(){
+jQuery('.image-container-wrapper').remove();
 jQuery('.image-container').removeClass('extended');
 jQuery('.image-container').append('<div class="close-image"></div>');
 jQuery('.close-image').after('<img class="reference-image" src=""/>');
 jQuery('.image-container').css("display","none");
-
 enableScroll();
 
 }
@@ -136,6 +136,10 @@ jQuery('.image-container').append('<img class="reference-image image-3"/>');
 jQuery('img.reference-image.image-3').before('<div class="close-image-3"></div>');
 jQuery('img.reference-image.image-3').attr('src', 'images/2.jpeg');
 jQuery('.close-image-3, img.reference-image.image-3').wrapAll('<div class="image-3-container">');
+
+
+jQuery('.image-1-container, .image-2-container, .image-3-container').wrapAll('<div class="image-container-wrapper">');
+
 
 
 threeImageCSS();
@@ -213,21 +217,21 @@ jQuery('.image-container').show();
 
 jQuery(document.body).on('click', '.close-image-1' ,function(){
     jQuery('.image-1-container').remove();
-if ( jQuery('.image-container.extended').children().length === 0 ) {
+if ( jQuery('.image-container-wrapper').children().length === 0 ) {
 threeImageContainerClear();
 }
 });
 
 jQuery(document.body).on('click', '.close-image-2' ,function(){
     jQuery('.image-2-container').remove();
-if ( jQuery('.image-container.extended').children().length === 0 ) {
+if ( jQuery('.image-container-wrapper').children().length === 0 ) {
 threeImageContainerClear();
 }
 });
 
 jQuery(document.body).on('click', '.close-image-3' ,function(){
     jQuery('.image-3-container').remove();
-if ( jQuery('.image-container.extended').children().length === 0 ) {
+if ( jQuery('.image-container-wrapper').children().length === 0 ) {
 threeImageContainerClear();
 }
 });
