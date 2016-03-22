@@ -231,7 +231,7 @@ a:visited {
     padding-top: 47px;
 }
 
-#chapter-1-sub-heading{
+#chapter-1-sub-heading {
     padding-bottom: 26px;
 }
 
@@ -385,31 +385,88 @@ img.portrait {
 ################### Static Images ######################
 -------------------------------------------------------*/
 
-#apple {
+
+/*------------------------------------------------------
+################### Single Images ######################
+-------------------------------------------------------*/
+
+#static-image-1 {
     position: absolute;
     z-index: -100;
-    width: 600px;
+    width: 303px;
     height: auto;
-    margin-left: -550px;
-    margin-top: 100px;
+    margin-left: 0px;
+    margin-top: 274px;
 }
 
-#orange {
+#static-image-2 {
     position: absolute;
     z-index: -100;
-    width: 300px;
+    width: 210px;
     height: auto;
-    margin-left: 600px;
-    margin-top: 100px;
+    margin-left: 0px;
+    margin-top: 1172px;
+    right: 0;
 }
 
-#grapes {
+#static-image-3 {
     position: absolute;
     z-index: -100;
-    width: 700px;
+    width: 405px;
     height: auto;
-    margin-left: 370px;
-    margin-top: 100px;
+    margin-left: 0px;
+    margin-top: 2380px;
+}
+
+#static-image-4 {
+    position: absolute;
+    z-index: -100;
+    width: 283px;
+    height: auto;
+    margin-left: 0px;
+    margin-top: 3300px;
+        right: 0;
+
+}
+
+#static-image-5 {
+    position: absolute;
+    z-index: -100;
+    width: 486px;
+    height: auto;
+    margin-left: 0px;
+    margin-top: 4357px;
+}
+
+#static-image-6 {
+    position: absolute;
+    z-index: -100;
+    width: 424px;
+    height: auto;
+    margin-left: 0px;
+    margin-top: 5630px;
+        right: 0;
+
+}
+
+#static-image-7 {
+    position: absolute;
+    z-index: -100;
+    width: 589px;
+    height: auto;
+    margin-left: 0px;
+    margin-top: 6794px;
+}
+
+#static-image-8 {
+    position: absolute;
+    z-index: -100;
+    width: 305px;
+    height: auto;
+    margin-left: 0px;
+    margin-top: 7923px;
+        right: 0;
+
 }
 
 
@@ -439,4 +496,3 @@ img.portrait {
     .underline {
         border-bottom: 0;
     }
-}
