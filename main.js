@@ -43,8 +43,9 @@ function enableScroll() {
 
 
 function resetCSS(){
-jQuery('.image-container').css("width","70%");
-jQuery('.image-container').css("max-width","800");
+// jQuery('.image-container').css("width","70%");
+// jQuery('.image-container').css("max-width","800");
+jQuery('.image-container').css("width","680");
 jQuery('.image-container').css("height","auto");
 disableScroll();
 }
@@ -52,7 +53,7 @@ disableScroll();
 function portraitCSS(){
 jQuery('.image-container').css("width","auto");
 jQuery('.image-container').css("max-width","none");
-jQuery('.image-container').css("height","620");
+jQuery('.image-container').css("height","640");
 disableScroll();
 }
 
@@ -96,9 +97,9 @@ enableScroll();
 if(jQuery(window).width() > 414){
 
 // Landscape Image
-jQuery('span#image-1').click(function() {
+jQuery('span#reference-image-1').click(function() {
 resetCSS();
-jQuery('img.reference-image').attr('src', 'images/1.jpg');
+jQuery('img.reference-image').attr('src', 'images/slide_300604_2520061_free.jpg');
 addLandscapeClass();
 jQuery('.image-container').show();
 });
@@ -147,9 +148,9 @@ addPortraitClass();
 jQuery('.image-container').show();
 });
 
-jQuery('span#reference-image-1').click(function() {
-jQuery('.image-container').show();
-});
+// jQuery('span#reference-image-1').click(function() {
+// jQuery('.image-container').show();
+// });
 
 jQuery('span#reference-image-2').click(function() {
 jQuery('.image-container').show();

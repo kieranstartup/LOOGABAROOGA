@@ -261,8 +261,9 @@ img.portrait {
 }
 
 .image-container {
-    max-width: 800px;
-    width: 70%;
+/*    max-width: 800px;
+    width: 70%;*/
+    width: 680px;
     height: auto;
     top: 50%;
     left: 50%;
@@ -391,7 +392,7 @@ img.portrait {
     width: 303px;
     height: auto;
     margin-left: 0px;
-    margin-top: 274px;
+    margin-top: 12px;
 }
 
 #static-image-2 {
@@ -420,8 +421,7 @@ img.portrait {
     height: auto;
     margin-left: 0px;
     margin-top: 3300px;
-        right: 0;
-
+    right: 0;
 }
 
 #static-image-5 {
@@ -440,8 +440,7 @@ img.portrait {
     height: auto;
     margin-left: 0px;
     margin-top: 5630px;
-        right: 0;
-
+    right: 0;
 }
 
 #static-image-7 {
@@ -460,8 +459,7 @@ img.portrait {
     height: auto;
     margin-left: 0px;
     margin-top: 7923px;
-        right: 0;
-
+    right: 0;
 }
 
 
@@ -490,5 +488,8 @@ img.portrait {
     }
     .underline {
         border-bottom: 0;
+    }
+    .underline::after{
+        margin-top: 1px;
     }
 }
