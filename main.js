@@ -147,73 +147,42 @@ addPortraitClass();
 jQuery('.image-container').show();
 });
 
-jQuery('span#image-4').click(function() {
+jQuery('span#reference-image-1').click(function() {
 jQuery('.image-container').show();
 });
 
-jQuery('span#image-5').click(function() {
+jQuery('span#reference-image-2').click(function() {
 jQuery('.image-container').show();
 });
 
-jQuery('span#image-6').click(function() {
+jQuery('span#reference-image-3').click(function() {
 jQuery('.image-container').show();
 });
 
-jQuery('span#image-7').click(function() {
+jQuery('span#reference-image-4').click(function() {
 jQuery('.image-container').show();
 });
 
-jQuery('span#image-8').click(function() {
+jQuery('span#reference-image-5').click(function() {
 jQuery('.image-container').show();
 });
 
-jQuery('span#image-9').click(function() {
+jQuery('span#reference-image-6').click(function() {
 jQuery('.image-container').show();
 });
 
-jQuery('span#image-10').click(function() {
+jQuery('span#reference-image-7').click(function() {
 jQuery('.image-container').show();
 });
 
-jQuery('span#image-11').click(function() {
+jQuery('span#reference-image-8').click(function() {
 jQuery('.image-container').show();
 });
 
-jQuery('span#image-12').click(function() {
+jQuery('span#reference-image-9').click(function() {
 jQuery('.image-container').show();
 });
 
-jQuery('span#image-13').click(function() {
-jQuery('.image-container').show();
-});
-
-jQuery('span#image-14').click(function() {
-jQuery('.image-container').show();
-});
-
-jQuery('span#image-15').click(function() {
-jQuery('.image-container').show();
-});
-
-jQuery('span#image-16').click(function() {
-jQuery('.image-container').show();
-});
-
-jQuery('span#image-17').click(function() {
-jQuery('.image-container').show();
-});
-
-jQuery('span#image-18').click(function() {
-jQuery('.image-container').show();
-});
-
-jQuery('span#image-19').click(function() {
-jQuery('.image-container').show();
-});
-
-jQuery('span#image-20').click(function() {
-jQuery('.image-container').show();
-});
 
 jQuery(document.body).on('click', '.close-image-1' ,function(){
     jQuery('.image-1-container').remove();
@@ -235,9 +204,6 @@ if ( jQuery('.image-container-wrapper').children().length === 0 ) {
 threeImageContainerClear();
 }
 });
-
-
-
 
 }
 
