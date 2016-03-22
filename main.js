@@ -275,36 +275,36 @@ jQuery(document.body).on('click', '.close-image' ,function(){
 
 });
 
-jQuery(window).load(function() {
+// jQuery(window).load(function() {
 
-// Testing Out Scrolling
-jQuery.fn.moveIt = function(){
-  var jQuerywindow = jQuery(window);
-  var instances = [];
+// // Testing Out Scrolling
+// jQuery.fn.moveIt = function(){
+//   var jQuerywindow = jQuery(window);
+//   var instances = [];
   
-  jQuery(this).each(function(){
-    instances.push(new moveItItem(jQuery(this)));
-  });
+//   jQuery(this).each(function(){
+//     instances.push(new moveItItem(jQuery(this)));
+//   });
   
-  window.onscroll = function(){
-    var scrollTop = jQuerywindow.scrollTop();
-    instances.forEach(function(inst){
-      inst.update(scrollTop);
-    });
-  };
-};
+//   window.onscroll = function(){
+//     var scrollTop = jQuerywindow.scrollTop();
+//     instances.forEach(function(inst){
+//       inst.update(scrollTop);
+//     });
+//   };
+// };
 
-var moveItItem = function(el){
-  this.el = jQuery(el);
-  this.speed = parseInt(this.el.attr('data-scroll-speed'));
-};
+// var moveItItem = function(el){
+//   this.el = jQuery(el);
+//   this.speed = parseInt(this.el.attr('data-scroll-speed'));
+// };
 
-moveItItem.prototype.update = function(scrollTop){
-  var pos = scrollTop / this.speed;
-  this.el.css('transform', 'translateY(' + -pos + 'px)');
-};
+// moveItItem.prototype.update = function(scrollTop){
+//   var pos = scrollTop / this.speed;
+//   this.el.css('transform', 'translateY(' + -pos + 'px)');
+// };
 
-jQuery(function(){
-  jQuery('[data-scroll-speed]').moveIt();
-});
-});
+// jQuery(function(){
+//   jQuery('[data-scroll-speed]').moveIt();
+// });
+// });
