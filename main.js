@@ -67,7 +67,7 @@ disableScroll();
 
 function threeImageCSS(){
 jQuery('.image-container').css("width","90%");
-jQuery('.image-container').css("max-width","1200");
+jQuery('.image-container').css("max-width","1024");
 // jQuery('.image-container').css("height","100%");
 disableScroll();
 }
@@ -170,23 +170,26 @@ threeImageContainerClear();
 }
 
 
-if (jQuery(window).width() < 414){
-jQuery('#image-2').bind('inview', function (event, visible) {
-  if (visible === true) {
 
-jQuery('img.reference-image').attr('src', 'images/2.jpeg');
-portraitCSSMobile();
-addPortraitClass();
-jQuery('.image-container').fadeIn(1000);
-enableScroll();
 
-  } else {
+if (jQuery(window).width() < 414) {
+    jQuery('#static-image-1,#static-image-2,#static-image-3,#static-image-4,#static-image-5,#static-image-6,#static-image-7,#static-image-8').bind('inview', function(event, visible) {
+    jQuery(this).wrap('<div class="empty">').css('z-index','99999');
+        if (visible === true) {
+        disableScroll();
 
-jQuery('.image-container').fadeOut(1000);
+            jQuery(document.body).on('click', '#static-image-1,#static-image-2,#static-image-3,#static-image-4,#static-image-5,#static-image-6,#static-image-7,#static-image-8', function() {
+                jQuery('.empty' , this).remove();
+                jQuery(this).fadeOut(300).remove();
+                enableScroll();
+            });
 
-  }
-});
+        } else {
+
+        }
+    });
 }
+
 
 
 jQuery(document.body).on('click', '.close-image' ,function(){

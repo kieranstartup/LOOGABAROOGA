@@ -278,8 +278,8 @@ img.portrait {
 -------------------------------------------------------*/
 
 .extended {
-    max-width: 1064px !important;
-    /*    display: -ms-flexbox;
+/*    max-width: 1064px !important;
+*/    /*    display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: row;
@@ -301,17 +301,17 @@ img.portrait {
 }
 
 .image-1 {
-    width: 100%;
+    width: auto;
     height: auto;
 }
 
 .image-2 {
-    width: 100%;
+    width: auto;
     height: auto;
 }
 
 .image-3 {
-    width: 100%;
+    width: auto;
     height: auto;
 }
 
@@ -358,7 +358,8 @@ img.portrait {
 }
 
 .image-1-container {
-    width: 30%;
+    width: auto;
+    height: 440px;
     position: absolute;
     left: 0;
     top: 50%;
@@ -366,7 +367,8 @@ img.portrait {
 }
 
 .image-2-container {
-    width: 30%;
+    width: auto;
+    height: 440px;
     position: absolute;
     left: 33%;
     top: 50%;
@@ -374,7 +376,8 @@ img.portrait {
 }
 
 .image-3-container {
-    width: 30%;
+    width: auto;
+    height: 440px;
     position: absolute;
     left: 66%;
     top: 50%;
