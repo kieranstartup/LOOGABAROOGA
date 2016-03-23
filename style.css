@@ -261,7 +261,7 @@ img.portrait {
 }
 
 .image-container {
-/*    max-width: 800px;
+    /*    max-width: 800px;
     width: 70%;*/
     width: 680px;
     height: auto;
@@ -386,6 +386,13 @@ img.portrait {
 ################### Static Images ######################
 -------------------------------------------------------*/
 
+.image-fixed {
+    position: fixed !important;
+    top: 50% !important;
+    transform: translateY(-50%);
+    margin-top: 0 !important;
+}
+
 #static-image-1 {
     position: absolute;
     z-index: -100;
@@ -393,6 +400,7 @@ img.portrait {
     height: auto;
     margin-left: 16px;
     margin-top: 12px;
+    display: none;
 }
 
 #static-image-2 {
@@ -402,7 +410,8 @@ img.portrait {
     height: auto;
     margin-left: 0px;
     margin-top: 1172px;
-right: 70px;
+    right: 70px;
+    display: none;
 }
 
 #static-image-3 {
@@ -412,6 +421,7 @@ right: 70px;
     height: auto;
     margin-left: 16px;
     margin-top: 2380px;
+    display: none;
 }
 
 #static-image-4 {
@@ -422,6 +432,7 @@ right: 70px;
     margin-left: 0px;
     margin-top: 3300px;
     right: 38px;
+    display: none;
 }
 
 #static-image-5 {
@@ -429,8 +440,9 @@ right: 70px;
     z-index: -100;
     width: 486px;
     height: auto;
-margin-left: 90px;
+    margin-left: 90px;
     margin-top: 4357px;
+    display: none;
 }
 
 #static-image-6 {
@@ -441,6 +453,7 @@ margin-left: 90px;
     margin-left: 0px;
     margin-top: 5630px;
     right: 70px;
+    display: none;
 }
 
 #static-image-7 {
@@ -450,6 +463,7 @@ margin-left: 90px;
     height: auto;
     margin-left: 16px;
     margin-top: 6794px;
+    display: none;
 }
 
 #static-image-8 {
@@ -460,6 +474,7 @@ margin-left: 90px;
     margin-left: 0px;
     margin-top: 7923px;
     right: 16px;
+    display: none;
 }
 
 
@@ -489,7 +504,6 @@ margin-left: 90px;
     .underline {
         border-bottom: 0;
     }
-    .underline::after{
+    .underline::after {
         margin-top: 1px;
     }
-}
