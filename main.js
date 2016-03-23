@@ -52,7 +52,7 @@ disableScroll();
 
 function portraitCSS(){
 jQuery('.image-container').css("width","auto");
-jQuery('.image-container').css("max-width","none");
+// jQuery('.image-container').css("max-width","none");
 jQuery('.image-container').css("height","640");
 disableScroll();
 }
@@ -87,7 +87,6 @@ jQuery('.image-container').append('<div class="close-image"></div>');
 jQuery('.close-image').after('<img class="reference-image" src=""/>');
 jQuery('.image-container').css("display","none");
 enableScroll();
-
 }
 
 
@@ -96,32 +95,31 @@ enableScroll();
 
 if(jQuery(window).width() > 414){
 
-// Landscape Image
+// Portrait Love Loughborough Image
 jQuery('span#reference-image-1').click(function() {
-resetCSS();
-jQuery('img.reference-image').attr('src', 'images/slide_300604_2520061_free.jpg');
-addLandscapeClass();
-jQuery('.image-container').show();
-});
-
-
-// Portrait Image
-jQuery('span#image-2').click(function() {
-jQuery('img.reference-image').attr('src', 'images/2.jpeg');
 portraitCSS();
+jQuery('img.reference-image').attr('src', 'images/reference-image-1-e.jpg');
 addPortraitClass();
 jQuery('.image-container').show();
 });
 
+// Landscape Belco Image
+jQuery('span#reference-image-2').click(function() {
+resetCSS();
+jQuery('img.reference-image').attr('src', 'images/reference-image-2-e.jpg');
+addLandscapeClass();
+jQuery('.image-container').show();
+});
+
 // 3 Portrait Images
-jQuery('span#image-3').click(function() {
+jQuery('span#reference-image-3').click(function() {
 jQuery('.image-container').addClass('extended');
 
 // This removes the old cross and adds in functionality for a new cross
 jQuery('.close-image').remove();
 
 
-jQuery('img.reference-image').attr('src', 'images/2.jpeg');
+jQuery('img.reference-image').attr('src', 'images/reference-image-3-1-e.jpg');
 jQuery('img.reference-image').addClass('image-1');
 jQuery('img.reference-image').before('<div class="close-image-1"></div>');
 jQuery('.close-image-1, img.reference-image.image-1').wrapAll('<div class="image-1-container">');
@@ -129,13 +127,13 @@ jQuery('.close-image-1, img.reference-image.image-1').wrapAll('<div class="image
 
 jQuery('.image-container').append('<img class="reference-image image-2"/>');
 jQuery('img.reference-image.image-2').before('<div class="close-image-2"></div>');
-jQuery('img.reference-image.image-2').attr('src', 'images/2.jpeg');
+jQuery('img.reference-image.image-2').attr('src', 'images/reference-image-3-2-e.jpg');
 jQuery('.close-image-2, img.reference-image.image-2').wrapAll('<div class="image-2-container">');
 
 
 jQuery('.image-container').append('<img class="reference-image image-3"/>');
 jQuery('img.reference-image.image-3').before('<div class="close-image-3"></div>');
-jQuery('img.reference-image.image-3').attr('src', 'images/2.jpeg');
+jQuery('img.reference-image.image-3').attr('src', 'images/reference-image-3-3-e.jpg');
 jQuery('.close-image-3, img.reference-image.image-3').wrapAll('<div class="image-3-container">');
 
 
@@ -147,43 +145,6 @@ threeImageCSS();
 addPortraitClass();
 jQuery('.image-container').show();
 });
-
-// jQuery('span#reference-image-1').click(function() {
-// jQuery('.image-container').show();
-// });
-
-jQuery('span#reference-image-2').click(function() {
-jQuery('.image-container').show();
-});
-
-jQuery('span#reference-image-3').click(function() {
-jQuery('.image-container').show();
-});
-
-jQuery('span#reference-image-4').click(function() {
-jQuery('.image-container').show();
-});
-
-jQuery('span#reference-image-5').click(function() {
-jQuery('.image-container').show();
-});
-
-jQuery('span#reference-image-6').click(function() {
-jQuery('.image-container').show();
-});
-
-jQuery('span#reference-image-7').click(function() {
-jQuery('.image-container').show();
-});
-
-jQuery('span#reference-image-8').click(function() {
-jQuery('.image-container').show();
-});
-
-jQuery('span#reference-image-9').click(function() {
-jQuery('.image-container').show();
-});
-
 
 jQuery(document.body).on('click', '.close-image-1' ,function(){
     jQuery('.image-1-container').remove();
