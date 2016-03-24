@@ -492,6 +492,14 @@ img.portrait {
         line-height: 22px;
         letter-spacing: 0.3px;
     }
+    .empty {
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    display: none;
+    z-index: 999999;
+    position: fixed;
+}
     #text-container {
         width: 292px;
     }
