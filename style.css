@@ -295,7 +295,7 @@ img.portrait {
 -------------------------------------------------------*/
 
 .extended {
-    /*    max-width: 1064px !important;
+/*        max-width: 1085px !important;
 */
     /*    display: -ms-flexbox;
     display: -webkit-flex;
@@ -388,7 +388,7 @@ img.portrait {
     width: auto;
     height: 440px;
     position: absolute;
-    left: 33%;
+    left: 359px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -397,7 +397,7 @@ img.portrait {
     width: auto;
     height: 440px;
     position: absolute;
-    left: 66%;
+    left: 718px;
     top: 50%;
     transform: translateY(-50%);
 }
