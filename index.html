@@ -166,13 +166,66 @@
     <script type="text/javascript">
     jQuery(document).ready(function() {
 
-
-
-
-
-        jQuery(".what-we-do-container:contains('Glasshouse')").html(function(_, html) {
-            return html.replace(/(Glasshouse)/g, '<a href="../gallery-and-glasshouse/" class="white-underline-hover-links" >Glasshouse</a>');
+        jQuery("#chapter-1:contains('market')").html(function(_, html) {
+            return html.replace(/(market)/g, '<span id="" class="underline" >market</span>');
         });
+
+
+        // jQuery("#chapter-2:contains('Love Loughborough')").html(function(_, html) {
+        //     return html.replace(/(Love Loughborough)/g, '<span class="underline" >Love Loughborough</span>');
+        // });
+        jQuery("#chapter-2:contains('place branding')").html(function(_, html) {
+            return html.replace(/(place branding)/g, '<span class="underline" >place branding</span>');
+        });
+        jQuery("#chapter-2:contains('this bag')").html(function(_, html) {
+            return html.replace(/(this bag)/g, '<span class="underline" >this bag</span>');
+        });
+
+
+        jQuery("#chapter-3:contains('Falcon Works')").html(function(_, html) {
+            return html.replace(/(Falcon Works)/g, '<span class="underline" >Falcon Works</span>');
+        });
+        jQuery("#chapter-3:contains('Immigration Enforcement Reporting Centre')").html(function(_, html) {
+            return html.replace(/(Immigration Enforcement Reporting Centre)/g, '<span class="underline" >Immigration Enforcement Reporting Centre</span>');
+        });
+        jQuery("#chapter-3:contains('postcard')").html(function(_, html) {
+            return html.replace(/(postcard)/g, '<span class="underline" >postcard</span>');
+        });
+
+
+
+        jQuery("#chapter-4:contains('coat of arms')").html(function(_, html) {
+            return html.replace(/(coat of arms)/g, '<span class="underline" >coat of arms</span>');
+        });
+        jQuery("#chapter-4:contains('shown here')").html(function(_, html) {
+            return html.replace(/(shown here)/g, '<span class="underline" >shown here</span>');
+        });
+
+
+        jQuery("#chapter-6:contains('triangle')").html(function(_, html) {
+            return html.replace(/(triangle)/g, '<span class="underline" >triangle</span>');
+        });
+        jQuery("#chapter-6:contains('Loughborough Town of Sanctuary')").html(function(_, html) {
+            return html.replace(/(Loughborough Town of Sanctuary)/g, '<span class="underline" >Loughborough Town of Sanctuary</span>');
+        });
+        jQuery("#chapter-6:contains('exchange')").html(function(_, html) {
+            return html.replace(/(exchange)/g, '<span class="underline" >exchange</span>');
+        });
+        jQuery("#chapter-6:contains('tatting shuttle')").html(function(_, html) {
+            return html.replace(/(tatting shuttle)/g, '<span class="underline" >tatting shuttle</span>');
+        });
+        jQuery("#chapter-6:contains('Sports Technology Institute’s')").html(function(_, html) {
+            return html.replace(/(Sports Technology Institute’s)/g, '<span class="underline" >Sports Technology Institute’s</span>');
+        });
+        jQuery("#chapter-6:contains('tennis racket grip')").html(function(_, html) {
+            return html.replace(/(tennis racket grip)/g, '<span class="underline" >tennis racket grip</span>');
+        });
+        jQuery("#chapter-6:contains('dismembered match balls')").html(function(_, html) {
+            return html.replace(/(dismembered match balls)/g, '<span class="underline" >dismembered match balls</span>');
+        });
+
+
+
 
     });
 
