@@ -43,8 +43,14 @@ jQuery(document).ready(function() {
 
 
     function resetCSS() {
+    if (jQuery(window).width() > 655) {
         jQuery('.image-container').css("width", "680");
         jQuery('.image-container').css("height", "auto");
+    }
+    if (jQuery(window).width() <= 655) {
+        jQuery('.image-container').css("width", "100%");
+        jQuery('.image-container').css("height", "auto");
+    }
         disableScroll();
     }
 
@@ -88,7 +94,7 @@ jQuery(document).ready(function() {
 
 
 
-    if (jQuery(window).width() > 414) {
+    // if (jQuery(window).width() > 414) {
 
         // Portrait Love Loughborough Image
         jQuery('span#reference-image-1').click(function() {
@@ -162,7 +168,7 @@ jQuery(document).ready(function() {
             }
         });
 
-    }
+    // }
 
 
 
