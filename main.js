@@ -43,8 +43,6 @@ jQuery(document).ready(function() {
 
 
     function resetCSS() {
-        // jQuery('.image-container').css("width","70%");
-        // jQuery('.image-container').css("max-width","800");
         jQuery('.image-container').css("width", "680");
         jQuery('.image-container').css("height", "auto");
         disableScroll();
@@ -52,7 +50,6 @@ jQuery(document).ready(function() {
 
     function portraitCSS() {
         jQuery('.image-container').css("width", "auto");
-        // jQuery('.image-container').css("max-width","none");
         jQuery('.image-container').css("height", "640");
         disableScroll();
     }
@@ -67,8 +64,6 @@ jQuery(document).ready(function() {
 
     function threeImageCSS() {
         jQuery('.image-container').css("width", "1048px");
-        // jQuery('.image-container').css("max-width", "1024");
-        // jQuery('.image-container').css("height","100%");
         disableScroll();
     }
 
