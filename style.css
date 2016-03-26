@@ -546,9 +546,8 @@ img.portrait {
     #static-image-7,
     #static-image-8 {
         z-index: -100;
-        width: 75% !important;
-        /*303px*/
-        height: auto;
+    width: auto !important;
+    height: 75%;
         margin-left: 0;
         margin-top: 0;
         right: 0;

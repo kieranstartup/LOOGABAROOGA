@@ -55,8 +55,14 @@ jQuery(document).ready(function() {
     }
 
     function portraitCSS() {
+    if (jQuery(window).width() > 655) {
         jQuery('.image-container').css("width", "auto");
         jQuery('.image-container').css("height", "640");
+    }
+    if (jQuery(window).width() <= 655) {
+        jQuery('.image-container').css("width", "100%");
+        jQuery('.image-container').css("height", "auto");
+    }    
         disableScroll();
     }
 
