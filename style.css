@@ -535,8 +535,9 @@ img.portrait {
         border-bottom: 1px solid black;
     }
     .underline::after {
-        margin-top: 1px;
-        display: inline;
+        /*margin-top: 1px;
+        display: inline;*/
+        display: none;
     }
     img.portrait {
     height: auto;

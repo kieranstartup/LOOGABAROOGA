@@ -60,7 +60,7 @@ jQuery(document).ready(function() {
         jQuery('.image-container').css("height", "640");
     }
     if (jQuery(window).width() <= 655) {
-        jQuery('.image-container').css("width", "50%");
+        jQuery('.image-container').css("width", "70%");
         jQuery('.image-container').css("height", "auto");
     }   
         disableScroll();
