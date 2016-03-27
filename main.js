@@ -274,13 +274,32 @@ jQuery('span#reference-image-dismembered-match-balls').click(function() {
             jQuery('.close-image-3, img.reference-image.image-3').wrapAll('<div class="image-3-triangle-container">');
 
 
-            jQuery('.image-1-container, .image-2-container, .image-3-container').wrapAll('<div class="image-container-wrapper">');
-
-
+            jQuery('.image-1-triangle-container, .image-2-triangle-container, .image-3-triangle-container').wrapAll('<div class="image-container-wrapper">');
 
             threeImageCSS();
-            addPortraitClass();
             jQuery('.image-container').show();
+        });
+
+
+        jQuery(document.body).on('click', '.close-image-1', function() {
+            jQuery('.image-1-triangle-container').remove();
+            if (jQuery('.image-container-wrapper').children().length === 0) {
+                threeImageContainerClear();
+            }
+        });
+
+        jQuery(document.body).on('click', '.close-image-2', function() {
+            jQuery('.image-2-triangle-container').remove();
+            if (jQuery('.image-container-wrapper').children().length === 0) {
+                threeImageContainerClear();
+            }
+        });
+
+        jQuery(document.body).on('click', '.close-image-3', function() {
+            jQuery('.image-3-triangle-container').remove();
+            if (jQuery('.image-container-wrapper').children().length === 0) {
+                threeImageContainerClear();
+            }
         });
 
 
