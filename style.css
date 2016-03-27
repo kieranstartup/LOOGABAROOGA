@@ -561,13 +561,19 @@ img.portrait {
 
 .image-1-two-image-container {
     position: absolute;
+    width: 440px;
 }
 
 .image-2-two-image-container {
     position: absolute;
     left: 468px;
+    width: 440px;
 }
 
+.image-1-footballs,
+.image-2-footballs {
+    width: 440px;
+}
 
 /*------------------------------------------------------
 ############ Two Image Portrait Layout ################

@@ -302,13 +302,48 @@ jQuery(window).load(function() {
         jQuery('.image-container').show();
     });
 
-    //
+    /////////////////////////////////////////////
+    // Two Images
+    ////////////////////////////////////////////
     jQuery('span#reference-image-dismembered-match-balls').click(function() {
+        jQuery('.image-container').addClass('extended-two-image');
 
-        jQuery('img.reference-image').attr('src', 'images/reference-image-1-e.jpg');
+        // This removes the old cross and adds in functionality for a new cross
+        jQuery('.close-image').remove();
 
+        jQuery('img.reference-image').attr('src', 'images/16.Football-1.jpg');
+        jQuery('img.reference-image').addClass('image-1-footballs');
+        jQuery('img.reference-image').before('<div class="close-image-1"></div>');
+        jQuery('.close-image-1, img.reference-image.image-1-footballs').wrapAll('<div class="image-1-two-image-container">');
+
+
+        jQuery('.image-container').append('<img class="reference-image image-2-footballs"/>');
+        jQuery('img.reference-image.image-2-footballs').before('<div class="close-image-2"></div>');
+        jQuery('img.reference-image.image-2-footballs').attr('src', 'images/16.Football-2.jpg');
+        jQuery('.close-image-2, img.reference-image.image-2-footballs').wrapAll('<div class="image-2-two-image-container">');
+
+        jQuery('.image-1-two-image-container, .image-2-two-image-container').wrapAll('<div class="image-container-wrapper">');
+
+        twoImageCSS();
         jQuery('.image-container').show();
     });
+
+    jQuery(document.body).on('click', '.close-image-1', function() {
+        jQuery('.image-1-two-image-container').remove();
+        if (jQuery('.image-container-wrapper').children().length === 0) {
+            twoImageContainerClear();
+        }
+    });
+
+    jQuery(document.body).on('click', '.close-image-2', function() {
+        jQuery('.image-2-two-image-container').remove();
+        if (jQuery('.image-container-wrapper').children().length === 0) {
+            twoImageContainerClear();
+        }
+    });
+    /////////////////////////////////////////////
+    // Two Images
+    ////////////////////////////////////////////
 
 
     // Triangle
@@ -467,40 +502,6 @@ jQuery(window).load(function() {
     });
 
 });
-
-// jQuery(window).load(function() {
-
-// // Testing Out Scrolling
-// jQuery.fn.moveIt = function(){
-//   var jQuerywindow = jQuery(window);
-//   var instances = [];
-
-//   jQuery(this).each(function(){
-//     instances.push(new moveItItem(jQuery(this)));
-//   });
-
-//   window.onscroll = function(){
-//     var scrollTop = jQuerywindow.scrollTop();
-//     instances.forEach(function(inst){
-//       inst.update(scrollTop);
-//     });
-//   };
-// };
-
-// var moveItItem = function(el){
-//   this.el = jQuery(el);
-//   this.speed = parseInt(this.el.attr('data-scroll-speed'));
-// };
-
-// moveItItem.prototype.update = function(scrollTop){
-//   var pos = scrollTop / this.speed;
-//   this.el.css('transform', 'translateY(' + -pos + 'px)');
-// };
-
-// jQuery(function(){
-//   jQuery('[data-scroll-speed]').moveIt();
-// });
-// });
 
 if (jQuery(window).width() > 414) {
 
@@ -673,10 +674,3 @@ if (jQuery(window).width() < 414) {
     };
     jQuery(document).ready(main);
 }
-
-
-// jQuery(document).ready(function() {
-
-
-
-// });
