@@ -73,6 +73,11 @@ jQuery(window).load(function() {
         disableScroll();
     }
 
+    function twoImageCSS() {
+        jQuery('.image-container').css("width", "699px");
+        disableScroll();
+    }
+
     function threeImageCSS() {
         jQuery('.image-container').css("width", "1048px");
         disableScroll();
@@ -105,7 +110,14 @@ jQuery(window).load(function() {
         enableScroll();
     }
 
-
+    function twoImageContainerClear() {
+        jQuery('.image-container-wrapper').remove();
+        jQuery('.image-1-two-image-container').children().remove();
+        jQuery('.image-2-two-image-container').children().remove();
+        jQuery('.image-container').removeClass('extended-two-image');
+        jQuery('.image-container').css("display", "none");
+        enableScroll();
+    }
 
     // if (jQuery(window).width() > 414) {
 
@@ -127,13 +139,44 @@ jQuery(window).load(function() {
 
 
 
-//
-jQuery('span#reference-image-market').click(function() {
+        // Two Images
+        jQuery('span#reference-image-market').click(function() {
+            jQuery('.image-container').addClass('extended-two-image');
 
-    jQuery('img.reference-image').attr('src', 'images/reference-image-1-e.jpg');
+            // This removes the old cross and adds in functionality for a new cross
+            jQuery('.close-image').remove();
 
-    jQuery('.image-container').show();
-});
+            jQuery('img.reference-image').attr('src', 'images/market-1.jpg');
+            jQuery('img.reference-image').addClass('image-1');
+            jQuery('img.reference-image').before('<div class="close-image-1"></div>');
+            jQuery('.close-image-1, img.reference-image.image-1').wrapAll('<div class="image-1-two-image-container">');
+
+
+            jQuery('.image-container').append('<img class="reference-image image-2"/>');
+            jQuery('img.reference-image.image-2').before('<div class="close-image-2"></div>');
+            jQuery('img.reference-image.image-2').attr('src', 'images/market-2.jpg');
+            jQuery('.close-image-2, img.reference-image.image-2').wrapAll('<div class="image-2-two-image-container">');
+
+            jQuery('.image-1-two-image-container, .image-2-two-image-container').wrapAll('<div class="image-container-wrapper">');
+
+            twoImageCSS();
+            jQuery('.image-container').show();
+        });
+
+        jQuery(document.body).on('click', '.close-image-1', function() {
+            jQuery('.image-1-two-image-container').remove();
+            if (jQuery('.image-container-wrapper').children().length === 0) {
+                twoImageContainerClear();
+            }
+        });
+
+        jQuery(document.body).on('click', '.close-image-2', function() {
+            jQuery('.image-2-two-image-container').remove();
+            if (jQuery('.image-container-wrapper').children().length === 0) {
+                twoImageContainerClear();
+            }
+        });
+
 
 // Landscape
 jQuery('span#reference-image-love-loughborough').click(function() {
