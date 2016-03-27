@@ -483,7 +483,7 @@ jQuery(window).load(function() {
                 jQuery(document.body).on('click', '.empty, #static-image-1,#static-image-2,#static-image-3,#static-image-4,#static-image-5,#static-image-6,#static-image-7,#static-image-8', function() {
                     jQuery(this).unwrap('<div class="empty">');
                     jQuery(this).fadeOut(500);
-                    disableScroll();
+                    enableScroll();
                 });
 
             } else {
