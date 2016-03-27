@@ -677,4 +677,10 @@ img.portrait {
         left: 50%;
         transform: translate(-50%, -50%);
     }
+    .endnote-text {
+        width: 292px;
+        font-size: 15px;
+        letter-spacing: 0.1px;
+        padding-bottom: 44px;
+    }
 }

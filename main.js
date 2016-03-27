@@ -472,7 +472,7 @@ jQuery(window).load(function() {
             if (visible === true) {
                 jQuery(this).wrap('<div class="empty">').css('z-index', '99999');
                 jQuery('.empty').fadeIn(500);
-                enableScroll();
+                disableScroll();
 
                 // window.onscroll = function (e) {
                 //     jQuery('#static-image-1,#static-image-2,#static-image-3,#static-image-4,#static-image-5,#static-image-6,#static-image-7,#static-image-8').unwrap('<div class="empty">');
@@ -487,6 +487,7 @@ jQuery(window).load(function() {
                 });
 
             } else {
+                    // enableScroll();
 
             }
         });
