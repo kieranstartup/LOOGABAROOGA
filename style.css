@@ -556,7 +556,7 @@ img.portrait {
 
 .extended-two-image {
     width: 908px !important;
-        height: 337px;
+    height: 337px;
 }
 
 .image-1-two-image-container {
@@ -568,13 +568,14 @@ img.portrait {
     left: 468px;
 }
 
+
 /*------------------------------------------------------
 ############ Two Image Portrait Layout ################
 -------------------------------------------------------*/
 
 .extended-two-image-portrait {
     width: 688px !important;
-        height: 440px;
+    height: 440px !important;
 }
 
 .image-1-two-portrait-image-container {
@@ -585,6 +586,7 @@ img.portrait {
     position: absolute;
     left: 358px;
 }
+
 
 /*------------------------------------------------------
 ################### Media Queries ######################
