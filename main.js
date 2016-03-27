@@ -95,7 +95,15 @@ jQuery(window).load(function() {
         enableScroll();
     }
 
-
+    function triangleImageContainerClear() {
+        jQuery('.image-container-wrapper').remove();
+        jQuery('.image-1-triangle-container').children().remove();
+        jQuery('.image-2-triangle-container').children().remove();
+        jQuery('.image-3-triangle-container').children().remove();
+        jQuery('.image-container').removeClass('extended-triangle');
+        jQuery('.image-container').css("display", "none");
+        enableScroll();
+    }
 
 
 
@@ -284,21 +292,21 @@ jQuery('span#reference-image-dismembered-match-balls').click(function() {
         jQuery(document.body).on('click', '.close-image-1', function() {
             jQuery('.image-1-triangle-container').remove();
             if (jQuery('.image-container-wrapper').children().length === 0) {
-                threeImageContainerClear();
+                triangleImageContainerClear();
             }
         });
 
         jQuery(document.body).on('click', '.close-image-2', function() {
             jQuery('.image-2-triangle-container').remove();
             if (jQuery('.image-container-wrapper').children().length === 0) {
-                threeImageContainerClear();
+                triangleImageContainerClear();
             }
         });
 
         jQuery(document.body).on('click', '.close-image-3', function() {
             jQuery('.image-3-triangle-container').remove();
             if (jQuery('.image-container-wrapper').children().length === 0) {
-                threeImageContainerClear();
+                triangleImageContainerClear();
             }
         });
 
