@@ -42,26 +42,26 @@ jQuery(window).load(function() {
 
 
     function resetCSS() {
-    if (jQuery(window).width() > 655) {
-        jQuery('.image-container').css("width", "680");
-        jQuery('.image-container').css("height", "auto");
-    }
-    if (jQuery(window).width() <= 655) {
-        jQuery('.image-container').css("width", "100%");
-        jQuery('.image-container').css("height", "auto");
-    }
+        if (jQuery(window).width() > 655) {
+            jQuery('.image-container').css("width", "680");
+            jQuery('.image-container').css("height", "auto");
+        }
+        if (jQuery(window).width() <= 655) {
+            jQuery('.image-container').css("width", "100%");
+            jQuery('.image-container').css("height", "auto");
+        }
         disableScroll();
     }
 
     function portraitCSS() {
-    if (jQuery(window).width() > 655) {
-        jQuery('.image-container').css("width", "auto");
-        jQuery('.image-container').css("height", "640");
-    }
-    if (jQuery(window).width() <= 655) {
-        jQuery('.image-container').css("width", "70%");
-        jQuery('.image-container').css("height", "auto");
-    }
+        if (jQuery(window).width() > 655) {
+            jQuery('.image-container').css("width", "auto");
+            jQuery('.image-container').css("height", "640");
+        }
+        if (jQuery(window).width() <= 655) {
+            jQuery('.image-container').css("width", "70%");
+            jQuery('.image-container').css("height", "auto");
+        }
         disableScroll();
     }
 
@@ -119,296 +119,327 @@ jQuery(window).load(function() {
         enableScroll();
     }
 
+    function twoPortraitImageContainerClear() {
+        jQuery('.image-container-wrapper').remove();
+        jQuery('.image-1-two-portrait-image-container').children().remove();
+        jQuery('.image-2-two-portrait-image-container').children().remove();
+        jQuery('.image-container').removeClass('extended-two-image-portrait');
+        jQuery('.image-container').css("display", "none");
+        enableScroll();
+    }
+
     // if (jQuery(window).width() > 414) {
 
-        // Portrait Love Loughborough Image
-        // jQuery('span#reference-image-1').click(function() {
-        //     portraitCSS();
-        //     jQuery('img.reference-image').attr('src', 'images/reference-image-1-e.jpg');
-        //     addPortraitClass();
-        //     jQuery('.image-container').show();
-        // });
-
-        // // Landscape Belco Image
-        // jQuery('span#reference-image-2').click(function() {
-        //     resetCSS();
-        //     jQuery('img.reference-image').attr('src', 'images/reference-image-2-e.jpg');
-        //     addLandscapeClass();
-        //     jQuery('.image-container').show();
-        // });
-
-
-
-        // Two Images
-        jQuery('span#reference-image-market').click(function() {
-            jQuery('.image-container').addClass('extended-two-image');
-
-            // This removes the old cross and adds in functionality for a new cross
-            jQuery('.close-image').remove();
-
-            jQuery('img.reference-image').attr('src', 'images/market-1.jpg');
-            jQuery('img.reference-image').addClass('image-1');
-            jQuery('img.reference-image').before('<div class="close-image-1"></div>');
-            jQuery('.close-image-1, img.reference-image.image-1').wrapAll('<div class="image-1-two-image-container">');
-
-
-            jQuery('.image-container').append('<img class="reference-image image-2"/>');
-            jQuery('img.reference-image.image-2').before('<div class="close-image-2"></div>');
-            jQuery('img.reference-image.image-2').attr('src', 'images/market-2.jpg');
-            jQuery('.close-image-2, img.reference-image.image-2').wrapAll('<div class="image-2-two-image-container">');
-
-            jQuery('.image-1-two-image-container, .image-2-two-image-container').wrapAll('<div class="image-container-wrapper">');
-
-            twoImageCSS();
-            jQuery('.image-container').show();
-        });
-
-        jQuery(document.body).on('click', '.close-image-1', function() {
-            jQuery('.image-1-two-image-container').remove();
-            if (jQuery('.image-container-wrapper').children().length === 0) {
-                twoImageContainerClear();
-            }
-        });
-
-        jQuery(document.body).on('click', '.close-image-2', function() {
-            jQuery('.image-2-two-image-container').remove();
-            if (jQuery('.image-container-wrapper').children().length === 0) {
-                twoImageContainerClear();
-            }
-        });
-
-
-// Landscape
-jQuery('span#reference-image-love-loughborough').click(function() {
-    resetCSS();
-    jQuery('img.reference-image').attr('src', 'images/2.Love_Loughborough.JPG');
-    addLandscapeClass();
-    jQuery('.image-container').show();
-});
-
-// Landscape
-jQuery('span#reference-image-place-branding').click(function() {
-    resetCSS();
-    jQuery('img.reference-image').attr('src', 'images/3.Love_Branding.jpg');
-    addLandscapeClass();
-    jQuery('.image-container').show();
-});
-
-// Landscape
-jQuery('span#reference-image-this-bag').click(function() {
-    resetCSS();
-    jQuery('img.reference-image').attr('src', 'images/4.I_Like_My_Town.jpg');
-    addLandscapeClass();
-    jQuery('.image-container').show();
-});
-
-// Landscape
-jQuery('span#reference-image-falcon-works').click(function() {
-    resetCSS();
-    jQuery('img.reference-image').attr('src', 'images/5.Falcom_Works.jpg');
-    addLandscapeClass();
-    jQuery('.image-container').show();
-});
-
-//
-jQuery('span#reference-image-immigration').click(function() {
-
-    jQuery('img.reference-image').attr('src', 'images/reference-image-1-e.jpg');
-
-    jQuery('.image-container').show();
-});
-
-// Landscape
-jQuery('span#reference-image-postcard').click(function() {
-    resetCSS();
-    jQuery('img.reference-image').attr('src', 'images/7.Postcard.jpg');
-    addLandscapeClass();
-    jQuery('.image-container').show();
-});
+    // Portrait Love Loughborough Image
+    // jQuery('span#reference-image-1').click(function() {
+    //     portraitCSS();
+    //     jQuery('img.reference-image').attr('src', 'images/reference-image-1-e.jpg');
+    //     addPortraitClass();
+    //     jQuery('.image-container').show();
+    // });
+
+    // // Landscape Belco Image
+    // jQuery('span#reference-image-2').click(function() {
+    //     resetCSS();
+    //     jQuery('img.reference-image').attr('src', 'images/reference-image-2-e.jpg');
+    //     addLandscapeClass();
+    //     jQuery('.image-container').show();
+    // });
+
+
+    /////////////////////////////////////////////
+    // Two Images
+    ////////////////////////////////////////////
+    jQuery('span#reference-image-market').click(function() {
+        jQuery('.image-container').addClass('extended-two-image');
+
+        // This removes the old cross and adds in functionality for a new cross
+        jQuery('.close-image').remove();
+
+        jQuery('img.reference-image').attr('src', 'images/market-1.jpg');
+        jQuery('img.reference-image').addClass('image-1');
+        jQuery('img.reference-image').before('<div class="close-image-1"></div>');
+        jQuery('.close-image-1, img.reference-image.image-1').wrapAll('<div class="image-1-two-image-container">');
+
+
+        jQuery('.image-container').append('<img class="reference-image image-2"/>');
+        jQuery('img.reference-image.image-2').before('<div class="close-image-2"></div>');
+        jQuery('img.reference-image.image-2').attr('src', 'images/market-2.jpg');
+        jQuery('.close-image-2, img.reference-image.image-2').wrapAll('<div class="image-2-two-image-container">');
+
+        jQuery('.image-1-two-image-container, .image-2-two-image-container').wrapAll('<div class="image-container-wrapper">');
+
+        twoImageCSS();
+        jQuery('.image-container').show();
+    });
+
+    jQuery(document.body).on('click', '.close-image-1', function() {
+        jQuery('.image-1-two-image-container').remove();
+        if (jQuery('.image-container-wrapper').children().length === 0) {
+            twoImageContainerClear();
+        }
+    });
+
+    jQuery(document.body).on('click', '.close-image-2', function() {
+        jQuery('.image-2-two-image-container').remove();
+        if (jQuery('.image-container-wrapper').children().length === 0) {
+            twoImageContainerClear();
+        }
+    });
+    /////////////////////////////////////////////
+    // Two Images
+    ////////////////////////////////////////////
+
+    // Landscape
+    jQuery('span#reference-image-love-loughborough').click(function() {
+        resetCSS();
+        jQuery('img.reference-image').attr('src', 'images/2.Love_Loughborough.JPG');
+        addLandscapeClass();
+        jQuery('.image-container').show();
+    });
+
+    // Landscape
+    jQuery('span#reference-image-place-branding').click(function() {
+        resetCSS();
+        jQuery('img.reference-image').attr('src', 'images/3.Love_Branding.jpg');
+        addLandscapeClass();
+        jQuery('.image-container').show();
+    });
+
+    // Landscape
+    jQuery('span#reference-image-this-bag').click(function() {
+        resetCSS();
+        jQuery('img.reference-image').attr('src', 'images/4.I_Like_My_Town.jpg');
+        addLandscapeClass();
+        jQuery('.image-container').show();
+    });
+
+    // Landscape
+    jQuery('span#reference-image-falcon-works').click(function() {
+        resetCSS();
+        jQuery('img.reference-image').attr('src', 'images/5.Falcom_Works.jpg');
+        addLandscapeClass();
+        jQuery('.image-container').show();
+    });
+
+    /////////////////////////////////////////////
+    // Two Portrait Images
+    ////////////////////////////////////////////
+    jQuery('span#reference-image-immigration').click(function() {
+        jQuery('.image-container').addClass('extended-two-image-portrait');
+
+        // This removes the old cross and adds in functionality for a new cross
+        jQuery('.close-image').remove();
+
+        jQuery('img.reference-image').attr('src', 'images/immigration-enforcement-1.jpg');
+        jQuery('img.reference-image').addClass('image-1');
+        jQuery('img.reference-image').before('<div class="close-image-1"></div>');
+        jQuery('.close-image-1, img.reference-image.image-1').wrapAll('<div class="image-1-two-portrait-image-container">');
+
+
+        jQuery('.image-container').append('<img class="reference-image image-2"/>');
+        jQuery('img.reference-image.image-2').before('<div class="close-image-2"></div>');
+        jQuery('img.reference-image.image-2').attr('src', 'images/immigration-enforcement-2.jpg');
+        jQuery('.close-image-2, img.reference-image.image-2').wrapAll('<div class="image-2-two-portrait-image-container">');
+
+        jQuery('.image-1-two-portrait-image-container, .image-2-two-portrait-image-container').wrapAll('<div class="image-container-wrapper">');
+
+        twoImageCSS();
+        jQuery('.image-container').show();
+    });
+
+    jQuery(document.body).on('click', '.close-image-1', function() {
+        jQuery('.image-1-two-portrait-image-container').remove();
+        if (jQuery('.image-container-wrapper').children().length === 0) {
+            twoPortraitImageContainerClear();
+        }
+    });
+
+    jQuery(document.body).on('click', '.close-image-2', function() {
+        jQuery('.image-2-two-portrait-image-container').remove();
+        if (jQuery('.image-container-wrapper').children().length === 0) {
+            twoPortraitImageContainerClear();
+        }
+    });
+    /////////////////////////////////////////////
+    // Two Portrait Images
+    ////////////////////////////////////////////
+
+    // Landscape
+    jQuery('span#reference-image-postcard').click(function() {
+        resetCSS();
+        jQuery('img.reference-image').attr('src', 'images/7.Postcard.jpg');
+        addLandscapeClass();
+        jQuery('.image-container').show();
+    });
+
+    // Portrait
+    jQuery('span#reference-image-coat-of-arms').click(function() {
+        portraitCSS();
+        jQuery('img.reference-image').attr('src', 'images/8.Coat_of_Arms.jpg');
+        addPortraitClass();
+        jQuery('.image-container').show();
+    });
+
+    // Landscape
+    jQuery('span#reference-image-shown-here').click(function() {
+        resetCSS();
+        jQuery('img.reference-image').attr('src', 'images/9.Belco.jpg');
+        addLandscapeClass();
+        jQuery('.image-container').show();
+    });
+
+    // Landscape
+    jQuery('span#reference-image-loughborough-town-of-sanctuary').click(function() {
+        resetCSS();
+        jQuery('img.reference-image').attr('src', 'images/11.Town_of_Sanctuary.jpg');
+        addLandscapeClass();
+        jQuery('.image-container').show();
+    });
+
+    // Landscape
+    jQuery('span#reference-image-exchange').click(function() {
+        resetCSS();
+        jQuery('img.reference-image').attr('src', 'images/12.John_Storer_House.jpg');
+        addLandscapeClass();
+        jQuery('.image-container').show();
+    });
+
+    // Landscape
+    jQuery('span#reference-image-tatting-shuttle').click(function() {
+        resetCSS();
+        jQuery('img.reference-image').attr('src', 'images/13.Tatting Shuttle.jpg');
+        addLandscapeClass();
+        jQuery('.image-container').show();
+    });
+
+    // Portrait
+    jQuery('span#reference-image-tennis-racket-grip').click(function() {
+        portraitCSS();
+        jQuery('img.reference-image').attr('src', 'images/15.Racket_Grip.jpg');
+        addPortraitClass();
+        jQuery('.image-container').show();
+    });
 
-// Portrait
-jQuery('span#reference-image-coat-of-arms').click(function() {
-    portraitCSS();
-    jQuery('img.reference-image').attr('src', 'images/8.Coat_of_Arms.jpg');
-    addPortraitClass();
-    jQuery('.image-container').show();
-});
-
-// Landscape
-jQuery('span#reference-image-shown-here').click(function() {
-    resetCSS();
-    jQuery('img.reference-image').attr('src', 'images/9.Belco.jpg');
-    addLandscapeClass();
-    jQuery('.image-container').show();
-});
-
-//
-// jQuery('span#reference-image-triangle').click(function() {
-
-//     jQuery('img.reference-image').attr('src', 'images/reference-image-1-e.jpg');
-
-//     jQuery('.image-container').show();
-// });
-
-// Landscape
-jQuery('span#reference-image-loughborough-town-of-sanctuary').click(function() {
-    resetCSS();
-    jQuery('img.reference-image').attr('src', 'images/11.Town_of_Sanctuary.jpg');
-    addLandscapeClass();
-    jQuery('.image-container').show();
-});
-
-// Landscape
-jQuery('span#reference-image-exchange').click(function() {
-    resetCSS();
-    jQuery('img.reference-image').attr('src', 'images/12.John_Storer_House.jpg');
-    addLandscapeClass();
-    jQuery('.image-container').show();
-});
-
-// Landscape
-jQuery('span#reference-image-tatting-shuttle').click(function() {
-    resetCSS();
-    jQuery('img.reference-image').attr('src', 'images/13.Tatting Shuttle.jpg');
-    addLandscapeClass();
-    jQuery('.image-container').show();
-});
-
-//
-jQuery('span#reference-image-sports-technology-institute').click(function() {
-
-    jQuery('img.reference-image').attr('src', 'images/reference-image-1-e.jpg');
-
-    jQuery('.image-container').show();
-});
-
-// Portrait
-jQuery('span#reference-image-tennis-racket-grip').click(function() {
-    portraitCSS();
-    jQuery('img.reference-image').attr('src', 'images/15.Racket_Grip.jpg');
-    addPortraitClass();
-    jQuery('.image-container').show();
-});
-
-//
-jQuery('span#reference-image-dismembered-match-balls').click(function() {
-
-    jQuery('img.reference-image').attr('src', 'images/reference-image-1-e.jpg');
-
-    jQuery('.image-container').show();
-});
-
-
-        // Triangle
-        jQuery('span#reference-image-triangle').click(function() {
-            jQuery('.image-container').addClass('extended-triangle');
-
-            // This removes the old cross and adds in functionality for a new cross
-            jQuery('.close-image').remove();
-
-
-            jQuery('img.reference-image').attr('src', 'images/triangle-1.jpg');
-            jQuery('img.reference-image').addClass('image-1');
-            jQuery('img.reference-image').before('<div class="close-image-1"></div>');
-            jQuery('.close-image-1, img.reference-image.image-1').wrapAll('<div class="image-1-triangle-container">');
-
-
-            jQuery('.image-container').append('<img class="reference-image image-2"/>');
-            jQuery('img.reference-image.image-2').before('<div class="close-image-2"></div>');
-            jQuery('img.reference-image.image-2').attr('src', 'images/triangle-2.jpg');
-            jQuery('.close-image-2, img.reference-image.image-2').wrapAll('<div class="image-2-triangle-container">');
-
-
-            jQuery('.image-container').append('<img class="reference-image image-3"/>');
-            jQuery('img.reference-image.image-3').before('<div class="close-image-3"></div>');
-            jQuery('img.reference-image.image-3').attr('src', 'images/triangle-3.jpg');
-            jQuery('.close-image-3, img.reference-image.image-3').wrapAll('<div class="image-3-triangle-container">');
-
-
-            jQuery('.image-1-triangle-container, .image-2-triangle-container, .image-3-triangle-container').wrapAll('<div class="image-container-wrapper">');
-
-            threeImageCSS();
-            jQuery('.image-container').show();
-        });
-
-
-        jQuery(document.body).on('click', '.close-image-1', function() {
-            jQuery('.image-1-triangle-container').remove();
-            if (jQuery('.image-container-wrapper').children().length === 0) {
-                triangleImageContainerClear();
-            }
-        });
-
-        jQuery(document.body).on('click', '.close-image-2', function() {
-            jQuery('.image-2-triangle-container').remove();
-            if (jQuery('.image-container-wrapper').children().length === 0) {
-                triangleImageContainerClear();
-            }
-        });
-
-        jQuery(document.body).on('click', '.close-image-3', function() {
-            jQuery('.image-3-triangle-container').remove();
-            if (jQuery('.image-container-wrapper').children().length === 0) {
-                triangleImageContainerClear();
-            }
-        });
-
-
-        // 3 Portrait Images
-        jQuery('span#reference-image-3').click(function() {
-            jQuery('.image-container').addClass('extended');
-
-            // This removes the old cross and adds in functionality for a new cross
-            jQuery('.close-image').remove();
-
-
-            jQuery('img.reference-image').attr('src', 'images/reference-image-3-1-e.jpg');
-            jQuery('img.reference-image').addClass('image-1');
-            jQuery('img.reference-image').before('<div class="close-image-1"></div>');
-            jQuery('.close-image-1, img.reference-image.image-1').wrapAll('<div class="image-1-container">');
-
-
-            jQuery('.image-container').append('<img class="reference-image image-2"/>');
-            jQuery('img.reference-image.image-2').before('<div class="close-image-2"></div>');
-            jQuery('img.reference-image.image-2').attr('src', 'images/reference-image-3-2-e.jpg');
-            jQuery('.close-image-2, img.reference-image.image-2').wrapAll('<div class="image-2-container">');
-
-
-            jQuery('.image-container').append('<img class="reference-image image-3"/>');
-            jQuery('img.reference-image.image-3').before('<div class="close-image-3"></div>');
-            jQuery('img.reference-image.image-3').attr('src', 'images/reference-image-3-3-e.jpg');
-            jQuery('.close-image-3, img.reference-image.image-3').wrapAll('<div class="image-3-container">');
-
-
-            jQuery('.image-1-container, .image-2-container, .image-3-container').wrapAll('<div class="image-container-wrapper">');
-
-
-
-            threeImageCSS();
-            addPortraitClass();
-            jQuery('.image-container').show();
-        });
-
-        jQuery(document.body).on('click', '.close-image-1', function() {
-            jQuery('.image-1-container').remove();
-            if (jQuery('.image-container-wrapper').children().length === 0) {
-                threeImageContainerClear();
-            }
-        });
-
-        jQuery(document.body).on('click', '.close-image-2', function() {
-            jQuery('.image-2-container').remove();
-            if (jQuery('.image-container-wrapper').children().length === 0) {
-                threeImageContainerClear();
-            }
-        });
-
-        jQuery(document.body).on('click', '.close-image-3', function() {
-            jQuery('.image-3-container').remove();
-            if (jQuery('.image-container-wrapper').children().length === 0) {
-                threeImageContainerClear();
-            }
-        });
+    //
+    jQuery('span#reference-image-dismembered-match-balls').click(function() {
+
+        jQuery('img.reference-image').attr('src', 'images/reference-image-1-e.jpg');
+
+        jQuery('.image-container').show();
+    });
+
+
+    // Triangle
+    jQuery('span#reference-image-triangle').click(function() {
+        jQuery('.image-container').addClass('extended-triangle');
+
+        // This removes the old cross and adds in functionality for a new cross
+        jQuery('.close-image').remove();
+
+
+        jQuery('img.reference-image').attr('src', 'images/triangle-1.jpg');
+        jQuery('img.reference-image').addClass('image-1');
+        jQuery('img.reference-image').before('<div class="close-image-1"></div>');
+        jQuery('.close-image-1, img.reference-image.image-1').wrapAll('<div class="image-1-triangle-container">');
+
+
+        jQuery('.image-container').append('<img class="reference-image image-2"/>');
+        jQuery('img.reference-image.image-2').before('<div class="close-image-2"></div>');
+        jQuery('img.reference-image.image-2').attr('src', 'images/triangle-2.jpg');
+        jQuery('.close-image-2, img.reference-image.image-2').wrapAll('<div class="image-2-triangle-container">');
+
+
+        jQuery('.image-container').append('<img class="reference-image image-3"/>');
+        jQuery('img.reference-image.image-3').before('<div class="close-image-3"></div>');
+        jQuery('img.reference-image.image-3').attr('src', 'images/triangle-3.jpg');
+        jQuery('.close-image-3, img.reference-image.image-3').wrapAll('<div class="image-3-triangle-container">');
+
+
+        jQuery('.image-1-triangle-container, .image-2-triangle-container, .image-3-triangle-container').wrapAll('<div class="image-container-wrapper">');
+
+        threeImageCSS();
+        jQuery('.image-container').show();
+    });
+
+
+    jQuery(document.body).on('click', '.close-image-1', function() {
+        jQuery('.image-1-triangle-container').remove();
+        if (jQuery('.image-container-wrapper').children().length === 0) {
+            triangleImageContainerClear();
+        }
+    });
+
+    jQuery(document.body).on('click', '.close-image-2', function() {
+        jQuery('.image-2-triangle-container').remove();
+        if (jQuery('.image-container-wrapper').children().length === 0) {
+            triangleImageContainerClear();
+        }
+    });
+
+    jQuery(document.body).on('click', '.close-image-3', function() {
+        jQuery('.image-3-triangle-container').remove();
+        if (jQuery('.image-container-wrapper').children().length === 0) {
+            triangleImageContainerClear();
+        }
+    });
+
+
+    // 3 Portrait Images
+    jQuery('span#reference-image-sports-technology-institute').click(function() {
+        jQuery('.image-container').addClass('extended');
+
+        // This removes the old cross and adds in functionality for a new cross
+        jQuery('.close-image').remove();
+
+
+        jQuery('img.reference-image').attr('src', 'images/reference-image-3-1-e.jpg');
+        jQuery('img.reference-image').addClass('image-1');
+        jQuery('img.reference-image').before('<div class="close-image-1"></div>');
+        jQuery('.close-image-1, img.reference-image.image-1').wrapAll('<div class="image-1-container">');
+
+
+        jQuery('.image-container').append('<img class="reference-image image-2"/>');
+        jQuery('img.reference-image.image-2').before('<div class="close-image-2"></div>');
+        jQuery('img.reference-image.image-2').attr('src', 'images/reference-image-3-2-e.jpg');
+        jQuery('.close-image-2, img.reference-image.image-2').wrapAll('<div class="image-2-container">');
+
+
+        jQuery('.image-container').append('<img class="reference-image image-3"/>');
+        jQuery('img.reference-image.image-3').before('<div class="close-image-3"></div>');
+        jQuery('img.reference-image.image-3').attr('src', 'images/reference-image-3-3-e.jpg');
+        jQuery('.close-image-3, img.reference-image.image-3').wrapAll('<div class="image-3-container">');
+
+
+        jQuery('.image-1-container, .image-2-container, .image-3-container').wrapAll('<div class="image-container-wrapper">');
+
+
+
+        threeImageCSS();
+        addPortraitClass();
+        jQuery('.image-container').show();
+    });
+
+    jQuery(document.body).on('click', '.close-image-1', function() {
+        jQuery('.image-1-container').remove();
+        if (jQuery('.image-container-wrapper').children().length === 0) {
+            threeImageContainerClear();
+        }
+    });
+
+    jQuery(document.body).on('click', '.close-image-2', function() {
+        jQuery('.image-2-container').remove();
+        if (jQuery('.image-container-wrapper').children().length === 0) {
+            threeImageContainerClear();
+        }
+    });
+
+    jQuery(document.body).on('click', '.close-image-3', function() {
+        jQuery('.image-3-container').remove();
+        if (jQuery('.image-container-wrapper').children().length === 0) {
+            threeImageContainerClear();
+        }
+    });
 
     // }
 
@@ -422,10 +453,10 @@ jQuery('span#reference-image-dismembered-match-balls').click(function() {
                 jQuery('.empty').fadeIn(500);
                 enableScroll();
 
-            // window.onscroll = function (e) {
-            //     jQuery('#static-image-1,#static-image-2,#static-image-3,#static-image-4,#static-image-5,#static-image-6,#static-image-7,#static-image-8').unwrap('<div class="empty">');
-            //     jQuery('#static-image-1,#static-image-2,#static-image-3,#static-image-4,#static-image-5,#static-image-6,#static-image-7,#static-image-8').fadeOut(500);
-            // };
+                // window.onscroll = function (e) {
+                //     jQuery('#static-image-1,#static-image-2,#static-image-3,#static-image-4,#static-image-5,#static-image-6,#static-image-7,#static-image-8').unwrap('<div class="empty">');
+                //     jQuery('#static-image-1,#static-image-2,#static-image-3,#static-image-4,#static-image-5,#static-image-6,#static-image-7,#static-image-8').fadeOut(500);
+                // };
 
 
                 jQuery(document.body).on('click', '.empty, #static-image-1,#static-image-2,#static-image-3,#static-image-4,#static-image-5,#static-image-6,#static-image-7,#static-image-8', function() {

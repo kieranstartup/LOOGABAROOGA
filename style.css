@@ -551,7 +551,7 @@ img.portrait {
 
 
 /*------------------------------------------------------
-################## Two Image Layout #####################
+############ Two Image Landscape Layout ################
 -------------------------------------------------------*/
 
 .extended-two-image {
@@ -568,6 +568,23 @@ img.portrait {
     left: 468px;
 }
 
+/*------------------------------------------------------
+############ Two Image Portrait Layout ################
+-------------------------------------------------------*/
+
+.extended-two-image-portrait {
+    width: 688px !important;
+        height: 440px;
+}
+
+.image-1-two-portrait-image-container {
+    position: absolute;
+}
+
+.image-2-two-portrait-image-container {
+    position: absolute;
+    left: 358px;
+}
 
 /*------------------------------------------------------
 ################### Media Queries ######################
