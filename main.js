@@ -1,5 +1,4 @@
 jQuery(window).load(function() {
-
     // This all works below
 
     jQuery(".image-container").css("display", "none");
@@ -315,12 +314,18 @@ jQuery('span#reference-image-dismembered-match-balls').click(function() {
             if (visible === true) {
                 jQuery(this).wrap('<div class="empty">').css('z-index', '99999');
                 jQuery('.empty').fadeIn(500);
-                disableScroll();
+                enableScroll();
+
+            // window.onscroll = function (e) {
+            //     jQuery('#static-image-1,#static-image-2,#static-image-3,#static-image-4,#static-image-5,#static-image-6,#static-image-7,#static-image-8').unwrap('<div class="empty">');
+            //     jQuery('#static-image-1,#static-image-2,#static-image-3,#static-image-4,#static-image-5,#static-image-6,#static-image-7,#static-image-8').fadeOut(500);
+            // };
+
 
                 jQuery(document.body).on('click', '.empty, #static-image-1,#static-image-2,#static-image-3,#static-image-4,#static-image-5,#static-image-6,#static-image-7,#static-image-8', function() {
                     jQuery(this).unwrap('<div class="empty">');
                     jQuery(this).fadeOut(500);
-                    enableScroll();
+                    disableScroll();
                 });
 
             } else {
@@ -494,24 +499,22 @@ if (jQuery(window).width() < 414) {
                     staticImage1.not('.image-fixed').fadeIn(500);
                     jQuery('.empty').show();
                     staticImage1.addClass('image-fixed');
-                } else {}
+                }
 
                 if (jQuery(this).scrollTop() > 1172 && jQuery(this).scrollTop() < 1772) {
                     staticImage2.not('.image-fixed').fadeIn(500);
                     staticImage2.addClass('image-fixed');
-                } else {}
+                }
 
                 if (jQuery(this).scrollTop() > 2380 && jQuery(this).scrollTop() < 2980) {
                     staticImage3.not('.image-fixed').fadeIn(500);
                     staticImage3.addClass('image-fixed');
 
-                } else {}
+                }
 
                 if (jQuery(this).scrollTop() > 3300 && jQuery(this).scrollTop() < 3900) {
                     staticImage4.not('.image-fixed').fadeIn(500);
                     staticImage4.addClass('image-fixed');
-
-                } else {
 
                 }
 
@@ -519,15 +522,11 @@ if (jQuery(window).width() < 414) {
                     staticImage5.not('.image-fixed').fadeIn(500);
                     staticImage5.addClass('image-fixed');
 
-                } else {
-
                 }
 
                 if (jQuery(this).scrollTop() > 5630 && jQuery(this).scrollTop() < 6330) {
                     staticImage6.not('.image-fixed').fadeIn(500);
                     staticImage6.addClass('image-fixed');
-
-                } else {
 
                 }
 
@@ -535,15 +534,11 @@ if (jQuery(window).width() < 414) {
                     staticImage7.not('.image-fixed').fadeIn(500);
                     staticImage7.addClass('image-fixed');
 
-                } else {
-
                 }
 
                 if (jQuery(this).scrollTop() > 7723 && jQuery(this).scrollTop() < 8322) {
                     staticImage8.not('.image-fixed').fadeIn(500);
                     staticImage8.addClass('image-fixed');
-
-                } else {
 
                 }
 

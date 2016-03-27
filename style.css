@@ -537,6 +537,9 @@ img.portrait {
         z-index: 999999;
         position: fixed;
     }
+    #top-text-box {
+    padding-top: 26px;
+}
     #text-container,
     #top-text-box {
         width: 292px;
