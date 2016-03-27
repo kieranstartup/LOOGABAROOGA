@@ -78,6 +78,11 @@ jQuery(window).load(function() {
         disableScroll();
     }
 
+        function twoImageCSSAlt() {
+        jQuery('.image-container').css("width", "329px");
+        disableScroll();
+    }
+
     function threeImageCSS() {
         jQuery('.image-container').css("width", "1048px");
         disableScroll();
@@ -324,7 +329,7 @@ jQuery(window).load(function() {
 
         jQuery('.image-1-two-image-container, .image-2-two-image-container').wrapAll('<div class="image-container-wrapper">');
 
-        twoImageCSS();
+        twoImageCSSAlt();
         jQuery('.image-container').show();
     });
 
