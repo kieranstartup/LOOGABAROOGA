@@ -600,6 +600,11 @@ img.portrait {
 -------------------------------------------------------*/
 
 @media screen and (max-width: 660px) {
+    #wrapper {
+        position: fixed;
+        left: 50%;
+        transform: translatex(-50%);
+    }
     /*414px*/
     body {
         font-size: 17px;
@@ -682,5 +687,26 @@ img.portrait {
         font-size: 15px;
         letter-spacing: 0.1px;
         padding-bottom: 44px;
+    }
+    .image-container {
+        position: absolute;
+        overflow: scroll;
+        left: 0;
+        transform: translateY(-50%);
+    }
+    .extended-two-image {
+        width: 100% !important;
+        height: 281px;
+    }
+    .image-1-two-image-container,
+    .image-2-two-image-container {
+        width: 100%;
+    }
+    .image-2-two-image-container {
+        left: 403px;
+    }
+    .image-1,
+    .image-2 {
+        width: 100%;
     }
 }
