@@ -192,12 +192,12 @@ jQuery('span#reference-image-shown-here').click(function() {
 });
 
 //
-jQuery('span#reference-image-triangle').click(function() {
+// jQuery('span#reference-image-triangle').click(function() {
 
-    jQuery('img.reference-image').attr('src', 'images/reference-image-1-e.jpg');
+//     jQuery('img.reference-image').attr('src', 'images/reference-image-1-e.jpg');
 
-    jQuery('.image-container').show();
-});
+//     jQuery('.image-container').show();
+// });
 
 // Landscape
 jQuery('span#reference-image-loughborough-town-of-sanctuary').click(function() {
@@ -246,6 +246,42 @@ jQuery('span#reference-image-dismembered-match-balls').click(function() {
 
     jQuery('.image-container').show();
 });
+
+
+        // Triangle
+        jQuery('span#reference-image-triangle').click(function() {
+            jQuery('.image-container').addClass('extended-triangle');
+
+            // This removes the old cross and adds in functionality for a new cross
+            jQuery('.close-image').remove();
+
+
+            jQuery('img.reference-image').attr('src', 'images/triangle-1.jpg');
+            jQuery('img.reference-image').addClass('image-1');
+            jQuery('img.reference-image').before('<div class="close-image-1"></div>');
+            jQuery('.close-image-1, img.reference-image.image-1').wrapAll('<div class="image-1-triangle-container">');
+
+
+            jQuery('.image-container').append('<img class="reference-image image-2"/>');
+            jQuery('img.reference-image.image-2').before('<div class="close-image-2"></div>');
+            jQuery('img.reference-image.image-2').attr('src', 'images/triangle-2.jpg');
+            jQuery('.close-image-2, img.reference-image.image-2').wrapAll('<div class="image-2-triangle-container">');
+
+
+            jQuery('.image-container').append('<img class="reference-image image-3"/>');
+            jQuery('img.reference-image.image-3').before('<div class="close-image-3"></div>');
+            jQuery('img.reference-image.image-3').attr('src', 'images/triangle-3.jpg');
+            jQuery('.close-image-3, img.reference-image.image-3').wrapAll('<div class="image-3-triangle-container">');
+
+
+            jQuery('.image-1-container, .image-2-container, .image-3-container').wrapAll('<div class="image-container-wrapper">');
+
+
+
+            threeImageCSS();
+            addPortraitClass();
+            jQuery('.image-container').show();
+        });
 
 
         // 3 Portrait Images
