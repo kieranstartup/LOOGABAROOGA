@@ -276,8 +276,8 @@ a:visited {
 }
 
 .close-image {
-    width: 15px;
-    height: 15px;
+    width: 25px;
+    height: 25px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -600,11 +600,11 @@ img.portrait {
 -------------------------------------------------------*/
 
 @media screen and (max-width: 660px) {
-    #wrapper {
+    /*    #wrapper {
         position: fixed;
         left: 50%;
         transform: translatex(-50%);
-    }
+    }*/
     /*414px*/
     body {
         font-size: 17px;
@@ -689,24 +689,87 @@ img.portrait {
         padding-bottom: 44px;
     }
     .image-container {
-        position: absolute;
-        overflow: scroll;
-        left: 0;
-        transform: translateY(-50%);
+        position: fixed;
+/*        overflow: scroll;
+*//*        left: 0;
+        transform: translateY(-50%);*/
     }
     .extended-two-image {
         width: 100% !important;
-        height: 281px;
+        height: 241px;
     }
     .image-1-two-image-container,
     .image-2-two-image-container {
         width: 100%;
     }
-    .image-2-two-image-container {
-        left: 403px;
+    .image-1-two-image-container{
+        z-index: 999;
     }
+    .image-2-two-image-container {
+        z-index: 0;
+/*        left: 403px;
+*/   
+        left: 0;
+ }
     .image-1,
     .image-2 {
         width: 100%;
     }
+    .image-container.extended-triangle {
+        width: 100% !important;
+    }
+    .image-1-triangle-container,
+    .image-2-triangle-container,
+    .image-3-triangle-container {
+        transform: rotate(0deg) translateY(-50%);
+        top: 50%;
+        right: 0;
+        transform-origin: center;
+        left: 0;
+        position: absolute;
+            bottom: 0;
+    }
+    /*.image-2-triangle-container{
+    left: 105%;
+}
+
+.image-3-triangle-container{
+left: 205%;
+}*/
+    /*.image-container {
+    position: fixed;
+    }*/
+
+
+.extended-two-image-portrait {
+    width: 70% !important;
+    height: 305px !important;
+}
+.image-1-two-portrait-image-container {
+    z-index: 999;
+}
+.image-2-two-portrait-image-container {
+    z-index: 0;
+        left: 0;
+}
+
+
+.extended{
+    width: 100%;
+}
+.image-1-container,
+.image-2-container,
+.image-3-container{
+    width: 70%;
+        left: 50%;
+    height: auto;
+    transform: translate(-50%,-50%);
+}
+.image-container.extended{
+    width: 100% !important;
+}
+
+    .image-1-footballs, .image-2-footballs {
+    width: 100%;
+}
 }
