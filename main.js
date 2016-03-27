@@ -128,25 +128,6 @@ jQuery(window).load(function() {
         enableScroll();
     }
 
-    // if (jQuery(window).width() > 414) {
-
-    // Portrait Love Loughborough Image
-    // jQuery('span#reference-image-1').click(function() {
-    //     portraitCSS();
-    //     jQuery('img.reference-image').attr('src', 'images/reference-image-1-e.jpg');
-    //     addPortraitClass();
-    //     jQuery('.image-container').show();
-    // });
-
-    // // Landscape Belco Image
-    // jQuery('span#reference-image-2').click(function() {
-    //     resetCSS();
-    //     jQuery('img.reference-image').attr('src', 'images/reference-image-2-e.jpg');
-    //     addLandscapeClass();
-    //     jQuery('.image-container').show();
-    // });
-
-
     /////////////////////////////////////////////
     // Two Images
     ////////////////////////////////////////////
