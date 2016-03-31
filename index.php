@@ -148,14 +148,14 @@
                 <br>We have worked with a range of objects that reference stories that we have encountered in the city. The work we have created is not presented as an identity for Loughborough, we make no claim that it defines the place, but it is a response to Loughborough that explores its identity in an open ended way. Through a juxtaposition of objects we encourage viewers to reflect on Loughborough and provoke further thought about the place. We explore no more than a few of the infinitude number of stories that make up the town. Our selection of objects and our stylistic preferences are deliberate and subjective, but this shows the very essence of personal involvement that is lacking in the bland, un-nuanced branding that has come to define many towns and cities.
             </div>
             <div class="endnote-text">
-                1 Wally Olins, On Brand, Thames and Hudson, p204
-                <br> 2 Sheila Levant de Bretteville, A Reexamination of Some Aspects of the Design Arts from the Perspective of a Woman Designer, Arts in society: women and the arts, Spring-Summer 1974, p116
-                <br> 3 Mae, Places for Strangers, Park Books, p28
-                <br> 4 Norman Potter, What is a Designer, Hyphen Press, p15
-                <br> 5 Sheila Levant de Bretteville, A Reexamination of Some Aspects of the Design Arts from the Perspective of a Woman Designer, Arts in society: women and the arts, Spring-Summer 1974, p115
-                <br> 6 Charles Jencks and Nathan Silver, Adhocism, MIT Press, pviii
-                <br> 7 Irénée Scalbert on Raphael Samuel, Never Modern, Park Books, p34
-                <br> 8 Susan Stewart, On Longing, Duke University Press, p23
+                <span class="number-spacing">1</span> Wally Olins, On Brand, Thames and Hudson, p204
+                <br> <span class="number-spacing">2</span> Sheila Levant de Bretteville, A Reexamination of Some Aspects of the Design Arts from the Perspective of a Woman Designer, Arts in society: women and the arts, Spring-Summer 1974, p116
+                <br> <span class="number-spacing">3</span> Mae, Places for Strangers, Park Books, p28
+                <br> <span class="number-spacing">4</span> Norman Potter, What is a Designer, Hyphen Press, p15
+                <br> <span class="number-spacing">5</span> Sheila Levant de Bretteville, A Reexamination of Some Aspects of the Design Arts from the Perspective of a Woman Designer, Arts in society: women and the arts, Spring-Summer 1974, p115
+                <br> <span class="number-spacing">6</span> Charles Jencks and Nathan Silver, Adhocism, MIT Press, pviii
+                <br> <span class="number-spacing">7</span> Irénée Scalbert on Raphael Samuel, Never Modern, Park Books, p34
+                <br> <span class="number-spacing">8</span> Susan Stewart, On Longing, Duke University Press, p23
             </div>
         </div>
     </div>

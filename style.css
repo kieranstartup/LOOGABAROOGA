@@ -240,15 +240,20 @@ a:visited {
     cursor: pointer;
     border-bottom: 1px solid #000;
 }
+span.number-spacing {
+    padding-right: 10px;
+    margin-left: -20px;
+}
 
 .endnote-text {
     font-size: 17px;
     letter-spacing: 0.2px;
     position: relative;
-    width: 489px;
+    width: 500px;
     margin: 0 auto;
     padding-bottom: 94px;
-        line-height: 22px;
+    line-height: 22px;
+    padding-left: 20px;
 }
 
 .footnote {
