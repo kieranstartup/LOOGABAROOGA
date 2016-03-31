@@ -11,7 +11,7 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="jquery.inview.min.js"></script>
     <!--<script src="reference-image-click.js"></script>-->
-    <script src="main.js"></script>
+    <script src="main.min.js"></script>
     <!--   <script src="mobileInView.js"></script> -->
     <!--
 
@@ -42,14 +42,14 @@
 
 <body>
     <div id="wrapper">
-        <img id="static-image-1" src="images/0547-e.jpg">
-        <img id="static-image-2" src="images/0562-e.jpg">
-        <img id="static-image-3" src="images/0570-e.jpg">
-        <img id="static-image-4" src="images/0554-e.jpg">
-        <img id="static-image-5" src="images/0551-e.jpg">
-        <img id="static-image-6" src="images/0568-e.jpg">
-        <img id="static-image-7" src="images/0544-e.jpg">
-        <img id="static-image-8" src="images/0572-e.jpg">
+        <img id="static-image-1" src="images/1.Sourdough_Smileys.jpg">
+        <img id="static-image-2" src="images/2.Phone_Purse.jpg">
+        <img id="static-image-3" src="images/3.Spout_Ginger.jpg">
+        <img id="static-image-4" src="images/4.Nails_Tiles.jpg">
+        <img id="static-image-5" src="images/5.Sycamore_Rotor.jpg">
+        <img id="static-image-6" src="images/6.Lace_Last.jpg">
+        <img id="static-image-7" src="images/7.Jackdaw_Lemongrass.jpg">
+        <img id="static-image-8" src="images/8.Sole_Flake.jpg">
         <div id="text-container">
             <div id="top-text-box" class="small-text">
                 The material for this site has been produced by <a class="underline-alt" href="http://www.europaeuropa.co.uk/" target="_blank">Europa</a> and <a class="underline-alt" href="http://www.peternencini.co.uk/" target="_blank">Peter Nencini</a> in response to a commission by <a class="underline-alt" href="http://www.arts.lboro.ac.uk/radar/" target="_blank">Radar</a>. It is accompanied by three billboards sited around the town of Loughborough.
