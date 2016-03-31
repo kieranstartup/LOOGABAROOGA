@@ -6,7 +6,7 @@
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>LOOGABAROOGA</title>
+    <title>THE IDENTITY FACADE</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="jquery.inview.min.js"></script>

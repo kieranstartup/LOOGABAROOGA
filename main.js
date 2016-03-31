@@ -1,4 +1,12 @@
+// jQuery(document).ready(function(){
+
+// });
+
 jQuery(window).load(function() {
+var isiPad = navigator.userAgent.match(/iPad/i) !== null;
+if (isiPad === true) {
+console.log("iPad detected");
+}
     // This all works below
 
     jQuery(".image-container").css("display", "none");
@@ -42,11 +50,11 @@ jQuery(window).load(function() {
 
 
     function resetCSS() {
-        if (jQuery(window).width() > 655) {
+        if( (jQuery(window).width() > 655) && (isiPad === false)){
             jQuery('.image-container').css("width", "680");
             jQuery('.image-container').css("height", "auto");
         }
-        if (jQuery(window).width() <= 655) {
+        if( (jQuery(window).width() <= 655) || (isiPad === true)){
             jQuery('.image-container').css("width", "100%");
             jQuery('.image-container').css("height", "auto");
         }
@@ -54,11 +62,11 @@ jQuery(window).load(function() {
     }
 
     function portraitCSS() {
-        if (jQuery(window).width() > 655) {
+        if( (jQuery(window).width() > 655) && (isiPad === false)){
             jQuery('.image-container').css("width", "auto");
             jQuery('.image-container').css("height", "640");
         }
-        if (jQuery(window).width() <= 655) {
+        if( (jQuery(window).width() <= 655) || (isiPad === true)){
             jQuery('.image-container').css("width", "70%");
             jQuery('.image-container').css("height", "auto");
         }
@@ -467,7 +475,7 @@ jQuery(window).load(function() {
 
 
 
-    if (jQuery(window).width() < 414) {
+    if( (jQuery(window).width() < 414) || (isiPad === true)) {
         jQuery('#static-image-1,#static-image-2,#static-image-3,#static-image-4,#static-image-5,#static-image-6,#static-image-7,#static-image-8').bind('inview', function(event, visible) {
             if (visible === true) {
                 jQuery(this).wrap('<div class="empty">').css('z-index', '99999');
@@ -509,8 +517,11 @@ jQuery(window).load(function() {
 
 });
 
-if (jQuery(window).width() > 414) {
-
+if( (jQuery(window).width() > 414) && (isiPad === false)){
+var isiPad = navigator.userAgent.match(/iPad/i) !== null;
+if (isiPad === true) {
+console.log("iPad detected");
+}
 
     var main = function() {
         var staticImage1 = jQuery('#static-image-1');
