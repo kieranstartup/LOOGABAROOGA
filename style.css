@@ -185,6 +185,7 @@ a:visited {
     margin: 0 auto;
     z-index: 999;
     -webkit-font-feature-settings: "liga" 0;
+    -webkit-font-variant-ligatures: no-common-ligatures;
 }
 
 #top-text-box {
