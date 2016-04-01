@@ -306,7 +306,7 @@ jQuery(window).load(function() {
     // Two Images
     ////////////////////////////////////////////
     jQuery('span#reference-image-dismembered-match-balls').click(function() {
-        jQuery('.image-container').addClass('extended-two-image');
+        // jQuery('.image-container').addClass('extended-two-image');
 
         // This removes the old cross and adds in functionality for a new cross
         jQuery('.close-image').remove();
@@ -323,6 +323,8 @@ jQuery(window).load(function() {
         jQuery('.close-image-2, img.reference-image.image-2-footballs').wrapAll('<div class="image-2-two-image-container">');
 
         jQuery('.image-1-two-image-container, .image-2-two-image-container').wrapAll('<div class="image-container-wrapper">');
+        jQuery('.image-container-wrapper').addClass('extended-two-image');
+
 
         twoImageCSSAlt();
         jQuery('.image-container').show();
