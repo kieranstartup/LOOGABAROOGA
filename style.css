@@ -306,7 +306,17 @@ span.number-spacing {
     z-index: 99999999;
 }
 
-img.portrait {
+.portrait {
+    width: auto;
+    height: 680px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    z-index: 99999999;
+}
+
+.portrait-image{
     height: 100%;
 }
 

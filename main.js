@@ -3,10 +3,10 @@
 // });
 
 jQuery(window).load(function() {
-var isiPad = navigator.userAgent.match(/iPad/i) !== null;
-if (isiPad === true) {
-console.log("iPad detected");
-}
+    var isiPad = navigator.userAgent.match(/iPad/i) !== null;
+    if (isiPad === true) {
+        console.log("iPad detected");
+    }
     // This all works below
 
     jQuery(".image-container").css("display", "none");
@@ -49,29 +49,9 @@ console.log("iPad detected");
     }
 
 
-    function resetCSS() {
-        // if( (jQuery(window).width() > 655) && (isiPad === false)){
-        //     jQuery('.image-container').css("width", "680");
-        //     jQuery('.image-container').css("height", "auto");
-        // }
-        // if( (jQuery(window).width() <= 655) || (isiPad === true)){
-        //     jQuery('.image-container').css("width", "100%");
-        //     jQuery('.image-container').css("height", "auto");
-        // }
-        disableScroll();
-    }
-
-    function portraitCSS() {
-        if( (jQuery(window).width() > 655) && (isiPad === false)){
-            jQuery('.image-container').css("width", "auto");
-            jQuery('.image-container').css("height", "640");
-        }
-        if( (jQuery(window).width() <= 655) || (isiPad === true)){
-            jQuery('.image-container').css("width", "70%");
-            jQuery('.image-container').css("height", "auto");
-        }
-        disableScroll();
-    }
+    // function resetCSS() {
+    //     disableScroll();
+    // }
 
     /* Portrait Mobile Image Sizing */
     function portraitCSSMobile() {
@@ -82,12 +62,10 @@ console.log("iPad detected");
     }
 
     function twoImageCSS() {
-        // jQuery('.image-container').css("width", "699px");
         disableScroll();
     }
 
-        function twoImageCSSAlt() {
-        // jQuery('.image-container').css("width", "329px");
+    function twoImageCSSAlt() {
         disableScroll();
     }
 
@@ -99,10 +77,14 @@ console.log("iPad detected");
     function addLandscapeClass() {
         jQuery('.close-image, img.reference-image').wrapAll('<div class="image-container-wrapper">');
         jQuery('.image-container-wrapper').addClass('landscape');
+        disableScroll();
+
     }
 
     function addPortraitClass() {
-        jQuery('img.reference-image').addClass('portrait');
+        jQuery('.close-image, img.reference-image').wrapAll('<div class="image-container-wrapper">');
+        jQuery('.image-container-wrapper').addClass('portrait');
+        disableScroll();
     }
 
     function threeImageContainerClear() {
@@ -162,7 +144,7 @@ console.log("iPad detected");
         jQuery('.close-image-2, img.reference-image.image-2').wrapAll('<div class="image-2-two-image-container">');
 
         jQuery('.image-1-two-image-container, .image-2-two-image-container').wrapAll('<div class="image-container-wrapper">');
-                jQuery('.image-container-wrapper').addClass('extended-two-image');
+        jQuery('.image-container-wrapper').addClass('extended-two-image');
 
 
         twoImageCSS();
@@ -188,7 +170,7 @@ console.log("iPad detected");
 
     // Landscape
     jQuery('span#reference-image-love-loughborough').click(function() {
-        resetCSS();
+        // resetCSS();
         jQuery('img.reference-image').attr('src', 'images/2.Love_Loughborough.JPG');
         addLandscapeClass();
         jQuery('.image-container').show();
@@ -196,7 +178,7 @@ console.log("iPad detected");
 
     // Landscape
     jQuery('span#reference-image-place-branding').click(function() {
-        resetCSS();
+        // resetCSS();
         jQuery('img.reference-image').attr('src', 'images/3.Love_Branding.jpg');
         addLandscapeClass();
         jQuery('.image-container').show();
@@ -204,7 +186,7 @@ console.log("iPad detected");
 
     // Landscape
     jQuery('span#reference-image-this-bag').click(function() {
-        resetCSS();
+        // resetCSS();
         jQuery('img.reference-image').attr('src', 'images/4.I_Like_My_Town.jpg');
         addLandscapeClass();
         jQuery('.image-container').show();
@@ -212,7 +194,7 @@ console.log("iPad detected");
 
     // Landscape
     jQuery('span#reference-image-falcon-works').click(function() {
-        resetCSS();
+        // resetCSS();
         jQuery('img.reference-image').attr('src', 'images/5.Falcom_Works.jpg');
         addLandscapeClass();
         jQuery('.image-container').show();
@@ -263,7 +245,7 @@ console.log("iPad detected");
 
     // Landscape
     jQuery('span#reference-image-postcard').click(function() {
-        resetCSS();
+        // resetCSS();
         jQuery('img.reference-image').attr('src', 'images/7.Postcard.jpg');
         addLandscapeClass();
         jQuery('.image-container').show();
@@ -271,7 +253,8 @@ console.log("iPad detected");
 
     // Portrait
     jQuery('span#reference-image-coat-of-arms').click(function() {
-        portraitCSS();
+        // portraitCSS();
+        jQuery('img.reference-image').addClass('portrait-image');
         jQuery('img.reference-image').attr('src', 'images/8.Coat_of_Arms.jpg');
         addPortraitClass();
         jQuery('.image-container').show();
@@ -279,7 +262,7 @@ console.log("iPad detected");
 
     // Landscape
     jQuery('span#reference-image-shown-here').click(function() {
-        resetCSS();
+        // resetCSS();
         jQuery('img.reference-image').attr('src', 'images/9.Belco.jpg');
         addLandscapeClass();
         jQuery('.image-container').show();
@@ -287,7 +270,7 @@ console.log("iPad detected");
 
     // Landscape
     jQuery('span#reference-image-loughborough-town-of-sanctuary').click(function() {
-        resetCSS();
+        // resetCSS();
         jQuery('img.reference-image').attr('src', 'images/11.Town_of_Sanctuary.jpg');
         addLandscapeClass();
         jQuery('.image-container').show();
@@ -295,7 +278,7 @@ console.log("iPad detected");
 
     // Landscape
     jQuery('span#reference-image-exchange').click(function() {
-        resetCSS();
+        // resetCSS();
         jQuery('img.reference-image').attr('src', 'images/12.John_Storer_House.jpg');
         addLandscapeClass();
         jQuery('.image-container').show();
@@ -303,7 +286,7 @@ console.log("iPad detected");
 
     // Landscape
     jQuery('span#reference-image-tatting-shuttle').click(function() {
-        resetCSS();
+        // resetCSS();
         jQuery('img.reference-image').attr('src', 'images/13.Tatting Shuttle.jpg');
         addLandscapeClass();
         jQuery('.image-container').show();
@@ -311,7 +294,7 @@ console.log("iPad detected");
 
     // Portrait
     jQuery('span#reference-image-tennis-racket-grip').click(function() {
-        portraitCSS();
+        // portraitCSS();
         jQuery('img.reference-image').attr('src', 'images/15.Racket_Grip.jpg');
         addPortraitClass();
         jQuery('.image-container').show();
@@ -477,7 +460,7 @@ console.log("iPad detected");
 
 
 
-    if( (jQuery(window).width() < 414) || (isiPad === true)) {
+    if ((jQuery(window).width() < 414) || (isiPad === true)) {
         jQuery('#static-image-1,#static-image-2,#static-image-3,#static-image-4,#static-image-5,#static-image-6,#static-image-7,#static-image-8').bind('inview', function(event, visible) {
             if (visible === true) {
                 jQuery(this).wrap('<div class="empty">').css('z-index', '99999');
@@ -497,7 +480,7 @@ console.log("iPad detected");
                 });
 
             } else {
-                    // enableScroll();
+                // enableScroll();
 
             }
         });
@@ -510,6 +493,7 @@ console.log("iPad detected");
         jQuery('img').removeClass("landscape");
         jQuery('.image-container-wrapper').removeClass('landscape');
         jQuery('.image-container-wrapper').removeClass('portrait');
+        jQuery('img.portrait-image').removeClass('portrait-image');
         jQuery('img').removeClass("image-1");
         jQuery('img.reference-image.image-2').remove();
         jQuery('img.reference-image.image-3').remove();
@@ -519,11 +503,11 @@ console.log("iPad detected");
 
 });
 
-if( (jQuery(window).width() > 414) && (isiPad === false)){
-var isiPad = navigator.userAgent.match(/iPad/i) !== null;
-if (isiPad === true) {
-console.log("iPad detected");
-}
+if ((jQuery(window).width() > 414) && (isiPad === false)) {
+    var isiPad = navigator.userAgent.match(/iPad/i) !== null;
+    if (isiPad === true) {
+        console.log("iPad detected");
+    }
 
     var main = function() {
         var staticImage1 = jQuery('#static-image-1');
