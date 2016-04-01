@@ -49,13 +49,13 @@ jQuery(window).load(function() {
     }
 
 
-    function twoImageCSS() {
-        disableScroll();
-    }
+    // function disableScroll() {
+    //     disableScroll();
+    // }
 
-    function twoImageCSSAlt() {
-        disableScroll();
-    }
+    // function disableScrollAlt() {
+    //     disableScroll();
+    // }
 
     function threeImageCSS() {
         jQuery('.image-container').css("width", "1048px");
@@ -135,7 +135,7 @@ jQuery(window).load(function() {
         jQuery('.image-container-wrapper').addClass('extended-two-image');
 
 
-        twoImageCSS();
+        disableScroll();
         jQuery('.image-container').show();
     });
 
@@ -210,7 +210,7 @@ jQuery(window).load(function() {
         jQuery('.image-1-two-portrait-image-container, .image-2-two-portrait-image-container').wrapAll('<div class="image-container-wrapper">');
         jQuery('.image-container-wrapper').addClass('extended-two-image-portrait');
 
-        twoImageCSS();
+        disableScroll();
         jQuery('.image-container').show();
     });
 
@@ -314,7 +314,7 @@ jQuery(window).load(function() {
         jQuery('.image-container-wrapper').addClass('extended-two-image');
 
 
-        twoImageCSSAlt();
+        disableScroll();
         jQuery('.image-container').show();
     });
 
