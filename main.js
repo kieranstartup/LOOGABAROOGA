@@ -170,7 +170,7 @@ jQuery(window).load(function() {
 
     // Landscape
     jQuery('span#reference-image-love-loughborough').click(function() {
-        // resetCSS();
+
         jQuery('img.reference-image').attr('src', 'images/2.Love_Loughborough.JPG');
         addLandscapeClass();
         jQuery('.image-container').show();
@@ -178,7 +178,7 @@ jQuery(window).load(function() {
 
     // Landscape
     jQuery('span#reference-image-place-branding').click(function() {
-        // resetCSS();
+
         jQuery('img.reference-image').attr('src', 'images/3.Love_Branding.jpg');
         addLandscapeClass();
         jQuery('.image-container').show();
@@ -186,7 +186,7 @@ jQuery(window).load(function() {
 
     // Landscape
     jQuery('span#reference-image-this-bag').click(function() {
-        // resetCSS();
+
         jQuery('img.reference-image').attr('src', 'images/4.I_Like_My_Town.jpg');
         addLandscapeClass();
         jQuery('.image-container').show();
@@ -194,7 +194,7 @@ jQuery(window).load(function() {
 
     // Landscape
     jQuery('span#reference-image-falcon-works').click(function() {
-        // resetCSS();
+
         jQuery('img.reference-image').attr('src', 'images/5.Falcom_Works.jpg');
         addLandscapeClass();
         jQuery('.image-container').show();
@@ -245,7 +245,7 @@ jQuery(window).load(function() {
 
     // Landscape
     jQuery('span#reference-image-postcard').click(function() {
-        // resetCSS();
+
         jQuery('img.reference-image').attr('src', 'images/7.Postcard.jpg');
         addLandscapeClass();
         jQuery('.image-container').show();
@@ -262,7 +262,7 @@ jQuery(window).load(function() {
 
     // Landscape
     jQuery('span#reference-image-shown-here').click(function() {
-        // resetCSS();
+
         jQuery('img.reference-image').attr('src', 'images/9.Belco.jpg');
         addLandscapeClass();
         jQuery('.image-container').show();
@@ -270,7 +270,7 @@ jQuery(window).load(function() {
 
     // Landscape
     jQuery('span#reference-image-loughborough-town-of-sanctuary').click(function() {
-        // resetCSS();
+
         jQuery('img.reference-image').attr('src', 'images/11.Town_of_Sanctuary.jpg');
         addLandscapeClass();
         jQuery('.image-container').show();
@@ -278,7 +278,7 @@ jQuery(window).load(function() {
 
     // Landscape
     jQuery('span#reference-image-exchange').click(function() {
-        // resetCSS();
+
         jQuery('img.reference-image').attr('src', 'images/12.John_Storer_House.jpg');
         addLandscapeClass();
         jQuery('.image-container').show();
@@ -286,7 +286,7 @@ jQuery(window).load(function() {
 
     // Landscape
     jQuery('span#reference-image-tatting-shuttle').click(function() {
-        // resetCSS();
+
         jQuery('img.reference-image').attr('src', 'images/13.Tatting Shuttle.jpg');
         addLandscapeClass();
         jQuery('.image-container').show();
@@ -295,6 +295,8 @@ jQuery(window).load(function() {
     // Portrait
     jQuery('span#reference-image-tennis-racket-grip').click(function() {
         // portraitCSS();
+        jQuery('img.reference-image').addClass('portrait-image');
+
         jQuery('img.reference-image').attr('src', 'images/15.Racket_Grip.jpg');
         addPortraitClass();
         jQuery('.image-container').show();
