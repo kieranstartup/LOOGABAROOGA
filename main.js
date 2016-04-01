@@ -49,18 +49,6 @@ jQuery(window).load(function() {
     }
 
 
-    // function resetCSS() {
-    //     disableScroll();
-    // }
-
-    /* Portrait Mobile Image Sizing */
-    function portraitCSSMobile() {
-        jQuery('.image-container').css("width", "auto");
-        jQuery('.image-container').css("max-width", "none");
-        jQuery('.image-container').css("height", "320");
-        disableScroll();
-    }
-
     function twoImageCSS() {
         disableScroll();
     }
