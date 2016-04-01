@@ -537,7 +537,7 @@ span.number-spacing {
     z-index: 99999999;
     width: 1204px;
     height: 760px;
-    }
+}
 
 .image-1-triangle-container {
     transform: rotate(-60deg);
@@ -795,6 +795,68 @@ left: 205%;
 
 /* Portrait iPad Mini */
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+    .image-container {
+        overflow-x: scroll;
+    }
+    .image-1-two-image-container,
+        .image-2-two-image-container {
+        overflow-x: scroll;
+    }
+
+    .extended-two-image {
+        width: 958px;
+        height: 337px;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        position: absolute;
+        margin-left: 50px;
+        overflow-x: scroll;
+    }
+
+
+.three-images {
+    width: 1098px;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: 99999999;
+}
+.image-1-container,
+.image-2-container,
+.image-3-container{
+        overflow-x: scroll;
+}
+.image-1-container {
+    position: relative;
+     left: 0; 
+     top: 0; 
+     transform: translateY(0); 
+    float: left;
+    clear: both;
+    margin-right: 38px;
+}
+.image-2-container{
+    position: relative;
+     left: 0; 
+     top: 0; 
+     transform: translateY(0); 
+    float: left;
+    clear: right;
+    margin-right: 38px;
+}
+.image-3-container {
+    position: relative;
+     left: 0; 
+     top: 0; 
+     transform: translateY(0);
+    float: left;
+    clear: right;
+}
+
+
 
 /*@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
     .empty {
@@ -918,7 +980,7 @@ left: 205%;
 }
 
 
-/* Portrait iPad 1 + 2 */
+/* Portrait iPad 1 + 2 
 
 
 /*@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {}
