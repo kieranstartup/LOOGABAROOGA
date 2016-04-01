@@ -403,7 +403,7 @@ jQuery(window).load(function() {
 
     // 3 Portrait Images
     jQuery('span#reference-image-sports-technology-institute').click(function() {
-        jQuery('.image-container').addClass('extended');
+        jQuery('.image-container-wrapper').addClass('extended');
 
         // This removes the old cross and adds in functionality for a new cross
         jQuery('.close-image').remove();
@@ -432,7 +432,7 @@ jQuery(window).load(function() {
 
 
         threeImageCSS();
-        addPortraitClass();
+        // addPortraitClass();
         jQuery('.image-container').show();
     });
 
