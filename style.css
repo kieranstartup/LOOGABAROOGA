@@ -419,9 +419,9 @@ span.number-spacing {
     transform: translateY(-50%);
 }
 
-.three-images{
+.three-images {
     width: 1048px;
-        top: 50%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: fixed;
@@ -524,25 +524,32 @@ span.number-spacing {
     display: none;
 }
 
+
 /*------------------------------------------------------
 ################## Triangle Layout #####################
 -------------------------------------------------------*/
 
 .extended-triangle {
-    height: 100% !important;
-}
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    z-index: 99999999;
+    width: 1204px;
+    height: 760px;
+    }
 
 .image-1-triangle-container {
     transform: rotate(-60deg);
     transform-origin: left;
     position: fixed;
-    top: 281px;
-    left: 251px;
+    top: 279px;
+    left: 328px;
 }
 
 .image-2-triangle-container {
     transform: rotate(60deg);
-    right: 236px;
+    right: 315px;
     transform-origin: right;
     position: fixed;
     top: 259px;
@@ -552,7 +559,7 @@ span.number-spacing {
     transform: translateX(-50%);
     left: 50%;
     position: fixed;
-    bottom: 47px;
+    top: 458px;
 }
 
 
@@ -788,6 +795,7 @@ left: 205%;
 
 /* Portrait iPad Mini */
 
+
 /*@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
     .empty {
         height: 100%;
@@ -912,9 +920,14 @@ left: 205%;
 
 /* Portrait iPad 1 + 2 */
 
+
 /*@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {}
 */
 
+
 /* Portrait iPad 3 + 4 */
 
-/*@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {}*/*/
+
+/*@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {}*/
+
+*/

@@ -57,8 +57,9 @@ jQuery(window).load(function() {
     //     disableScroll();
     // }
 
+// Triangle Images
     function threeImageCSS() {
-        jQuery('.image-container-wrapper').addClass('three-images');
+        // jQuery('.image-container-wrapper').addClass('three-images');
         disableScroll();
     }
 
@@ -89,7 +90,7 @@ jQuery(window).load(function() {
         jQuery('.image-1-triangle-container').children().remove();
         jQuery('.image-2-triangle-container').children().remove();
         jQuery('.image-3-triangle-container').children().remove();
-        jQuery('.image-container').removeClass('extended-triangle');
+        jQuery('.image-container-wrapper').removeClass('extended-triangle');
         jQuery('.image-container').css("display", "none");
         enableScroll();
     }
@@ -338,7 +339,6 @@ jQuery(window).load(function() {
 
     // Triangle
     jQuery('span#reference-image-triangle').click(function() {
-        jQuery('.image-container').addClass('extended-triangle');
 
         // This removes the old cross and adds in functionality for a new cross
         jQuery('.close-image').remove();
@@ -363,6 +363,7 @@ jQuery(window).load(function() {
 
 
         jQuery('.image-1-triangle-container, .image-2-triangle-container, .image-3-triangle-container').wrapAll('<div class="image-container-wrapper">');
+        jQuery('.image-container-wrapper').addClass('extended-triangle');
 
         threeImageCSS();
         jQuery('.image-container').show();
