@@ -770,10 +770,9 @@ left: 205%;
                         width: 100%;
                     }
                 }
-
+                /* Portrait and Landscape */
                 
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+                @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
                     /* General */
                     .image-container {
                         overflow-x: scroll;
@@ -842,6 +841,47 @@ left: 205%;
                         overflow-x: scroll;
                     }
                 }
+
+
+/* Landscape iPad Mini */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+
+/* 'Market' */
+.image-1-two-image-container{
+        position: absolute;
+}
+.image-2-two-image-container {
+    position: absolute;
+    left: 468px;
+}
+
+/* 'Sports Technology Center' */
+.image-1-container {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.image-2-container {
+    position: absolute;
+    left: 359px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.image-3-container {
+    position: absolute;
+    left: 718px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+}
+
+
+
+
+
+
                 /*@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
     .empty {
         height: 100%;
@@ -972,4 +1012,3 @@ left: 205%;
                 /* Portrait iPad 3 + 4 */
                 /*@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {}*/
                 
-                */
