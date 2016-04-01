@@ -394,7 +394,6 @@ jQuery(window).load(function() {
 
     // 3 Portrait Images
     jQuery('span#reference-image-sports-technology-institute').click(function() {
-        jQuery('.image-container-wrapper').addClass('extended');
 
         // This removes the old cross and adds in functionality for a new cross
         jQuery('.close-image').remove();
@@ -419,6 +418,7 @@ jQuery(window).load(function() {
 
 
         jQuery('.image-1-container, .image-2-container, .image-3-container').wrapAll('<div class="image-container-wrapper">');
+        jQuery('.image-container-wrapper').addClass('three-images');
 
 
 
