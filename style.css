@@ -443,9 +443,9 @@ img.portrait {
 #static-image-1 {
     position: absolute;
     z-index: -100;
-    width: 303px;
+    width: 640px;
     height: auto;
-    margin-left: 16px;
+    margin-left: 0px;
     margin-top: 12px;
     display: none;
 }
@@ -453,20 +453,20 @@ img.portrait {
 #static-image-2 {
     position: absolute;
     z-index: -100;
-    width: 180px;
+    width: 640px;
     height: auto;
     margin-left: 0px;
     margin-top: 1172px;
-    right: 70px;
+    right: 0;
     display: none;
 }
 
 #static-image-3 {
     position: absolute;
     z-index: -100;
-    width: 405px;
+    width: 640px;
     height: auto;
-    margin-left: 16px;
+    margin-left: 0px;
     margin-top: 2380px;
     display: none;
 }
@@ -474,18 +474,18 @@ img.portrait {
 #static-image-4 {
     position: absolute;
     z-index: -100;
-    width: 283px;
+    width: 640px;
     height: auto;
     margin-left: 0px;
     margin-top: 3300px;
-    right: 38px;
+    right: 0;
     display: none;
 }
 
 #static-image-5 {
     position: absolute;
     z-index: -100;
-    width: 486px;
+    width: 640px;
     height: auto;
     margin-left: 90px;
     margin-top: 4357px;
@@ -495,20 +495,20 @@ img.portrait {
 #static-image-6 {
     position: absolute;
     z-index: -100;
-    width: 424px;
+    width: 640px;
     height: auto;
     margin-left: 0px;
     margin-top: 5630px;
-    right: 70px;
+    right: 0;
     display: none;
 }
 
 #static-image-7 {
     position: absolute;
     z-index: -100;
-    width: 589px;
+    width: 640px;
     height: auto;
-    margin-left: 16px;
+    margin-left: 0px;
     margin-top: 6794px;
     display: none;
 }
@@ -516,11 +516,11 @@ img.portrait {
 #static-image-8 {
     position: absolute;
     z-index: -100;
-    width: 305px;
+    width: 640px;
     height: auto;
     margin-left: 0px;
     margin-top: 7923px;
-    right: 16px;
+    right: 0;
     display: none;
 }
 
@@ -689,6 +689,11 @@ img.portrait {
         left: 50%;
         transform: translate(-50%, -50%);
     }
+
+
+
+
+
     .endnote-text {
         width: 292px;
         font-size: 15px;
