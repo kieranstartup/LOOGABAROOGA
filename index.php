@@ -11,7 +11,7 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="jquery.inview.min.js"></script>
     <!--<script src="reference-image-click.js"></script>-->
-    <script src="main.min.js"></script>
+    <script src="main.js"></script>
     <!--   <script src="mobileInView.js"></script> -->
     <!--
 
