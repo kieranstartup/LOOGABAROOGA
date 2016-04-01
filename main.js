@@ -54,7 +54,7 @@ jQuery(window).load(function() {
     //     disableScroll();
     // }
 
-// Triangle Images
+    // Triangle Images
     function threeImageCSS() {
         // jQuery('.image-container-wrapper').addClass('three-images');
         disableScroll();
@@ -490,5 +490,44 @@ jQuery(window).load(function() {
         jQuery('.close-image, img.reference-image').unwrap('.image-container-wrapper');
         enableScroll();
     });
+
+});
+
+// Special Cases Only
+// For Example When There Are Multiple Images
+jQuery(window).load(function() {
+
+    var windowSize = jQuery(window).width();
+    console.log(windowSize);
+
+    if (jQuery(window).width() <= 414){
+
+    var imageWidth = windowSize * 2;
+    console.log(imageWidth);
+
+    var multiplicationPlusMargin = imageWidth + 38;
+    console.log(multiplicationPlusMargin);
+
+    jQuery('span#reference-image-market').click(function() {
+        jQuery('.image-1-two-image-container').css('max-width', windowSize);
+        jQuery('.image-1').css('max-width', windowSize);
+
+        jQuery('.image-2-two-image-container').css('max-width', windowSize);
+        jQuery('.image-2').css('max-width', windowSize);
+
+        jQuery('.extended-two-image').css('width', multiplicationPlusMargin);
+    });
+
+        jQuery('span#reference-image-dismembered-match-balls').click(function() {
+        jQuery('.image-1-two-image-container').css('max-width', windowSize);
+        jQuery('.image-1').css('max-width', windowSize);
+
+        jQuery('.image-2-two-image-container').css('max-width', windowSize);
+        jQuery('.image-2').css('max-width', windowSize);
+
+        jQuery('.extended-two-image').css('width', multiplicationPlusMargin);
+    });
+    }
+
 
 });
