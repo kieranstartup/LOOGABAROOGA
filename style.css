@@ -419,6 +419,15 @@ span.number-spacing {
     transform: translateY(-50%);
 }
 
+.three-images{
+    width: 1048px;
+        top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    z-index: 99999999;
+}
+
 
 /*------------------------------------------------------
 ################### Static Images ######################
@@ -514,7 +523,6 @@ span.number-spacing {
     right: 0;
     display: none;
 }
-
 
 /*------------------------------------------------------
 ################## Triangle Layout #####################

@@ -58,7 +58,7 @@ jQuery(window).load(function() {
     // }
 
     function threeImageCSS() {
-        jQuery('.image-container').css("width", "1048px");
+        jQuery('.image-container-wrapper').addClass('three-images');
         disableScroll();
     }
 
