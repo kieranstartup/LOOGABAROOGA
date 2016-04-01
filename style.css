@@ -240,6 +240,7 @@ a:visited {
     cursor: pointer;
     border-bottom: 1px solid #000;
 }
+
 span.number-spacing {
     padding-right: 10px;
     margin-left: -20px;
@@ -295,8 +296,14 @@ span.number-spacing {
     cursor: pointer;
 }
 
-img.landscape {
-    width: 100%;
+.landscape {
+    width: 680px;
+    height: auto;
+        top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    z-index: 99999999;
 }
 
 img.portrait {
@@ -560,8 +567,12 @@ img.portrait {
 -------------------------------------------------------*/
 
 .extended-two-image {
-    width: 908px !important;
-    height: 337px !important;
+    width: 908px;
+    height: 337px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
 }
 
 .image-1-two-image-container {
@@ -586,8 +597,12 @@ img.portrait {
 -------------------------------------------------------*/
 
 .extended-two-image-portrait {
-    width: 688px !important;
-    height: 440px !important;
+    width: 688px;
+    height: 440px;
+        top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
 }
 
 .image-1-two-portrait-image-container {
@@ -687,11 +702,6 @@ img.portrait {
         left: 50%;
         transform: translate(-50%, -50%);
     }
-
-
-
-
-
     .endnote-text {
         width: 292px;
         font-size: 15px;

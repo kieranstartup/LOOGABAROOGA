@@ -50,14 +50,14 @@ console.log("iPad detected");
 
 
     function resetCSS() {
-        if( (jQuery(window).width() > 655) && (isiPad === false)){
-            jQuery('.image-container').css("width", "680");
-            jQuery('.image-container').css("height", "auto");
-        }
-        if( (jQuery(window).width() <= 655) || (isiPad === true)){
-            jQuery('.image-container').css("width", "100%");
-            jQuery('.image-container').css("height", "auto");
-        }
+        // if( (jQuery(window).width() > 655) && (isiPad === false)){
+        //     jQuery('.image-container').css("width", "680");
+        //     jQuery('.image-container').css("height", "auto");
+        // }
+        // if( (jQuery(window).width() <= 655) || (isiPad === true)){
+        //     jQuery('.image-container').css("width", "100%");
+        //     jQuery('.image-container').css("height", "auto");
+        // }
         disableScroll();
     }
 
@@ -82,12 +82,12 @@ console.log("iPad detected");
     }
 
     function twoImageCSS() {
-        jQuery('.image-container').css("width", "699px");
+        // jQuery('.image-container').css("width", "699px");
         disableScroll();
     }
 
         function twoImageCSSAlt() {
-        jQuery('.image-container').css("width", "329px");
+        // jQuery('.image-container').css("width", "329px");
         disableScroll();
     }
 
@@ -97,7 +97,8 @@ console.log("iPad detected");
     }
 
     function addLandscapeClass() {
-        jQuery('img.reference-image').addClass('landscape');
+        jQuery('.close-image, img.reference-image').wrapAll('<div class="image-container-wrapper">');
+        jQuery('.image-container-wrapper').addClass('landscape');
     }
 
     function addPortraitClass() {
@@ -145,7 +146,6 @@ console.log("iPad detected");
     // Two Images
     ////////////////////////////////////////////
     jQuery('span#reference-image-market').click(function() {
-        jQuery('.image-container').addClass('extended-two-image');
 
         // This removes the old cross and adds in functionality for a new cross
         jQuery('.close-image').remove();
@@ -162,6 +162,8 @@ console.log("iPad detected");
         jQuery('.close-image-2, img.reference-image.image-2').wrapAll('<div class="image-2-two-image-container">');
 
         jQuery('.image-1-two-image-container, .image-2-two-image-container').wrapAll('<div class="image-container-wrapper">');
+                jQuery('.image-container-wrapper').addClass('extended-two-image');
+
 
         twoImageCSS();
         jQuery('.image-container').show();
@@ -220,7 +222,6 @@ console.log("iPad detected");
     // Two Portrait Images
     ////////////////////////////////////////////
     jQuery('span#reference-image-immigration').click(function() {
-        jQuery('.image-container').addClass('extended-two-image-portrait');
 
         // This removes the old cross and adds in functionality for a new cross
         jQuery('.close-image').remove();
@@ -237,6 +238,7 @@ console.log("iPad detected");
         jQuery('.close-image-2, img.reference-image.image-2').wrapAll('<div class="image-2-two-portrait-image-container">');
 
         jQuery('.image-1-two-portrait-image-container, .image-2-two-portrait-image-container').wrapAll('<div class="image-container-wrapper">');
+        jQuery('.image-container-wrapper').addClass('extended-two-image-portrait');
 
         twoImageCSS();
         jQuery('.image-container').show();
@@ -501,17 +503,17 @@ console.log("iPad detected");
         });
     }
 
-
-
     jQuery(document.body).on('click', '.close-image', function() {
         jQuery('.image-container').css("display", "none");
         jQuery('img.reference-image').attr('src', '');
         jQuery('img').removeClass("portrait");
         jQuery('img').removeClass("landscape");
-        jQuery('.image-container').removeClass('extended');
+        jQuery('.image-container-wrapper').removeClass('landscape');
+        jQuery('.image-container-wrapper').removeClass('portrait');
         jQuery('img').removeClass("image-1");
         jQuery('img.reference-image.image-2').remove();
         jQuery('img.reference-image.image-3').remove();
+        jQuery('.close-image, img.reference-image').unwrap('.image-container-wrapper');
         enableScroll();
     });
 
