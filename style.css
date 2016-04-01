@@ -770,7 +770,7 @@ left: 205%;
                         width: 100%;
                     }
                 }
-                /* Portrait and Landscape */
+                /* Portrait and Landscape iPad Mini */
                 
                 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
                     /* General */
@@ -841,174 +841,34 @@ left: 205%;
                         overflow-x: scroll;
                     }
                 }
-
-
-/* Landscape iPad Mini */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
-
-/* 'Market' */
-.image-1-two-image-container{
-        position: absolute;
-}
-.image-2-two-image-container {
-    position: absolute;
-    left: 468px;
-}
-
-/* 'Sports Technology Center' */
-.image-1-container {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.image-2-container {
-    position: absolute;
-    left: 359px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.image-3-container {
-    position: absolute;
-    left: 718px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-}
-
-
-
-
-
-
-                /*@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
-    .empty {
-        height: 100%;
-        width: 100%;
-        background-color: white;
-        display: none;
-        z-index: 999999;
-        position: fixed;
-    }
-    .underline {
-        border-bottom: 1px solid black;
-    }
-    .underline::after {
-        display: none;
-    }
-    img.portrait {
-        height: auto;
-        width: 100%;
-    }
-    #static-image-1,
-    #static-image-3,
-    #static-image-4,
-    #static-image-5,
-    #static-image-6,
-    #static-image-8 {
-        z-index: -100;
-        width: auto !important;
-        height: 75%;
-        margin-left: 0;
-        margin-top: 0;
-        right: 0;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    #static-image-2 {
-        z-index: -100;
-        width: auto !important;
-        height: 70%;
-        margin-left: 0;
-        margin-top: 0;
-        right: 0;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    #static-image-7 {
-        z-index: -100;
-        width: auto !important;
-        height: 45%;
-        margin-left: 0;
-        margin-top: 0;
-        right: 0;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    .image-container {
-        position: fixed;
-    }
-    .extended-two-image {
-        width: 100% !important;
-        height: 241px;
-    }
-    .image-1-two-image-container,
-    .image-2-two-image-container {
-        width: 100%;
-    }
-    .image-1-two-image-container {
-        z-index: 999;
-    }
-    .image-2-two-image-container {
-        z-index: 0;
-        left: 0;
-    }
-    .image-1,
-    .image-2 {
-        width: 100%;
-    }
-    .image-container.extended-triangle {
-        width: 100% !important;
-    }
-    .image-1-triangle-container,
-    .image-2-triangle-container,
-    .image-3-triangle-container {
-        transform: rotate(0deg) translateY(-50%);
-        top: 50%;
-        right: 0;
-        transform-origin: center;
-        left: 0;
-        position: absolute;
-        bottom: 0;
-    }
-    .extended-two-image-portrait {
-        width: 70% !important;
-        height: 305px !important;
-    }
-    .image-1-two-portrait-image-container {
-        z-index: 999;
-    }
-    .image-2-two-portrait-image-container {
-        z-index: 0;
-        left: 0;
-    }
-    .extended {
-        width: 100%;
-    }
-    .image-1-container,
-    .image-2-container,
-    .image-3-container {
-        width: 70%;
-        left: 50%;
-        height: auto;
-        transform: translate(-50%, -50%);
-    }
-    .image-container.extended {
-        width: 100% !important;
-    }
-    .image-1-footballs,
-    .image-2-footballs {
-        width: 100%;
-    }
-}
-
-
-/* Portrait iPad 1 + 2 
-
-
-/*@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {}
-*/
-                /* Portrait iPad 3 + 4 */
-                /*@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {}*/
+                /* Landscape iPad Mini */
                 
+                @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+                    /* 'Market' */
+                    .image-1-two-image-container {
+                        position: absolute;
+                    }
+                    .image-2-two-image-container {
+                        position: absolute;
+                        left: 468px;
+                    }
+                    /* 'Sports Technology Center' */
+                    .image-1-container {
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                    .image-2-container {
+                        position: absolute;
+                        left: 359px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                    .image-3-container {
+                        position: absolute;
+                        left: 718px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
