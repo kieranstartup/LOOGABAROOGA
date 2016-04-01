@@ -450,7 +450,7 @@ jQuery(window).load(function() {
 
 
 
-    if ((jQuery(window).width() < 414) || (isiPad === false)) {
+    if ((jQuery(window).width() < 414) || (isiPad === true)) {
         jQuery('#static-image-1,#static-image-2,#static-image-3,#static-image-4,#static-image-5,#static-image-6,#static-image-7,#static-image-8').bind('inview', function(event, visible) {
             if (visible === true) {
                 jQuery(this).wrap('<div class="empty">').css('z-index', '99999');
