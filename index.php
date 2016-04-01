@@ -12,6 +12,7 @@
     <script src="jquery.inview.min.js"></script>
     <!--<script src="reference-image-click.js"></script>-->
     <script src="main.js"></script>
+    <script src="static-images.js"></script>
     <!--   <script src="mobileInView.js"></script> -->
     <!--
 
