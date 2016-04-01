@@ -1,11 +1,11 @@
 jQuery(document).ready(function() {
-    
+
     var isiPad = navigator.userAgent.match(/iPad/i) !== null;
     if (isiPad === true) {
         console.log("iPad detected");
     }
 
-    if ((jQuery(window).width() > 414) && (isiPad === false)) {
+    if (jQuery(window).width() > 414) {
 
         jQuery(document).scroll(function() {
 
