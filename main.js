@@ -46,17 +46,9 @@ jQuery(window).load(function() {
     }
 
 
-    // function disableScroll() {
-    //     disableScroll();
-    // }
-
-    // function disableScrollAlt() {
-    //     disableScroll();
-    // }
 
     // Triangle Images
     function threeImageCSS() {
-        // jQuery('.image-container-wrapper').addClass('three-images');
         disableScroll();
     }
 
@@ -64,7 +56,6 @@ jQuery(window).load(function() {
         jQuery('.close-image, img.reference-image').wrapAll('<div class="image-container-wrapper">');
         jQuery('.image-container-wrapper').addClass('landscape');
         disableScroll();
-
     }
 
     function addPortraitClass() {
@@ -362,6 +353,7 @@ jQuery(window).load(function() {
         jQuery('.image-1-triangle-container, .image-2-triangle-container, .image-3-triangle-container').wrapAll('<div class="image-container-wrapper">');
         jQuery('.image-container-wrapper').addClass('extended-triangle');
 
+        disableScroll();
         threeImageCSS();
         jQuery('.image-container').show();
     });
@@ -420,7 +412,7 @@ jQuery(window).load(function() {
 
 
         threeImageCSS();
-        // addPortraitClass();
+        disableScroll();
         jQuery('.image-container').show();
     });
 
@@ -450,7 +442,7 @@ jQuery(window).load(function() {
 
 
 
-    if ((jQuery(window).width() < 414) || (isiPad === true)) {
+    if (jQuery(window).width() <= 414) {
         jQuery('#static-image-1,#static-image-2,#static-image-3,#static-image-4,#static-image-5,#static-image-6,#static-image-7,#static-image-8').bind('inview', function(event, visible) {
             if (visible === true) {
                 jQuery(this).wrap('<div class="empty">').css('z-index', '99999');
