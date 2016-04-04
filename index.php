@@ -50,6 +50,23 @@
     </div>
 
     <div id="wrapper">
+
+        <script type="text/javascript">
+jQuery(document).ready(function() {
+    if (jQuery(window).width() <= 414){
+
+jQuery('#static-image-1').attr('src','images/1.Sourdough_Smileys_Centered.jpg');
+jQuery('#static-image-2').attr('src','images/2.Phone_Purse_Centered.jpg');
+jQuery('#static-image-3').attr('src','images/3.Spout_Ginger_Centered.jpg');
+jQuery('#static-image-4').attr('src','images/4.Nails_Tiles_Centered.jpg');
+jQuery('#static-image-5').attr('src','images/5.Sycamore_Rotor_Centered.jpg');
+jQuery('#static-image-6').attr('src','images/6.Lace_Last_Centered.jpg');
+jQuery('#static-image-7').attr('src','images/7.Jackdaw_Lemongrass_Centered.jpg');
+jQuery('#static-image-8').attr('src','images/8.Sole_Flake_Centered.jpg');
+
+    }
+});
+        </script>
         <img id="static-image-1" src="images/1.Sourdough_Smileys.jpg">
         <img id="static-image-2" src="images/2.Phone_Purse.jpg">
         <img id="static-image-3" src="images/3.Spout_Ginger.jpg">
@@ -58,6 +75,7 @@
         <img id="static-image-6" src="images/6.Lace_Last.jpg">
         <img id="static-image-7" src="images/7.Jackdaw_Lemongrass.jpg">
         <img id="static-image-8" src="images/8.Sole_Flake.jpg">
+
         <div id="text-container">
             <div id="top-text-box" class="small-text">
                 The material for this site has been produced by <a class="underline-alt" href="http://www.europaeuropa.co.uk/" target="_blank">Europa</a> and <a class="underline-alt" href="http://www.peternencini.co.uk/" target="_blank">Peter Nencini</a> in response to a commission by <a class="underline-alt" href="http://www.arts.lboro.ac.uk/radar/" target="_blank">Radar</a>. It is accompanied by three billboards sited around the town of Loughborough.
