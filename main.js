@@ -34,9 +34,8 @@ jQuery(window).load(function() {
         window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
         // window.ontouchmove = preventDefault; // mobile - this prevents all scrolling - we only need to stop vertical scrolling
         document.onkeydown = preventDefaultForScrollKeys;
+    }
 
-}
-    
 
     function enableScroll() {
         if (window.removeEventListener)
@@ -496,90 +495,28 @@ jQuery(window).load(function() {
         console.log("iPad detected");
     }
 
-
     var windowSize = jQuery(window).width();
     console.log(windowSize);
-
-
-// jQuery(".image-container").ontouchmove = function ( event ) {
-
-//     var isTouchMoveAllowed = true, target = event.target;
-
-//     while ( target !== null ) {
-//         if ( target.classList && target.classList.contains( 'disable-scrolling' ) ) {
-//             isTouchMoveAllowed = false;
-//             break;
-//         }
-//         target = target.parentNode;
-//     }
-
-//     if ( !isTouchMoveAllowed ) {
-//         event.preventDefault();
-//     }
-// };
-
-
-
-// function touchHandler(event) {
-//     var touches = event.changedTouches;
-
-//     for(var i=0; i < event.changedTouches.length; i++) {
-//         var touchId = event.changedTouches[i].identifier;
-//         var x       = event.changedTouches[i].pageX;
-//         var y       = event.changedTouches[i].pageY;
-//             console.log(x);
-//             console.log(y);
-//     }
-// }
-    // function disable_scroll() {
-    //      $('body').bind('touchmove', function(e){e.preventDefault()});
-    // }
-
-    // function enable_scroll() {
-    //     $('body').unbind('touchmove');
-    // }
 
     if ((jQuery(window).width() <= 414) || (isiPad === true)) {
 
         jQuery('.image-container').bind('inview', function(event, visible) {
             if (visible === true) {
 
-                // document.addEventListener('touchmove', function(e){
-                //     e.preventDefault();
-                // }, false);
-
-                // document.getElementById('inner-scroll').addEventListener('touchmove', function(e){
-                //     e.stopPropagation();
-                // }, false);
-
-             // mobile_disable_scroll();
-
-      jQuery('#inner-scroll').lockscroll(true, 'vertical');
-      jQuery('.image-container').lockscroll(true, 'vertical');
-      jQuery('.image-container-wrapper').lockscroll(true, 'vertical');
-
-      console.log('locked!');
+                jQuery('body').lockscroll(true, 'vertical');
+                jQuery('.image-container').lockscroll(true, 'vertical');
+                jQuery('#inner-scroll').lockscroll(true, 'vertical');
+                jQuery('.image-container-wrapper').lockscroll(true, 'vertical');
+                console.log('locked!');
 
 
             } else {
-                         // mobile_enable_scroll();
-      jQuery('#inner-scroll').lockscroll(false);
-      console.log('unlocked!');
+                jQuery('#inner-scroll').lockscroll(false);
+                console.log('unlocked!');
 
             }
 
         });
-    }
-
-    function mobile_disable_scroll() {
-         jQuery('.image-container').bind('touchmove', function(e){e.preventDefault(); });
-                         document.getElementById('inner-scroll').addEventListener('touchmove', function(e){
-                    e.stopPropagation();
-                }, false);
-    }
-
-    function mobile_enable_scroll() {
-        jQuery('.image-container').unbind('touchmove');
     }
 
 
