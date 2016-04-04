@@ -2,31 +2,31 @@
 * https://github.com/okataku/jquery-lockscroll
 * Copyright (c) 2015 Takuya Okada;
 */
-;(function ($) {
-
-	$.fn.lockscroll = function(lock, direction) {
+jQuery(window).load(function() {
+console.log('working!!');
+	jQuery.fn.lockscroll = function(lock, direction) {
 		var eventName = 'scroll.lockscroll';
 		this.each(function(i, el) {
-			var $el = $(this);
-			var pos = { x: $el.scrollLeft(), y: $el.scrollTop() };
+			var jQueryel = jQuery(this);
+			var pos = { x: jQueryel.scrollLeft(), y: jQueryel.scrollTop() };
 
 			if(lock) {
-				$el.off(eventName);
-				$el.on(eventName, function() {
+				jQueryel.off(eventName);
+				jQueryel.on(eventName, function() {
 					if (direction === 'horizontal') {
-						$el.scrollLeft(pos.x);
+						jQueryel.scrollLeft(pos.x);
 					} else if (direction === 'vertical') {
-						$el.scrollTop(pos.y);
+						jQueryel.scrollTop(pos.y);
 					} else {
-						$el.scrollLeft(pos.x);
-						$el.scrollTop(pos.y);
+						jQueryel.scrollLeft(pos.x);
+						jQueryel.scrollTop(pos.y);
 					}
 				});
 			} else {
-				$el.off(eventName);
+				jQueryel.off(eventName);
 			}
 		});
 
 		return this;
 	};
-})(jQuery);
+});

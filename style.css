@@ -122,10 +122,6 @@
                       -webkit-font-smoothing: antialiased !important;
                       -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
                     }
-                    /*@font-face {
-    font-family: Make-Do;
-    src: url('webfonts/Make_Do-Master-20150817.otf');
-}*/
                     
                     @font-face {
                       font-family: 'Make-Do';
@@ -163,12 +159,10 @@
                       text-decoration: none;
                       color: #000;
                     }
-                    
                     /*------------------------------------------------------
 ################### Begin Styling ######################
 -------------------------------------------------------*/
-                    
-/*                    #wrapper {
+                    /*                    #wrapper {
                       overflow: scroll;
                     }*/
                     
@@ -691,27 +685,28 @@
                         position: fixed;
                       }
                       .image-container {
-/*                        overflow-x: scroll;
-*/                      
-  overflow: auto;
-
-}
+                        /*                        overflow-x: scroll;
+*/
+                        overflow: auto;
+                      }
                       /* 'Market' */
                       .image-1-two-image-container {
                         position: relative;
                         float: left;
                         clear: right;
                         margin-right: 38px;
-/*                        overflow-x: scroll;
-*/                        display: block;
+                        /*                        overflow-x: scroll;
+*/
+                        display: block;
                       }
                       .image-2-two-image-container {
                         position: relative;
                         left: 0;
                         float: left;
                         clear: right;
-/*                        overflow-x: scroll;
-*/                        display: block;
+                        /*                        overflow-x: scroll;
+*/
+                        display: block;
                       }
                       .extended-two-image {
                         width: 958px;
@@ -721,9 +716,9 @@
                         transform: translateY(-50%);
                         position: relative;
                         margin-left: 50px;
-/*                        overflow-x: scroll;
-*/  overflow: auto;
-
+                        /*                        overflow-x: scroll;
+*/
+                        overflow: auto;
                       }
                       /* 'Sports Technology Center' */
                       .three-images {
@@ -742,8 +737,9 @@
                         float: left;
                         clear: both;
                         margin-right: 38px;
-/*                        overflow-x: scroll;
-*/                      }
+                        /*                        overflow-x: scroll;
+*/
+                      }
                       .image-2-container {
                         position: relative;
                         left: 0;
@@ -752,8 +748,9 @@
                         float: left;
                         clear: right;
                         margin-right: 38px;
-/*                        overflow-x: scroll;
-*/                      }
+                        /*                        overflow-x: scroll;
+*/
+                      }
                       .image-3-container {
                         position: relative;
                         left: 0;
@@ -761,8 +758,9 @@
                         transform: translateY(0);
                         float: left;
                         clear: right;
-/*                        overflow-x: scroll;
-*/                      }
+                        /*                        overflow-x: scroll;
+*/
+                      }
                     }
                     /* Landscape iPad Mini */
                     
@@ -873,6 +871,129 @@
                             float: left;
                             clear: right;
                         }*/
+                      /* 'Sports Technology Center' */
+                      .three-images {
+                        width: 1098px;
+                        top: 50%;
+                        left: 50px;
+                        transform: translateY(-50%);
+                        position: absolute;
+                        z-index: 99999999;
+                      }
+                      .image-1-container {
+                        position: relative;
+                        left: 0;
+                        top: 0;
+                        transform: translateY(0);
+                        float: left;
+                        clear: both;
+                        margin-right: 38px;
+                        overflow-x: scroll;
+                      }
+                      .image-2-container {
+                        position: relative;
+                        left: 0;
+                        top: 0;
+                        transform: translateY(0);
+                        float: left;
+                        clear: right;
+                        margin-right: 38px;
+                        overflow-x: scroll;
+                      }
+                      .image-3-container {
+                        position: relative;
+                        left: 0;
+                        top: 0;
+                        transform: translateY(0);
+                        float: left;
+                        clear: right;
+                        overflow-x: scroll;
+                      }
+                      body > div.image-container > div > div.image-1-container > img {
+                        width: auto;
+                        height: 100%;
+                      }
+                      body > div.image-container > div > div.image-2-container > img {
+                        width: auto;
+                        height: 100%;
+                      }
+                      body > div.image-container > div > div.image-3-container > img {
+                        width: auto;
+                        height: 100%;
+                      }
+                    }
+                    /*------------------------------------------------------
+################### iPhone 6+ Portrait And Smaller Media Queries ######################
+-------------------------------------------------------*/
+                    
+                    @media screen and (max-width: 414px) {
+                      .large-text {
+                        letter-spacing: 0;
+                      }
+                      .footnote {
+                        font-size: 12px;
+                      }
+                      /* General */
+                      .image-container {
+                        overflow-x: scroll;
+                      }
+                      .landscape {
+                        width: 100%;
+                      }
+                      .portrait {
+                        width: auto;
+                        height: 440px;
+                      }
+                      .portrait-image {
+                        width: auto !important;
+                      }
+                      img.reference-image {
+                        width: 100%;
+                      }
+                      /* 'Market' */
+                      .image-1-two-image-container {
+                        position: relative;
+                        float: left;
+                        clear: right;
+                        margin-right: 38px;
+                        overflow-x: scroll;
+                        width: 100%;
+                      }
+                      .image-2-two-image-container {
+                        position: relative;
+                        left: 0;
+                        float: left;
+                        clear: right;
+                        overflow-x: scroll;
+                        width: 100%;
+                      }
+                      .extended-two-image {
+                        width: 958px;
+                        height: 337px;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                        position: absolute;
+                        margin-left: 0;
+                        overflow-x: scroll;
+                      }
+                      .image-1 {
+                        width: 100%;
+                        height: auto;
+                      }
+                      .image-2 {
+                        width: 100%;
+                        height: auto;
+                      }
+                      /* 'Immigration Center' */
+                      .extended-two-image-portrait {
+                        width: 698px;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                        position: absolute;
+                        overflow-x: scroll;
+                      }
                       /* 'Sports Technology Center' */
                       .three-images {
                         width: 1098px;
