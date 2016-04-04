@@ -6,7 +6,7 @@ jQuery(window).load(function() {
         console.log("iPad detected");
     }
 
-        if (jQuery(window).width() <= 414) {
+    if (jQuery(window).width() <= 414) {
         jQuery('#static-image-1,#static-image-2,#static-image-3,#static-image-4,#static-image-5,#static-image-6,#static-image-7,#static-image-8').bind('inview', function(event, visible) {
             if (visible === true) {
 
@@ -45,26 +45,56 @@ jQuery(window).load(function() {
             if (visible === true) {
 
 
-                document.addEventListener('touchmove', function(e){
+                // document.addEventListener('touchmove', function(e){
+                //     e.preventDefault();
+                // }, false);
+
+                // document.getElementById('inner-scroll').addEventListener('touchmove', function(e){
+                //     e.stopPropagation();
+                // }, false);
+
+                var lastY;
+
+                jQuery(document).bind('touchmove', function(e) {
                     e.preventDefault();
-                }, false);
+                });
 
-                document.getElementById('inner-scroll').addEventListener('touchmove', function(e){
+                jQuery('#inner-scroll').bind('touchmove', function(e) {
                     e.stopPropagation();
-                }, false);
+
+                    // var currentY = e.originalEvent.touches[0].clientY;
+
+                    // if (currentY > lastY) {
+                    //     e.preventDefault();
+                    // } else if (currentY < lastY) {
+                    //     e.preventDefault();
+                    // }
+                    // lastY = currentY;
+
+                });
+
+                // document.getElementById('inner-scroll').addEventListener('touchmove', function(e){
+                //     e.stopPropagation();
+                // }, false);
 
 
-                jQuery('body').lockscroll(true, 'vertical');
-                jQuery('#wrapper').lockscroll(true, 'vertical');
-                jQuery('.image-container').lockscroll(true, 'vertical');
-                jQuery('#inner-scroll').lockscroll(true, 'vertical');
-                jQuery('.image-container-wrapper').lockscroll(true, 'vertical');
-                console.log('locked!');
-                
+                // jQuery('body').lockscroll(true, 'vertical');
+                // jQuery('#wrapper').lockscroll(true, 'vertical');
+                // jQuery('.image-container').lockscroll(true, 'vertical');
+                // jQuery('#inner-scroll').lockscroll(true, 'vertical');
+                // jQuery('.image-container-wrapper').lockscroll(true, 'vertical');
+                // console.log('locked!');
+
+                // jQuery(document).delegate('.image-container', 'touchmove', false);
+
+
 
             } else {
                 // jQuery('#inner-scroll').lockscroll(false);
                 // console.log('unlocked!');
+
+                jQuery(document).unbind('touchmove');
+
 
             }
 
