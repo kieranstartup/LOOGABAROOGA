@@ -79,7 +79,7 @@ jQuery(document).ready(function() {
 
 
 
-    if (jQuery(window).width() < 414) {
+    if (jQuery(window).width() <= 414) {
         var initialScrollPosition = 0;
 
         jQuery(document).scroll(function() {

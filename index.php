@@ -10,10 +10,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="jquery.inview.min.js"></script>
-    <!--<script src="reference-image-click.js"></script>-->
+    <script src="jquery.lockscroll.min.js"></script>
     <script src="main.js"></script>
     <script src="static-images.js"></script>
-    <!--   <script src="mobileInView.js"></script> -->
+
     <!--
 
         ██ ▄█▀ ██▓▓█████  ██▀███  ▄▄▄      ███▄    █            
@@ -42,6 +42,13 @@
 </head>
 
 <body>
+
+    <!-- All The Images -->
+    <div class="image-container">
+        <div class="close-image"></div>
+        <img class="reference-image" src="">
+    </div>
+
     <div id="wrapper">
         <img id="static-image-1" src="images/1.Sourdough_Smileys.jpg">
         <img id="static-image-2" src="images/2.Phone_Purse.jpg">
@@ -160,11 +167,7 @@
             </div>
         </div>
     </div>
-    <!-- All The Images -->
-    <div class="image-container">
-        <div class="close-image"></div>
-        <img class="reference-image" src="">
-    </div>
+
     <script type="text/javascript">
     jQuery(document).ready(function() {
 
