@@ -685,8 +685,6 @@
                         position: fixed;
                       }
                       .image-container {
-                        /*                        overflow-x: scroll;
-*/
                         overflow: auto;
                       }
                       /* 'Market' */

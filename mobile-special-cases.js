@@ -38,9 +38,6 @@ jQuery(window).load(function() {
 
     if ((jQuery(window).width() <= 414) || (isiPad === true)) {
 
-
-
-
         jQuery('.image-container').bind('inview', function(event, visible) {
             if (visible === true) {
 
@@ -53,25 +50,58 @@ jQuery(window).load(function() {
                 //     e.stopPropagation();
                 // }, false);
 
-                var lastY;
+      //Enable swiping...
+      // jQuery("#inner-scroll").swipe( {
+      //   //Generic swipe handler for all directions
+      //   swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+      //   },
+      //   //Default is 75px, set to 0 for demo so any distance triggers swipe
+      //    threshold:0,
+      //    allowPageScroll: 'horizontal'
+      // });
 
-                jQuery(document).bind('touchmove', function(e) {
-                    e.preventDefault();
-                });
+      // jQuery(".image-container").swipe( { allowPageScroll:"none"} );
 
-                jQuery('#inner-scroll').bind('touchmove', function(e) {
-                    e.stopPropagation();
+      jQuery(".image-container").swipe( { allowPageScroll:"horizontal" } );
 
-                    // var currentY = e.originalEvent.touches[0].clientY;
 
-                    // if (currentY > lastY) {
-                    //     e.preventDefault();
-                    // } else if (currentY < lastY) {
-                    //     e.preventDefault();
-                    // }
-                    // lastY = currentY;
+                // var lastY;
 
-                });
+                // jQuery(document).bind('touchmove', function(e) {
+                //     e.preventDefault();
+                // });
+
+                // jQuery('#inner-scroll').bind('touchmove', function(e) {
+                //     e.stopPropagation();
+
+                //     // var currentY = e.originalEvent.touches[0].clientY;
+
+                //     // if (currentY > lastY) {
+                //     //     e.preventDefault();
+                //     // } else if (currentY < lastY) {
+                //     //     e.preventDefault();
+                //     // }
+                //     // lastY = currentY;
+
+                // });
+
+                // jQuery('.image-container').lockscroll(true, 'vertical');
+                // jQuery('#inner-scroll').lockscroll(true, 'horizontal');
+                // jQuery('.image-container-wrapper').lockscroll(true, 'vertical');
+
+                
+                // jQuery('.image-1-two-image-container').lockscroll(true, 'horizontal');
+                // jQuery('.image-2-two-image-container').lockscroll(true, 'horizontal');
+
+
+jQuery('body,html').css('overflow','hidden');
+                
+
+
+                // jQuery('html, body').css({
+                //     'overflow': 'hidden',
+                //     'height': '100%'
+                // });
 
                 // document.getElementById('inner-scroll').addEventListener('touchmove', function(e){
                 //     e.stopPropagation();
@@ -95,6 +125,10 @@ jQuery(window).load(function() {
 
                 jQuery(document).unbind('touchmove');
 
+                // jQuery('html, body').css({
+                //     'overflow': 'auto',
+                //     'height': 'auto'
+                // });
 
             }
 
