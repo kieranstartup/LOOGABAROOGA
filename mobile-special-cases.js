@@ -13,23 +13,37 @@ jQuery(document).ready(function() {
                 jQuery(this).wrap('<div class="empty">').css('z-index', '99999');
                 jQuery('.empty').fadeIn(500);
 
-                // window.onscroll = function(e) {
-                //     jQuery('#static-image-1,#static-image-2,#static-image-3,#static-image-4,#static-image-5,#static-image-6,#static-image-7,#static-image-8').fadeOut(1000);
-                //     jQuery('.empty').fadeOut(1000);
-                //     jQuery('#static-image-1,#static-image-2,#static-image-3,#static-image-4,#static-image-5,#static-image-6,#static-image-7,#static-image-8').unwrap('<div class="empty">');
-                // };
+                jQuery("#static-image-1,#static-image-2,#static-image-3,#static-image-4,#static-image-5,#static-image-6,#static-image-7,#static-image-8").swipe({
+                    swipeUp: function(event, distance, duration, fingerCount, fingerData, currentDirection) {
+                        console.log("swipeUp from callback");
 
+                    jQuery('#static-image-1,#static-image-2,#static-image-3,#static-image-4,#static-image-5,#static-image-6,#static-image-7,#static-image-8').fadeOut(500);
+                    jQuery('.empty').fadeOut(500);
+                    jQuery('#static-image-1,#static-image-2,#static-image-3,#static-image-4,#static-image-5,#static-image-6,#static-image-7,#static-image-8').unwrap('<div class="empty">');
+                    }
+                });
+
+                jQuery("#static-image-1,#static-image-2,#static-image-3,#static-image-4,#static-image-5,#static-image-6,#static-image-7,#static-image-8").swipe({
+                    swipeDown: function(event, distance, duration, fingerCount, fingerData, currentDirection) {
+                        console.log("swipeDown from callback");
+
+                    jQuery('#static-image-1,#static-image-2,#static-image-3,#static-image-4,#static-image-5,#static-image-6,#static-image-7,#static-image-8').fadeOut(500);
+                    jQuery('.empty').fadeOut(500);
+                    jQuery('#static-image-1,#static-image-2,#static-image-3,#static-image-4,#static-image-5,#static-image-6,#static-image-7,#static-image-8').unwrap('<div class="empty">');
+                    }
+                });
 
                 jQuery(document.body).on('click', '.empty, #static-image-1,#static-image-2,#static-image-3,#static-image-4,#static-image-5,#static-image-6,#static-image-7,#static-image-8', function() {
                     jQuery(this).unwrap('<div class="empty">');
                     jQuery(this).fadeOut(500);
-                    enableScroll();
+                        console.log("clicked");
                 });
 
-            } else {
-                // enableScroll();
+            } 
+            // else {
+            //     // enableScroll();
 
-            }
+            // }
         });
     }
 
@@ -65,9 +79,10 @@ jQuery(document).ready(function() {
         var multiplicationPlusMargin = imageWidth + 38;
         console.log(multiplicationPlusMargin);
 
-    jQuery(document.body).on('click', 'span#reference-image-market', function() {
+        jQuery(document.body).on('click', 'span#reference-image-market', function() {
 
             jQuery('.extended-two-image').css('width', '100% !important');
+            jQuery('.extended-two-image').css('height', 'auto');
             jQuery('#inner-scroll').css('width', multiplicationPlusMargin);
 
             jQuery('#inner-scroll > div.image-1-two-image-container').css('max-width', windowSize);
@@ -78,7 +93,7 @@ jQuery(document).ready(function() {
 
         });
 
-    jQuery(document.body).on('click', 'span#reference-image-dismembered-match-balls', function() {
+        jQuery(document.body).on('click', 'span#reference-image-dismembered-match-balls', function() {
             jQuery('.image-1-two-image-container').css('max-width', windowSize);
             jQuery('.image-1').css('max-width', windowSize);
 
