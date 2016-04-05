@@ -906,6 +906,65 @@ overflow: scroll;
                         width: auto;
                         height: 100%;
                       }
+
+
+
+
+                    /* Triangle Layout */
+
+
+.extended-triangle{
+top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: 99999999;
+    width: 1036px;
+    height: auto;
+    overflow-x: scroll;
+}
+
+.image-1-triangle-container {
+    transform: rotate(0);
+    transform-origin: left;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 320px;
+    /* float: left; */
+    /* clear: right; */
+    /* margin-right: 38px; */
+    display: inline-block;
+}
+
+.image-2-triangle-container {
+    transform: rotate(0);
+    right: 0;
+    transform-origin: left;
+    position: relative;
+    top: 0;
+    width: 320px;
+    /* float: left; */
+    /* clear: both; */
+    margin-left: 38px;
+    left: 0;
+    display: inline-block;
+}
+
+.image-3-triangle-container {
+    transform: translate(0);
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 320px;
+    /* float: left; */
+    /* clear: both; */
+    margin-left: 38px;
+    display: inline-block;
+}
+
+
+
                     }
                     /* Landscape iPhone 5*/
                     
