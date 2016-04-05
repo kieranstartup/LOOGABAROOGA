@@ -75,8 +75,10 @@ jQuery(document).ready(function() {
     if (jQuery(window).width() <= 414) {
 
         var imageWidth = windowSize * 2;
+        var tripleImageWidth = windowSize * 3;
 
         var multiplicationPlusMargin = imageWidth + 38;
+        var multiplicationPlusMarginPlusMargin = tripleImageWidth + 76;
 
         jQuery(document.body).on('click', 'span#reference-image-market', function() {
 
@@ -101,7 +103,30 @@ jQuery(document).ready(function() {
 
             jQuery('.extended-two-image').css('width', multiplicationPlusMargin);
         });
+    
+
+
+        jQuery(document.body).on('click', 'span#reference-image-triangle', function() {
+
+            jQuery('.extended-two-image').css('width', '100% !important');
+            jQuery('.extended-two-image').css('height', 'auto');
+            jQuery('#inner-scroll').css('width', multiplicationPlusMarginPlusMargin);
+
+            jQuery('#inner-scroll > div.image-1-triangle-container').css('max-width', windowSize);
+            jQuery('.image-1').css('max-width', windowSize);
+
+            jQuery('#inner-scroll > div.image-2-triangle-container').css('max-width', windowSize);
+            jQuery('.image-2').css('max-width', windowSize);
+
+            jQuery('#inner-scroll > div.image-3-triangle-container').css('max-width', windowSize);
+            jQuery('.image-3').css('max-width', windowSize);
+
+        });
+
+
+
+
+
+
     }
-
-
 });
