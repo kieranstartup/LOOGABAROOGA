@@ -9,11 +9,11 @@
     <title>THE IDENTITY FACADE</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="jquery.touchSwipe.min.js"></script>
     <script src="jquery.inview.min.js"></script>
     <script src="main.js"></script>
-    <script src="static-images.js"></script>
-    <script src="jquery.touchSwipe.min.js"></script>
-    <script src="mobile-special-cases.js"></script>
+<!--    <script src="static-images.js"></script>
+    <script src="mobile-special-cases.js"></script> -->
 
     <!--
 
