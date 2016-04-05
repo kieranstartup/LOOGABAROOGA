@@ -163,7 +163,7 @@
 ################### Begin Styling ######################
 -------------------------------------------------------*/
                     /*                    #wrapper {
-                      overflow: scroll;
+overflow: scroll;
                     }*/
                     
                     #text-container {
@@ -311,7 +311,7 @@
                       left: 50%;
                       transform: translate(-50%, -50%);
                       position: fixed;
-                      z-index: 9999;
+                      z-index: 999999;
                       width: 100%;
                       height: 100%;
                     }
@@ -685,7 +685,7 @@
                         position: fixed;
                       }
                       .image-container {
-                        overflow: auto;
+                        overflow-x: scroll;
                       }
                       /* 'Market' */
                       .image-1-two-image-container {

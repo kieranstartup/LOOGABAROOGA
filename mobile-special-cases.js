@@ -1,6 +1,6 @@
 // Special Cases Only
 // For Example When There Are Multiple Images
-jQuery(window).load(function() {
+jQuery(document).ready(function() {
     var isiPad = navigator.userAgent.match(/iPad/i) !== null;
     if (isiPad === true) {
         console.log("iPad detected");
@@ -41,94 +41,17 @@ jQuery(window).load(function() {
         jQuery('.image-container').bind('inview', function(event, visible) {
             if (visible === true) {
 
+                jQuery(".image-container").swipe({ allowPageScroll: "horizontal" });
+                jQuery("#inner-scroll").swipe({ allowPageScroll: "horizontal" });
 
-                // document.addEventListener('touchmove', function(e){
-                //     e.preventDefault();
-                // }, false);
-
-                // document.getElementById('inner-scroll').addEventListener('touchmove', function(e){
-                //     e.stopPropagation();
-                // }, false);
-
-      //Enable swiping...
-      // jQuery("#inner-scroll").swipe( {
-      //   //Generic swipe handler for all directions
-      //   swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-      //   },
-      //   //Default is 75px, set to 0 for demo so any distance triggers swipe
-      //    threshold:0,
-      //    allowPageScroll: 'horizontal'
-      // });
-
-      // jQuery(".image-container").swipe( { allowPageScroll:"none"} );
-
-      jQuery(".image-container").swipe( { allowPageScroll:"horizontal" } );
-
-
-                // var lastY;
-
-                // jQuery(document).bind('touchmove', function(e) {
-                //     e.preventDefault();
-                // });
-
-                // jQuery('#inner-scroll').bind('touchmove', function(e) {
-                //     e.stopPropagation();
-
-                //     // var currentY = e.originalEvent.touches[0].clientY;
-
-                //     // if (currentY > lastY) {
-                //     //     e.preventDefault();
-                //     // } else if (currentY < lastY) {
-                //     //     e.preventDefault();
-                //     // }
-                //     // lastY = currentY;
-
-                // });
-
-                // jQuery('.image-container').lockscroll(true, 'vertical');
-                // jQuery('#inner-scroll').lockscroll(true, 'horizontal');
-                // jQuery('.image-container-wrapper').lockscroll(true, 'vertical');
-
-                
-                // jQuery('.image-1-two-image-container').lockscroll(true, 'horizontal');
-                // jQuery('.image-2-two-image-container').lockscroll(true, 'horizontal');
-
-
-jQuery('body,html').css('overflow','hidden');
-                
-
-
-                // jQuery('html, body').css({
-                //     'overflow': 'hidden',
-                //     'height': '100%'
-                // });
-
-                // document.getElementById('inner-scroll').addEventListener('touchmove', function(e){
-                //     e.stopPropagation();
-                // }, false);
-
-
-                // jQuery('body').lockscroll(true, 'vertical');
-                // jQuery('#wrapper').lockscroll(true, 'vertical');
-                // jQuery('.image-container').lockscroll(true, 'vertical');
-                // jQuery('#inner-scroll').lockscroll(true, 'vertical');
-                // jQuery('.image-container-wrapper').lockscroll(true, 'vertical');
-                // console.log('locked!');
-
-                // jQuery(document).delegate('.image-container', 'touchmove', false);
-
-
+                jQuery('body,html').css('overflow', 'hidden');
 
             } else {
-                // jQuery('#inner-scroll').lockscroll(false);
-                // console.log('unlocked!');
 
-                jQuery(document).unbind('touchmove');
-
-                // jQuery('html, body').css({
-                //     'overflow': 'auto',
-                //     'height': 'auto'
-                // });
+                jQuery('html, body').css({
+                    'overflow': 'auto',
+                    'height': 'auto'
+                });
 
             }
 
