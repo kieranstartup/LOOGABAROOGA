@@ -13,8 +13,8 @@ jQuery(document).ready(function() {
                 jQuery(this).wrap('<div class="empty">').css('z-index', '99999');
                 jQuery('.empty').fadeIn(500);
 
-                jQuery("#static-image-1,#static-image-2,#static-image-3,#static-image-4,#static-image-5,#static-image-6,#static-image-7,#static-image-8").swipe({
-                    swipeUp: function(event, distance, duration, fingerCount, fingerData, currentDirection) {
+                jQuery("#static-image-1,#static-image-2,#static-image-3,#static-image-4,#static-image-5,#static-image-6,#static-image-7,#static-image-8,.empty").swipe({
+                    swipeUp:function(event, distance, duration, fingerCount, fingerData, currentDirection) {
                         console.log("swipeUp from callback");
 
                     jQuery('#static-image-1,#static-image-2,#static-image-3,#static-image-4,#static-image-5,#static-image-6,#static-image-7,#static-image-8').fadeOut(500);
@@ -23,8 +23,8 @@ jQuery(document).ready(function() {
                     }
                 });
 
-                jQuery("#static-image-1,#static-image-2,#static-image-3,#static-image-4,#static-image-5,#static-image-6,#static-image-7,#static-image-8").swipe({
-                    swipeDown: function(event, distance, duration, fingerCount, fingerData, currentDirection) {
+                jQuery("#static-image-1,#static-image-2,#static-image-3,#static-image-4,#static-image-5,#static-image-6,#static-image-7,#static-image-8,.empty").swipe({
+                    swipeDown:function(event, distance, duration, fingerCount, fingerData, currentDirection) {
                         console.log("swipeDown from callback");
 
                     jQuery('#static-image-1,#static-image-2,#static-image-3,#static-image-4,#static-image-5,#static-image-6,#static-image-7,#static-image-8').fadeOut(500);
@@ -39,7 +39,7 @@ jQuery(document).ready(function() {
                         console.log("clicked");
                 });
 
-            } 
+            }
             // else {
             //     // enableScroll();
 
@@ -77,7 +77,6 @@ jQuery(document).ready(function() {
         var imageWidth = windowSize * 2;
 
         var multiplicationPlusMargin = imageWidth + 38;
-        console.log(multiplicationPlusMargin);
 
         jQuery(document.body).on('click', 'span#reference-image-market', function() {
 

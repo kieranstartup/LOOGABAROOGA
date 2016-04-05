@@ -90,48 +90,48 @@ jQuery(document).ready(function() {
                 //If scrolling down, trigger this
                 //If scrolling up do nothing
 
-                if (jQuery(this).scrollTop() > 12 && jQuery(this).scrollTop() < 612) {
+                if (jQuery(this).scrollTop() > 1000 && jQuery(this).scrollTop() < 2500) {
                     jQuery('#static-image-1').not('.image-fixed').fadeIn(500);
                     jQuery('.empty').show();
                     jQuery('#static-image-1').addClass('image-fixed');
                 }
 
-                if (jQuery(this).scrollTop() > 1172 && jQuery(this).scrollTop() < 1772) {
+                if (jQuery(this).scrollTop() > 2500 && jQuery(this).scrollTop() < 4000) {
                     jQuery('#static-image-2').not('.image-fixed').fadeIn(500);
                     jQuery('#static-image-2').addClass('image-fixed');
                 }
 
-                if (jQuery(this).scrollTop() > 2380 && jQuery(this).scrollTop() < 2980) {
+                if (jQuery(this).scrollTop() > 4000 && jQuery(this).scrollTop() < 5500) {
                     jQuery('#static-image-3').not('.image-fixed').fadeIn(500);
                     jQuery('#static-image-3').addClass('image-fixed');
 
                 }
 
-                if (jQuery(this).scrollTop() > 3300 && jQuery(this).scrollTop() < 3900) {
+                if (jQuery(this).scrollTop() > 5500 && jQuery(this).scrollTop() < 7000) {
                     jQuery('#static-image-4').not('.image-fixed').fadeIn(500);
                     jQuery('#static-image-4').addClass('image-fixed');
 
                 }
 
-                if (jQuery(this).scrollTop() > 4357 && jQuery(this).scrollTop() < 4957) {
+                if (jQuery(this).scrollTop() > 7000 && jQuery(this).scrollTop() < 8500) {
                     jQuery('#static-image-5').not('.image-fixed').fadeIn(500);
                     jQuery('#static-image-5').addClass('image-fixed');
 
                 }
 
-                if (jQuery(this).scrollTop() > 5630 && jQuery(this).scrollTop() < 6330) {
+                if (jQuery(this).scrollTop() > 8500 && jQuery(this).scrollTop() < 10000) {
                     jQuery('#static-image-6').not('.image-fixed').fadeIn(500);
                     jQuery('#static-image-6').addClass('image-fixed');
 
                 }
 
-                if (jQuery(this).scrollTop() > 6794 && jQuery(this).scrollTop() < 7394) {
+                if (jQuery(this).scrollTop() > 10000 && jQuery(this).scrollTop() < 11500) {
                     jQuery('#static-image-7').not('.image-fixed').fadeIn(500);
                     jQuery('#static-image-7').addClass('image-fixed');
 
                 }
 
-                if (jQuery(this).scrollTop() > 7723 && jQuery(this).scrollTop() < 8322) {
+                if (jQuery(this).scrollTop() > 11500 && jQuery(this).scrollTop() < 12000) {
                     jQuery('#static-image-8').not('.image-fixed').fadeIn(500);
                     jQuery('#static-image-8').addClass('image-fixed');
 

@@ -280,6 +280,7 @@ overflow: scroll;
                       right: 8px;
                       top: 8px;
                       cursor: pointer;
+                      display: none;
                     }
                     
                     .landscape {
@@ -696,8 +697,6 @@ overflow: scroll;
                         float: left;
                         clear: right;
                         margin-right: 38px;
-                        /*                        overflow-x: scroll;
-*/
                         display: block;
                       }
                       .image-2-two-image-container {
@@ -705,8 +704,6 @@ overflow: scroll;
                         left: 0;
                         float: left;
                         clear: right;
-                        /*                        overflow-x: scroll;
-*/
                         display: block;
                       }
                       .extended-two-image {
@@ -717,8 +714,6 @@ overflow: scroll;
                         transform: translateY(-50%);
                         position: relative;
                         margin-left: 50px;
-                        /*                        overflow-x: scroll;
-*/
                         overflow: auto;
                       }
                       /* 'Sports Technology Center' */
@@ -738,8 +733,6 @@ overflow: scroll;
                         float: left;
                         clear: both;
                         margin-right: 38px;
-                        /*                        overflow-x: scroll;
-*/
                       }
                       .image-2-container {
                         position: relative;
@@ -749,8 +742,6 @@ overflow: scroll;
                         float: left;
                         clear: right;
                         margin-right: 38px;
-                        /*                        overflow-x: scroll;
-*/
                       }
                       .image-3-container {
                         position: relative;
@@ -759,8 +750,6 @@ overflow: scroll;
                         transform: translateY(0);
                         float: left;
                         clear: right;
-                        /*                        overflow-x: scroll;
-*/
                       }
                     }
                     /* Landscape iPad Mini */
@@ -916,4 +905,12 @@ overflow: scroll;
                         width: auto;
                         height: 100%;
                       }
+                    }
+                    /* Landscape iPhone 5*/
+                    
+                    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+
+
+
+
                     }
