@@ -858,14 +858,28 @@ overflow: scroll;
                       }
                       /* 'Sports Technology Center' */
                       .three-images {
-                        width: 1098px;
+                        /*                        width: 1098px;
                         top: 50%;
                         left: 50px;
+                        transform: translateY(-50%);
+                        position: absolute;
+                        z-index: 99999999;*/
+                        width: 1098px;
+                        top: 50%;
+                        left: 15px;
                         transform: translateY(-50%);
                         position: absolute;
                         z-index: 99999999;
                       }
                       .image-1-container {
+                        /*                        position: relative;
+                        left: 0;
+                        top: 0;
+                        transform: translateY(0);
+                        float: left;
+                        clear: both;
+                        margin-right: 38px;
+                        overflow-x: scroll;*/
                         position: relative;
                         left: 0;
                         top: 0;
@@ -874,8 +888,18 @@ overflow: scroll;
                         clear: both;
                         margin-right: 38px;
                         overflow-x: scroll;
+                        width: 290px;
+                        height: auto;
                       }
                       .image-2-container {
+                        /*                        position: relative;
+                        left: 0;
+                        top: 0;
+                        transform: translateY(0);
+                        float: left;
+                        clear: right;
+                        margin-right: 38px;
+                        overflow-x: scroll;*/
                         position: relative;
                         left: 0;
                         top: 0;
@@ -884,8 +908,17 @@ overflow: scroll;
                         clear: right;
                         margin-right: 38px;
                         overflow-x: scroll;
+                        width: 290px;
+                        height: auto;
                       }
                       .image-3-container {
+                        /*                        position: relative;
+                        left: 0;
+                        top: 0;
+                        transform: translateY(0);
+                        float: left;
+                        clear: right;
+                        overflow-x: scroll;*/
                         position: relative;
                         left: 0;
                         top: 0;
@@ -893,18 +926,26 @@ overflow: scroll;
                         float: left;
                         clear: right;
                         overflow-x: scroll;
+                        width: 290px;
+                        height: auto;
                       }
                       body > div.image-container > div > div.image-1-container > img {
-                        width: auto;
-                        height: 100%;
+                        /*width: auto;
+                        height: 100%;*/
+                        width: 100%;
+                        height: auto;
                       }
                       body > div.image-container > div > div.image-2-container > img {
-                        width: auto;
-                        height: 100%;
+                        /*width: auto;
+                        height: 100%;*/
+                        width: 100%;
+                        height: auto;
                       }
                       body > div.image-container > div > div.image-3-container > img {
-                        width: auto;
-                        height: 100%;
+                        /*width: auto;
+                        height: 100%;*/
+                        width: 100%;
+                        height: auto;
                       }
                       /* Triangle Layout */
                       .extended-triangle {
@@ -924,8 +965,6 @@ overflow: scroll;
                         top: 0;
                         left: 0;
                         width: 100%;
-
-
                         display: inline-block;
                       }
                       .image-2-triangle-container {
@@ -935,7 +974,6 @@ overflow: scroll;
                         position: relative;
                         top: 0;
                         width: 100%;
-
                         margin-left: 38px;
                         left: 0;
                         display: inline-block;
@@ -946,7 +984,6 @@ overflow: scroll;
                         position: relative;
                         top: 0;
                         width: 100%;
-
                         margin-left: 38px;
                         display: inline-block;
                       }

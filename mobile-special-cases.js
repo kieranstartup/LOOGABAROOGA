@@ -124,6 +124,22 @@ jQuery(document).ready(function() {
         });
 
 
+        jQuery(document.body).on('click', 'span#reference-image-sports-technology-institute', function() {
+
+            jQuery('.extended-two-image').css('width', '100% !important');
+            jQuery('.extended-two-image').css('height', 'auto');
+            jQuery('#inner-scroll').css('width', multiplicationPlusMarginPlusMargin);
+
+            jQuery('#inner-scroll > div.image-1-triangle-container').css('max-width', windowSize);
+            jQuery('.image-1').css('max-width', windowSize);
+
+            jQuery('#inner-scroll > div.image-2-triangle-container').css('max-width', windowSize);
+            jQuery('.image-2').css('max-width', windowSize);
+
+            jQuery('#inner-scroll > div.image-3-triangle-container').css('max-width', windowSize);
+            jQuery('.image-3').css('max-width', windowSize);
+
+        });
 
 
 
