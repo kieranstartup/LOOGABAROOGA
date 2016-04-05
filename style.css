@@ -630,6 +630,9 @@ overflow: scroll;
                       .underline::after {
                         display: none;
                       }
+                      .footnote {
+                        font-size: 12px;
+                      }
                       img.portrait {
                         height: auto;
                         width: 100%;
@@ -831,8 +834,8 @@ overflow: scroll;
                         width: 100%;
                       }
                       .extended-two-image {
-                        width: 958px;
-                        height: 337px;
+/*                        width: 958px;
+*/                        height: 337px;
                         top: 50%;
                         left: 0;
                         transform: translateY(-50%);

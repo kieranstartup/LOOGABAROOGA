@@ -63,18 +63,22 @@ jQuery(document).ready(function() {
         var imageWidth = windowSize * 2;
 
         var multiplicationPlusMargin = imageWidth + 38;
+        console.log(multiplicationPlusMargin);
 
-        jQuery('span#reference-image-market').click(function() {
-            jQuery('.image-1-two-image-container').css('max-width', windowSize);
+    jQuery(document.body).on('click', 'span#reference-image-market', function() {
+
+            jQuery('.extended-two-image').css('width', '100% !important');
+            jQuery('#inner-scroll').css('width', multiplicationPlusMargin);
+
+            jQuery('#inner-scroll > div.image-1-two-image-container').css('max-width', windowSize);
             jQuery('.image-1').css('max-width', windowSize);
 
-            jQuery('.image-2-two-image-container').css('max-width', windowSize);
+            jQuery('#inner-scroll > div.image-2-two-image-container').css('max-width', windowSize);
             jQuery('.image-2').css('max-width', windowSize);
 
-            jQuery('.extended-two-image').css('width', multiplicationPlusMargin);
         });
 
-        jQuery('span#reference-image-dismembered-match-balls').click(function() {
+    jQuery(document.body).on('click', 'span#reference-image-dismembered-match-balls', function() {
             jQuery('.image-1-two-image-container').css('max-width', windowSize);
             jQuery('.image-1').css('max-width', windowSize);
 

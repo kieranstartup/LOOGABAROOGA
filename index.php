@@ -12,8 +12,8 @@
     <script src="jquery.touchSwipe.min.js"></script>
     <script src="jquery.inview.min.js"></script>
     <script src="main.js"></script>
-<!--    <script src="static-images.js"></script>
-    <script src="mobile-special-cases.js"></script> -->
+<!--    <script src="static-images.js"></script> -->
+    <script src="mobile-special-cases.js"></script>
 
     <!--
 
