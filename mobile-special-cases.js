@@ -34,7 +34,6 @@ jQuery(document).ready(function() {
     }
 
     var windowSize = jQuery(window).width();
-    console.log(windowSize);
 
     if ((jQuery(window).width() <= 414) || (isiPad === true)) {
 
@@ -62,10 +61,8 @@ jQuery(document).ready(function() {
     if (jQuery(window).width() <= 414) {
 
         var imageWidth = windowSize * 2;
-        console.log(imageWidth);
 
         var multiplicationPlusMargin = imageWidth + 38;
-        console.log(multiplicationPlusMargin);
 
         jQuery('span#reference-image-market').click(function() {
             jQuery('.image-1-two-image-container').css('max-width', windowSize);

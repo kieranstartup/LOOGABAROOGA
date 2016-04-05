@@ -1,7 +1,6 @@
 jQuery(window).load(function() {
     var isiPad = navigator.userAgent.match(/iPad/i) !== null;
     if (isiPad === true) {
-        console.log("iPad detected");
     }
 
     // This all works below

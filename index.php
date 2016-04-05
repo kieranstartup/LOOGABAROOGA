@@ -12,6 +12,8 @@
     <script src="jquery.inview.min.js"></script>
     <script src="main.js"></script>
     <script src="static-images.js"></script>
+    <script src="jquery.touchSwipe.min.js"></script>
+    <script src="mobile-special-cases.js"></script>
 
     <!--
 
@@ -250,12 +252,5 @@ What can we bring to the place through working here? We began as outsiders, look
         });
     });
     </script>
-    <!--<script src="jquery.lockscroll.js"></script>-->
-        <script src="jquery.touchSwipe.min.js"></script>
-
-    <script src="mobile-special-cases.js"></script>
-
-    
-
 </body>
 </html>
