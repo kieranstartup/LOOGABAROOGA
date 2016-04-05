@@ -280,7 +280,8 @@ overflow: scroll;
                       right: 8px;
                       top: 8px;
                       cursor: pointer;
-                      display: none;
+                      /*                      display: none;
+*/
                     }
                     
                     .landscape {
@@ -524,16 +525,16 @@ overflow: scroll;
                       transform: rotate(-60deg);
                       transform-origin: left;
                       position: fixed;
-                      top: 279px;
-                      left: 328px;
+                      top: 255px;
+                      left: 315px;
                     }
                     
                     .image-2-triangle-container {
                       transform: rotate(60deg);
-                      right: 315px;
+                      right: 316px;
                       transform-origin: right;
                       position: fixed;
-                      top: 259px;
+                      top: 257px;
                     }
                     
                     .image-3-triangle-container {
@@ -908,9 +909,4 @@ overflow: scroll;
                     }
                     /* Landscape iPhone 5*/
                     
-                    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-
-
-
-
-                    }
+                    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
