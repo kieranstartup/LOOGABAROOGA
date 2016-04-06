@@ -80,6 +80,15 @@ jQuery(document).ready(function() {
         var multiplicationPlusMargin = imageWidth + 38;
         var multiplicationPlusMarginPlusMargin = tripleImageWidth + 76;
 
+        //65% of window width
+        var windowPercentage = Math.floor(windowSize * 0.65);
+        var windowPercentageTimesTwoPlusMargin = (windowPercentage * 2) + 76;
+    
+    // Sports Institute 
+        // var multiplicationPlusMargin = imageWidth + 38;
+        var windowPercentageTimesThreePlusMarginPlusMargin = (windowPercentage * 3) + 114;
+
+
         jQuery(document.body).on('click', 'span#reference-image-market', function() {
 
             jQuery('.extended-two-image').css('width', '100% !important');
@@ -126,22 +135,28 @@ jQuery(document).ready(function() {
 
         jQuery(document.body).on('click', 'span#reference-image-sports-technology-institute', function() {
 
-            jQuery('.extended-two-image').css('width', '100% !important');
-            jQuery('.extended-two-image').css('height', 'auto');
-            jQuery('#inner-scroll').css('width', multiplicationPlusMarginPlusMargin);
+            // jQuery('.extended-two-image').css('width', '100% !important');
+            // jQuery('.extended-two-image').css('height', 'auto');
+            jQuery('#inner-scroll').css('width', windowPercentageTimesThreePlusMarginPlusMargin);
 
-            jQuery('#inner-scroll > div.image-1-triangle-container').css('max-width', windowSize);
-            jQuery('.image-1').css('max-width', windowSize);
+            jQuery('#inner-scroll > div.image-1-container').css('width', windowPercentage);
+            // jQuery('.image-1').css('max-width', windowSize);
 
-            jQuery('#inner-scroll > div.image-2-triangle-container').css('max-width', windowSize);
-            jQuery('.image-2').css('max-width', windowSize);
+            jQuery('#inner-scroll > div.image-2-container').css('width', windowPercentage);
+            // jQuery('.image-2').css('max-width', windowSize);
 
-            jQuery('#inner-scroll > div.image-3-triangle-container').css('max-width', windowSize);
-            jQuery('.image-3').css('max-width', windowSize);
+            jQuery('#inner-scroll > div.image-3-container').css('width', windowPercentage);
+            // jQuery('.image-3').css('max-width', windowSize);
 
         });
 
 
+        jQuery(document.body).on('click', 'span#reference-image-immigration', function() {
+            jQuery('#inner-scroll').css('width', windowPercentageTimesTwoPlusMargin);
+            jQuery('#inner-scroll').css('height', 'auto');
+            jQuery('#inner-scroll > div.image-1-two-portrait-image-container').css('width', windowPercentage);
+            jQuery('#inner-scroll > div.image-2-two-portrait-image-container').css('width', windowPercentage);
+        });
 
 
     }

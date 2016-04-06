@@ -201,11 +201,9 @@ overflow: scroll;
                       display: inline;
                       position: relative;
                       cursor: pointer;
-                                            border-bottom: 1px solid #000;
-
+                      border-bottom: 1px solid #000;
                     }
-                    
-/*                    .underline::after {
+                    /*                    .underline::after {
                       content: '';
                       position: absolute;
                       left: 0;
@@ -853,10 +851,20 @@ overflow: scroll;
                         overflow-x: scroll;*/
                         width: 708px;
                         top: 50%;
-                        left: 20px;
+                        left: 38px;
                         transform: translateY(-50%);
                         position: absolute;
                         overflow-x: scroll;
+                      }
+                                            .image-1-two-portrait-image-container {
+                        position: relative;
+                        display: inline-block;
+                      }
+                      .image-2-two-portrait-image-container {
+                        position: relative;
+                        left: 0;
+                        margin-left: 38px;
+                        display: inline-block;
                       }
                       /* 'Sports Technology Center' */
                       .three-images {
@@ -868,7 +876,7 @@ overflow: scroll;
                         z-index: 99999999;*/
                         width: 1098px;
                         top: 50%;
-                        left: 15px;
+                        left: 38px;
                         transform: translateY(-50%);
                         position: absolute;
                         z-index: 99999999;
