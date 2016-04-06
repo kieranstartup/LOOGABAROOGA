@@ -197,7 +197,10 @@ jQuery(window).load(function() {
         document.onkeydown = null;
     }
 
-
+    // function resetCSS() {
+    //     jQuery('.image-container').append('<img class="reference-image"/>');
+    //     jQuery('img.reference-image').before('<div class="close-image-1"></div>');
+    // }
 
     // Triangle Images
     function threeImageCSS() {
@@ -232,6 +235,8 @@ jQuery(window).load(function() {
         jQuery('.image-3-triangle-container').children().remove();
         jQuery('.image-container-wrapper').removeClass('extended-triangle');
         jQuery('.image-container').css("display", "none");
+
+        resetCSS();
         enableScroll();
     }
 
@@ -241,6 +246,8 @@ jQuery(window).load(function() {
         jQuery('.image-2-two-image-container').children().remove();
         jQuery('.image-container').removeClass('extended-two-image');
         jQuery('.image-container').css("display", "none");
+
+        resetCSS();
         enableScroll();
     }
 
@@ -250,8 +257,10 @@ jQuery(window).load(function() {
         jQuery('.image-2-four-image-container').children().remove();
         jQuery('.image-3-four-image-container').children().remove();
         jQuery('.image-4-four-image-container').children().remove();
-        jQuery('.image-container-wrapper').removeClass('extended-two-image-two-rows');
+        // jQuery('.image-container-wrapper').removeClass('extended-two-image-two-rows');
         jQuery('.image-container').css("display", "none");
+
+        resetCSS();
         enableScroll();
     }
 
@@ -261,6 +270,8 @@ jQuery(window).load(function() {
         jQuery('.image-2-two-portrait-image-container').children().remove();
         jQuery('.image-container').removeClass('extended-two-image-portrait');
         jQuery('.image-container').css("display", "none");
+
+        resetCSS();
         enableScroll();
     }
 
@@ -359,27 +370,24 @@ jQuery(window).load(function() {
 
 
     /////////////////////////////////////////////
-    // Two Images
+    // Four Images
     ////////////////////////////////////////////
     jQuery('span#reference-image-object-compositions').click(function() {
 
         // This removes the old cross and adds in functionality for a new cross
         jQuery('.close-image').remove();
-                jQuery('img').remove();
+        jQuery('img').remove();
 
-        jQuery('.image-container').append('<img class="reference-image image-1"/>');
-        jQuery('img.reference-image').attr('src', 'images/Object.Compositions.1.jpg');
         jQuery('img.reference-image').addClass('image-1');
-        jQuery('img.reference-image').before('<div class="close-image-1"></div>');
+        jQuery('.image-container').append('<img class="reference-image image-1"/>');
+        jQuery('img.reference-image.image-1').attr('src', 'images/Object.Compositions.1.jpg');
+        jQuery('img.reference-image.image-1').before('<div class="close-image-1"></div>');
         jQuery('.close-image-1, img.reference-image.image-1').wrapAll('<div class="image-1-four-image-container">');
-
 
         jQuery('.image-container').append('<img class="reference-image image-2"/>');
         jQuery('img.reference-image.image-2').before('<div class="close-image-2"></div>');
         jQuery('img.reference-image.image-2').attr('src', 'images/Object.Compositions.2.jpg');
         jQuery('.close-image-2, img.reference-image.image-2').wrapAll('<div class="image-2-four-image-container">');
-
-        // jQuery('.image-1-four-image-container, .image-2-four-image-container').wrapAll('<div id="inner-scroll" class="image-container-wrapper-top-row">');
         
         jQuery('.image-container').append('<img class="reference-image image-3"/>');
         jQuery('img.reference-image.image-3').before('<div class="close-image-3"></div>');
@@ -424,7 +432,7 @@ jQuery(window).load(function() {
         }
     });
     /////////////////////////////////////////////
-    // Two Images
+    // Four Images
     ////////////////////////////////////////////
 
 
@@ -730,6 +738,13 @@ jQuery(window).load(function() {
         }
     });
 
+
+    // jQuery(document.body).on('click', function() {
+    //     if (jQuery('.image-container').children().length === 0) {
+    //     jQuery('img.reference-image').attr('src', '');
+
+    //     }
+    // });
 
     jQuery(document.body).on('click', '.close-image', function() {
         jQuery('.image-container').css("display", "none");
