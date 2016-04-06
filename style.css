@@ -201,9 +201,11 @@ overflow: scroll;
                       display: inline;
                       position: relative;
                       cursor: pointer;
+                                            border-bottom: 1px solid #000;
+
                     }
                     
-                    .underline::after {
+/*                    .underline::after {
                       content: '';
                       position: absolute;
                       left: 0;
@@ -212,7 +214,7 @@ overflow: scroll;
                       width: 100%;
                       border-bottom: 1px solid #000;
                       margin-top: 4px;
-                    }
+                    }*/
                     /*                    .underline {
                       display: inline;
                       position: relative;
