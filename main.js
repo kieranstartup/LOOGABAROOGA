@@ -244,6 +244,17 @@ jQuery(window).load(function() {
         enableScroll();
     }
 
+    function fourImageContainerClear() {
+        jQuery('.image-container-wrapper').remove();
+        jQuery('.image-1-four-image-container').children().remove();
+        jQuery('.image-2-four-image-container').children().remove();
+        jQuery('.image-3-four-image-container').children().remove();
+        jQuery('.image-4-four-image-container').children().remove();
+        jQuery('.image-container').removeClass('extended-two-image-two-rows');
+        jQuery('.image-container').css("display", "none");
+        enableScroll();
+    }
+
     function twoPortraitImageContainerClear() {
         jQuery('.image-container-wrapper').remove();
         jQuery('.image-1-two-portrait-image-container').children().remove();
@@ -375,9 +386,6 @@ jQuery(window).load(function() {
 
         jQuery('.image-1-four-image-container, .image-2-four-image-container, .image-3-four-image-container, .image-4-four-image-container').wrapAll('<div id="inner-scroll" class="image-container-wrapper">');
 
-
-
-
         jQuery('.image-container-wrapper').addClass('extended-two-image-two-rows');
         disableScroll();
         jQuery('.image-container').show();
@@ -386,26 +394,26 @@ jQuery(window).load(function() {
     jQuery(document.body).on('click', '.close-image-1', function() {
         jQuery('.image-1-four-image-container').remove();
         if (jQuery('.image-container-wrapper').children().length === 0) {
-            twoImageContainerClear();
+            fourImageContainerClear();
         }
     });
 
     jQuery(document.body).on('click', '.close-image-2', function() {
         jQuery('.image-2-four-image-container').remove();
         if (jQuery('.image-container-wrapper').children().length === 0) {
-            twoImageContainerClear();
+            fourImageContainerClear();
         }
     });
         jQuery(document.body).on('click', '.close-image-3', function() {
         jQuery('.image-3-four-image-container').remove();
         if (jQuery('.image-container-wrapper').children().length === 0) {
-            twoImageContainerClear();
+            fourImageContainerClear();
         }
     });
             jQuery(document.body).on('click', '.close-image-4', function() {
         jQuery('.image-4-four-image-container').remove();
         if (jQuery('.image-container-wrapper').children().length === 0) {
-            twoImageContainerClear();
+            fourImageContainerClear();
         }
     });
     /////////////////////////////////////////////
