@@ -1213,26 +1213,27 @@ span.number-spacing {
         top: 0;
         left: 0;
         display: inline-block;
+                margin-right: 38px;
+
     }
     .image-2-four-image-container {
         position: relative;
         top: 0;
         left: 0;
-        margin-left: 38px;
+        margin-right: 38px;
         display: inline-block;
     }
     .image-3-four-image-container {
         position: relative;
         top: 0;
         left: 0;
-        margin-left: 38px;
+        margin-right: 38px;
         display: inline-block;
     }
     .image-4-four-image-container {
         position: relative;
         top: 0;
         left: 0;
-        margin-left: 38px;
                 margin-right: 38px;
 
         display: inline-block;

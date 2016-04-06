@@ -245,11 +245,11 @@ jQuery(window).load(function() {
     }
 
     function fourImageContainerClear() {
+        jQuery('.image-container-wrapper').remove();
         jQuery('.image-1-four-image-container').children().remove();
         jQuery('.image-2-four-image-container').children().remove();
         jQuery('.image-3-four-image-container').children().remove();
         jQuery('.image-4-four-image-container').children().remove();
-        jQuery('.image-container-wrapper').remove();
         jQuery('.image-container-wrapper').removeClass('extended-two-image-two-rows');
         jQuery('.image-container').css("display", "none");
         enableScroll();
@@ -271,7 +271,9 @@ jQuery(window).load(function() {
 
         // This removes the old cross and adds in functionality for a new cross
         jQuery('.close-image').remove();
+                jQuery('img').remove();
 
+        jQuery('.image-container').append('<img class="reference-image image-1"/>');
         jQuery('img.reference-image').attr('src', 'images/market-1.jpg');
         jQuery('img.reference-image').addClass('image-1');
         jQuery('img.reference-image').before('<div class="close-image-1"></div>');
@@ -315,7 +317,10 @@ jQuery(window).load(function() {
 
         // This removes the old cross and adds in functionality for a new cross
         jQuery('.close-image').remove();
+        jQuery('img').remove();
 
+
+        jQuery('.image-container').append('<img class="reference-image image-1"/>');
         jQuery('img.reference-image').attr('src', 'images/identity-consulting-1.jpg');
         jQuery('img.reference-image').addClass('image-1');
         jQuery('img.reference-image').before('<div class="close-image-1"></div>');
@@ -360,7 +365,9 @@ jQuery(window).load(function() {
 
         // This removes the old cross and adds in functionality for a new cross
         jQuery('.close-image').remove();
+                jQuery('img').remove();
 
+        jQuery('.image-container').append('<img class="reference-image image-1"/>');
         jQuery('img.reference-image').attr('src', 'images/Object.Compositions.1.jpg');
         jQuery('img.reference-image').addClass('image-1');
         jQuery('img.reference-image').before('<div class="close-image-1"></div>');
@@ -462,7 +469,10 @@ jQuery(window).load(function() {
 
         // This removes the old cross and adds in functionality for a new cross
         jQuery('.close-image').remove();
+        jQuery('img').remove();
 
+
+        jQuery('.image-container').append('<img class="reference-image image-1"/>');
         jQuery('img.reference-image').attr('src', 'images/immigration-enforcement-1.jpg');
         jQuery('img.reference-image').addClass('image-1');
         jQuery('img.reference-image').before('<div class="close-image-1"></div>');
@@ -565,7 +575,10 @@ jQuery(window).load(function() {
 
         // This removes the old cross and adds in functionality for a new cross
         jQuery('.close-image').remove();
+        jQuery('img').remove();
 
+
+        jQuery('.image-container').append('<img class="reference-image image-1-footballs"/>');
         jQuery('img.reference-image').attr('src', 'images/16.Football-1.jpg');
         jQuery('img.reference-image').addClass('image-1-footballs');
         jQuery('img.reference-image').before('<div class="close-image-1"></div>');
@@ -608,8 +621,10 @@ jQuery(window).load(function() {
 
         // This removes the old cross and adds in functionality for a new cross
         jQuery('.close-image').remove();
+        jQuery('img').remove();
 
 
+        jQuery('.image-container').append('<img class="reference-image image-1"/>');
         jQuery('img.reference-image').attr('src', 'images/triangle-1.jpg');
         jQuery('img.reference-image').addClass('image-1');
         jQuery('img.reference-image').before('<div class="close-image-1"></div>');
@@ -664,8 +679,10 @@ jQuery(window).load(function() {
 
         // This removes the old cross and adds in functionality for a new cross
         jQuery('.close-image').remove();
+        jQuery('img').remove();
 
 
+        jQuery('.image-container').append('<img class="reference-image image-1"/>');
         jQuery('img.reference-image').attr('src', 'images/reference-image-3-1-e.jpg');
         jQuery('img.reference-image').addClass('image-1');
         jQuery('img.reference-image').before('<div class="close-image-1"></div>');
