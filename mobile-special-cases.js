@@ -81,7 +81,7 @@ jQuery(document).ready(function() {
         var multiplicationPlusMarginPlusMargin = tripleImageWidth + 76;
 
         //65% of window width
-        var windowPercentage = Math.floor(windowSize * 0.65);
+        var windowPercentage = Math.floor(windowSize * 0.75);
         var windowPercentageTimesTwoPlusMargin = (windowPercentage * 2) + 76;
     
     // Sports Institute 

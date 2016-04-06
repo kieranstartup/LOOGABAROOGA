@@ -789,6 +789,13 @@ overflow: scroll;
 -------------------------------------------------------*/
                     
                     @media screen and (max-width: 414px) {
+                      .close-image {
+                        width: 50px;
+                        height: 50px;
+                        background-size: 25px;
+                        right: 0;
+                        top: 0;
+                      }
                       /* General */
                       .image-container {
                         overflow-x: scroll;
@@ -856,7 +863,7 @@ overflow: scroll;
                         position: absolute;
                         overflow-x: scroll;
                       }
-                                            .image-1-two-portrait-image-container {
+                      .image-1-two-portrait-image-container {
                         position: relative;
                         display: inline-block;
                       }
