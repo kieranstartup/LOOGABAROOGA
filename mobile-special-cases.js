@@ -123,7 +123,7 @@ jQuery(document).ready(function() {
             jQuery('.extended-two-image').css('height', 'auto');
             jQuery('#inner-scroll').css('width', multiplicationPlusMarginPlusMargin);
 
-            jQuery('#inner-scroll > div.image-1-four-image-container').css('max-width', windowSize);
+            jQuery('#inner-scroll > div.image-1-triangle-container').css('max-width', windowSize);
             jQuery('.image-1').css('max-width', windowSize);
 
             jQuery('#inner-scroll > div.image-2-triangle-container').css('max-width', windowSize);
