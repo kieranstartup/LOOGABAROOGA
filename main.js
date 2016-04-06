@@ -245,12 +245,12 @@ jQuery(window).load(function() {
     }
 
     function fourImageContainerClear() {
-        jQuery('.image-container-wrapper').remove();
         jQuery('.image-1-four-image-container').children().remove();
         jQuery('.image-2-four-image-container').children().remove();
         jQuery('.image-3-four-image-container').children().remove();
         jQuery('.image-4-four-image-container').children().remove();
-        jQuery('.image-container').removeClass('extended-two-image-two-rows');
+        jQuery('.image-container-wrapper').remove();
+        jQuery('.image-container-wrapper').removeClass('extended-two-image-two-rows');
         jQuery('.image-container').css("display", "none");
         enableScroll();
     }
