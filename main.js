@@ -350,7 +350,7 @@ jQuery(window).load(function() {
         // This removes the old cross and adds in functionality for a new cross
         jQuery('.close-image').remove();
 
-        jQuery('img.reference-image').attr('src', 'images/identity-consulting-1.jpg');
+        jQuery('img.reference-image').attr('src', 'images/Object.Compositions.1.jpg');
         jQuery('img.reference-image').addClass('image-1');
         jQuery('img.reference-image').before('<div class="close-image-1"></div>');
         jQuery('.close-image-1, img.reference-image.image-1').wrapAll('<div class="image-1-four-image-container">');
@@ -358,20 +358,20 @@ jQuery(window).load(function() {
 
         jQuery('.image-container').append('<img class="reference-image image-2"/>');
         jQuery('img.reference-image.image-2').before('<div class="close-image-2"></div>');
-        jQuery('img.reference-image.image-2').attr('src', 'images/identity-consulting-2.jpg');
+        jQuery('img.reference-image.image-2').attr('src', 'images/Object.Compositions.2.jpg');
         jQuery('.close-image-2, img.reference-image.image-2').wrapAll('<div class="image-2-four-image-container">');
 
         // jQuery('.image-1-four-image-container, .image-2-four-image-container').wrapAll('<div id="inner-scroll" class="image-container-wrapper-top-row">');
         
         jQuery('.image-container').append('<img class="reference-image image-3"/>');
         jQuery('img.reference-image.image-3').before('<div class="close-image-3"></div>');
-        jQuery('img.reference-image.image-3').attr('src', 'images/identity-consulting-2.jpg');
-        jQuery('.close-image-3-bottom-row, img.reference-image.image-3').wrapAll('<div class="image-3-four-image-container">');
+        jQuery('img.reference-image.image-3').attr('src', 'images/Object.Compositions.3.jpg');
+        jQuery('.close-image-3, img.reference-image.image-3').wrapAll('<div class="image-3-four-image-container">');
 
         jQuery('.image-container').append('<img class="reference-image image-4"/>');
         jQuery('img.reference-image.image-4').before('<div class="close-image-4"></div>');
-        jQuery('img.reference-image.image-4').attr('src', 'images/identity-consulting-2.jpg');
-        jQuery('.close-image-4-bottom-row, img.reference-image.image-4').wrapAll('<div class="image-4-four-image-container">');
+        jQuery('img.reference-image.image-4').attr('src', 'images/Object.Compositions.4.jpg');
+        jQuery('.close-image-4, img.reference-image.image-4').wrapAll('<div class="image-4-four-image-container">');
 
         jQuery('.image-1-four-image-container, .image-2-four-image-container, .image-3-four-image-container, .image-4-four-image-container').wrapAll('<div id="inner-scroll" class="image-container-wrapper">');
 
@@ -384,14 +384,26 @@ jQuery(window).load(function() {
     });
 
     jQuery(document.body).on('click', '.close-image-1', function() {
-        jQuery('.image-1-two-image-container').remove();
+        jQuery('.image-1-four-image-container').remove();
         if (jQuery('.image-container-wrapper').children().length === 0) {
             twoImageContainerClear();
         }
     });
 
     jQuery(document.body).on('click', '.close-image-2', function() {
-        jQuery('.image-2-two-image-container').remove();
+        jQuery('.image-2-four-image-container').remove();
+        if (jQuery('.image-container-wrapper').children().length === 0) {
+            twoImageContainerClear();
+        }
+    });
+        jQuery(document.body).on('click', '.close-image-3', function() {
+        jQuery('.image-3-four-image-container').remove();
+        if (jQuery('.image-container-wrapper').children().length === 0) {
+            twoImageContainerClear();
+        }
+    });
+            jQuery(document.body).on('click', '.close-image-4', function() {
+        jQuery('.image-4-four-image-container').remove();
         if (jQuery('.image-container-wrapper').children().length === 0) {
             twoImageContainerClear();
         }

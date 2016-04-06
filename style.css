@@ -258,6 +258,19 @@ span.number-spacing {
     cursor: pointer;
     z-index: 999;
 }
+.close-image-4 {
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("images/Closing-Cross.png");
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    z-index: 999;
+}
 .image-1-container {
     width: auto;
     height: 440px;
@@ -458,7 +471,7 @@ span.number-spacing {
 -------------------------------------------------------*/
 .extended-two-image-two-rows {
 width: 918px;
-    height: 620px;
+    height: 680px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -467,27 +480,23 @@ width: 918px;
 
 
 .image-1-four-image-container {
-    position: relative;
+    position: absolute;
     width: 440px;
-    display: inline-block;
-    margin-bottom: 38px;
 }
 .image-2-four-image-container {
-    margin-left: 38px;
-    position: relative;
-    width: 440px;
-    display: inline-block;
+position: absolute;
+    left: 468px;
 }
 .image-3-four-image-container {
-    position: relative;
+    position: absolute;
     width: 440px;
-    display: inline-block;
+    top: 357px;
 }
+
 .image-4-four-image-container {
-    position: relative;
-    width: 440px;
-    display: inline-block;
-    margin-left: 38px;
+position: absolute;
+    left: 468px;
+        top: 357px;
 }
 
 
