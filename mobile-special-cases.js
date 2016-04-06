@@ -116,6 +116,16 @@ jQuery(document).ready(function() {
         });
     
 
+            jQuery(document.body).on('click', 'span#reference-image-identity-consulting', function() {
+            jQuery('.image-1-two-image-container').css('max-width', windowSize);
+            jQuery('.image-1').css('max-width', windowSize);
+
+            jQuery('.image-2-two-image-container').css('max-width', windowSize);
+            jQuery('.image-2').css('max-width', windowSize);
+
+            jQuery('.extended-two-image').css('width', multiplicationPlusMargin);
+        });
+
 
         jQuery(document.body).on('click', 'span#reference-image-triangle', function() {
 

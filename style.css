@@ -1020,7 +1020,7 @@ span.number-spacing {
         width: 100%;
     }
     .extended-two-image {
-        height: 337px;
+        height: auto;
         top: 50%;
         left: 0;
         transform: translateY(-50%);
@@ -1181,6 +1181,7 @@ span.number-spacing {
         top: 0;
         left: 0;
         width: 100%;
+            margin-right: 38px;
         display: inline-block;
     }
     .image-2-triangle-container {
@@ -1190,7 +1191,7 @@ span.number-spacing {
         position: relative;
         top: 0;
         width: 100%;
-        margin-left: 38px;
+        margin-right: 38px;
         left: 0;
         display: inline-block;
     }
@@ -1200,7 +1201,6 @@ span.number-spacing {
         position: relative;
         top: 0;
         width: 100%;
-        margin-left: 38px;
         display: inline-block;
     }
     .extended-two-image-two-rows {
