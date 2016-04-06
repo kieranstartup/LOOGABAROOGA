@@ -453,6 +453,42 @@ span.number-spacing {
     left: 358px;
 }
 
+/*------------------------------------------------------
+############ Four Image Landscape Layout ################
+-------------------------------------------------------*/
+.extended-two-image-two-rows {
+width: 918px;
+    height: 620px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+}
+
+
+.image-1-four-image-container {
+    position: relative;
+    width: 440px;
+    display: inline-block;
+    margin-bottom: 38px;
+}
+.image-2-four-image-container {
+    margin-left: 38px;
+    position: relative;
+    width: 440px;
+    display: inline-block;
+}
+.image-3-four-image-container {
+    position: relative;
+    width: 440px;
+    display: inline-block;
+}
+.image-4-four-image-container {
+    position: relative;
+    width: 440px;
+    display: inline-block;
+    margin-left: 38px;
+}
 
 
 /*------------------------------------------------------

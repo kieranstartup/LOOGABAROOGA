@@ -12,7 +12,6 @@
     <script src="jquery.touchSwipe.min.js"></script>
     <script src="jquery.inview.min.js"></script>
     <script src="main.js"></script>
-<!--    <script src="static-images.js"></script> -->
     <script src="mobile-special-cases.js"></script>
 
     <!--
@@ -102,7 +101,7 @@ jQuery('#static-image-8').attr('src','images/8.Sole_Flake_Centered.jpg');
             <div id="chapter-2">
                 The phrase ‘corporate identity’ was ‘coined in the 1950s to describe how all of an organisation’s visible manifestations are designed to create a coherent whole associated with a specific theme, attitude, or personality’.<span class="footnote">1</span> ‘Identity’ in this context is metaphor that allows us to deal with companies as if they were people with individual characteristics, memory and a soul. When the language of these corporations is applied to a place an uneasy clash happens. The language of the world of profit and sales starts to define a place and a group of people. This raises questions of why a place needs to be sold – who is selling it, and who is it being sold to? A brand defines what something is – selecting and distilling chosen characteristics into graphic form. As a result of this, a brand also defines what the same thing is not. So if a brand is colourful – then it excludes a preference for monochrome, if it is playful – then it excludes the serious, and so on. ‘…simplification denies the complexity of life’s experience, for while simple statements, familiar and repeated imagery sell the product and the idea most efficiently, they also reinforce restricting separations.’<span class="footnote">2</span> Contradictions are characteristics of a mixed society. Could a graphic identity be designed which is suitably diverse, and could it still be ‘coherent’ or is incoherence precisely the point?
                 <br>
-                <br> A brand has been created for Loughborough by the business improvement district. ‘<span id="reference-image-love-loughborough" class="underline"> Love Loughborough</span>’ is accompanied by a heart made up of smaller pictograms. The majority of these are applicable to most English towns and cities. However pictograms of the Carillon and the Sock Statue locate the brand in Loughborough. The brand echoes perhaps the most famous piece of place-based marketing – the ‘I heart NY’ design by Milton Glaser in 1977. What Glaser’s identity does so successfully is to allow the individual space for participation. If you choose to wear a bag that says ‘I heart NY’, then you choose to take part in the brand. You become the ‘I’ and enter into a dialogue with the city. The unsolicited remixes of ‘I heart NY’ further cement the participatory nature of the brand – I ‘pizza’ this, I ‘orange’ that – the brand is easily manipulated to give alternative messages, yet each of these messages reinforce a celebration of the city. ‘Love Loughborough’ doesn’t have this capacity for consumer participation. Instead, it acts as a command where you are ordered to ‘love’ the town. It is an attempt to dictate an opinion which is a problem because it’s something you need to sign up to or be left out of. This is symptomatic of the culture of ready-made, one size fits all place branding – where any notion of self-identity is subsumed by the eagerness to match ‘competing’ places. As a result these homogenous identities degrade the very qualities of the place they claim to embody.
+                <br> A brand has been created for Loughborough by the business improvement district. ‘<span id="reference-image-love-loughborough" class="underline">Love Loughborough</span>’ is accompanied by a heart made up of smaller pictograms. The majority of these are applicable to most English towns and cities. However pictograms of the Carillon and the Sock Statue locate the brand in Loughborough. The brand echoes perhaps the most famous piece of place-based marketing – the ‘I heart NY’ design by Milton Glaser in 1977. What Glaser’s identity does so successfully is to allow the individual space for participation. If you choose to wear a bag that says ‘I heart NY’, then you choose to take part in the brand. You become the ‘I’ and enter into a dialogue with the city. The unsolicited remixes of ‘I heart NY’ further cement the participatory nature of the brand – I ‘pizza’ this, I ‘orange’ that – the brand is easily manipulated to give alternative messages, yet each of these messages reinforce a celebration of the city. ‘Love Loughborough’ doesn’t have this capacity for consumer participation. Instead, it acts as a command where you are ordered to ‘love’ the town. It is an attempt to dictate an opinion which is a problem because it’s something you need to sign up to or be left out of. This is symptomatic of the culture of ready-made, one size fits all place branding – where any notion of self-identity is subsumed by the eagerness to match ‘competing’ places. As a result these homogenous identities degrade the very qualities of the place they claim to embody.
                 <br>
                 <br> New York is perceived as a cultural capital of the world, so the idea that everyone goes to New York and feels compelled to declare their love for it holds a certain amount of plausibility. We feel that the same is not true for everywhere which reminds us of this bag designed by Martin Frostner and Jake Ford which declared ‘I Like My Town’. There is a humble beauty about this message which seems fitting. The words were inspired by this quote by Georges Perec from the Species of Spaces:
                 <br>
@@ -232,6 +231,18 @@ What can we bring to the place through working here? We began as outsiders, look
         jQuery("#chapter-6:contains('triangle')").html(function(_, html) {
             return html.replace(/(triangle)/g, '<span id="reference-image-triangle" class="underline" >triangle</span>');
         });
+
+        jQuery("#chapter-6:contains('identity consulting')").html(function(_, html) {
+            return html.replace(/(identity consulting)/g, '<span id="reference-image-identity-consulting" class="underline" >identity consulting</span>');
+        });
+        jQuery("#chapter-6:contains('object compositions')").html(function(_, html) {
+            return html.replace(/(object compositions)/g, '<span id="reference-image-object-compositions" class="underline" >object compositions</span>');
+        });
+
+
+
+
+
         jQuery("#chapter-6:contains('Loughborough Town of Sanctuary')").html(function(_, html) {
             return html.replace(/(Loughborough Town of Sanctuary)/g, '<span id="reference-image-loughborough-town-of-sanctuary" class="underline" >Loughborough Town of Sanctuary</span>');
         });
