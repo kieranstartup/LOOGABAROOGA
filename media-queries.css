@@ -1,0 +1,645 @@
+/*------------------------------------------------------
+################### Media Queries ######################
+-------------------------------------------------------*/
+@media screen and (max-width:660px) {
+  body {
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+  }
+  .empty {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    display: none;
+    z-index: 999999;
+    position: fixed;
+  }
+  #top-text-box {
+    padding-top: 26px;
+  }
+  #text-container, #top-text-box {
+    width: 292px;
+  }
+  .large-text {
+    text-align: center;
+    font-size: 17px;
+    letter-spacing: 1px;
+  }
+  .small-text {
+    font-size: 15px;
+    letter-spacing: 0px;
+  }
+  .underline {
+    border-bottom: 1px solid black;
+  }
+  .underline::after {
+    display: none;
+  }
+  .footnote {
+    font-size: 12px;
+  }
+  img.portrait {
+    height: auto;
+    width: 100%;
+  }
+  #static-image-1, #static-image-3, #static-image-4, #static-image-5, #static-image-6, #static-image-8 {
+    z-index: -100;
+    width: auto !important;
+    height: 75%;
+    margin-left: 0;
+    margin-top: 0;
+    right: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #static-image-2 {
+    z-index: -100;
+    width: auto !important;
+    height: 70%;
+    margin-left: 0;
+    margin-top: 0;
+    right: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #static-image-7 {
+    z-index: -100;
+    width: auto !important;
+    height: 45%;
+    margin-left: 0;
+    margin-top: 0;
+    right: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .endnote-text {
+    width: 292px;
+    font-size: 15px;
+    letter-spacing: 0.1px;
+    padding-bottom: 44px;
+  }
+}
+
+/* Portrait and Landscape iPad Mini */
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (-webkit-min-device-pixel-ratio:1) {
+
+  /* General */
+  .image-container-wrapper {
+    z-index: 9999;
+    position: fixed;
+  }
+  .image-container {
+    overflow-x: scroll;
+  }
+
+  /* 'Market' */
+  .image-1-two-image-container {
+    position: relative;
+    float: left;
+    clear: right;
+    margin-right: 38px;
+    display: block;
+  }
+  .image-2-two-image-container {
+    position: relative;
+    left: 0;
+    float: left;
+    clear: right;
+    display: block;
+  }
+  .extended-two-image {
+    width: 958px;
+    height: 337px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    position: relative;
+    margin-left: 50px;
+    overflow: auto;
+  }
+
+  /* 'Sports Technology Center' */
+  .three-images {
+    width: 1098px;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: 99999999;
+  }
+  .image-1-container {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: translateY(0);
+    float: left;
+    clear: both;
+    margin-right: 38px;
+  }
+  .image-2-container {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: translateY(0);
+    float: left;
+    clear: right;
+    margin-right: 38px;
+  }
+  .image-3-container {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: translateY(0);
+    float: left;
+    clear: right;
+  }
+}
+
+/* Landscape iPad Mini */
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio:1) {
+
+  /* 'Market' */
+  .image-1-two-image-container {
+    position: absolute;
+  }
+  .image-2-two-image-container {
+    position: absolute;
+    left: 468px;
+  }
+
+  /* 'Sports Technology Center' */
+  .image-1-container {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .image-2-container {
+    position: absolute;
+    left: 359px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .image-3-container {
+    position: absolute;
+    left: 718px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+/* ----------- iPad 1 and 2 ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (-webkit-min-device-pixel-ratio:1) {
+
+  /* General */
+  .image-container-wrapper {
+    z-index: 9999;
+    position: fixed;
+  }
+  .image-container {
+    overflow-x: scroll;
+  }
+
+  /* 'Market' */
+  .image-1-two-image-container {
+    position: relative;
+    float: left;
+    clear: right;
+    margin-right: 38px;
+    display: block;
+  }
+  .image-2-two-image-container {
+    position: relative;
+    left: 0;
+    float: left;
+    clear: right;
+    display: block;
+  }
+  .extended-two-image {
+    width: 958px;
+    height: 337px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    position: relative;
+    margin-left: 50px;
+    overflow: auto;
+  }
+
+  /* 'Sports Technology Center' */
+  .three-images {
+    width: 1098px;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: 99999999;
+  }
+  .image-1-container {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: translateY(0);
+    float: left;
+    clear: both;
+    margin-right: 38px;
+  }
+  .image-2-container {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: translateY(0);
+    float: left;
+    clear: right;
+    margin-right: 38px;
+  }
+  .image-3-container {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: translateY(0);
+    float: left;
+    clear: right;
+  }
+}
+
+/* Landscape iPad 1 + 2 */
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio:1) {
+
+  /* 'Market' */
+  .image-1-two-image-container {
+    position: absolute;
+  }
+  .image-2-two-image-container {
+    position: absolute;
+    left: 468px;
+  }
+
+  /* 'Sports Technology Center' */
+  .image-1-container {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .image-2-container {
+    position: absolute;
+    left: 359px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .image-3-container {
+    position: absolute;
+    left: 718px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+/* ----------- iPad 3 and 4 ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (-webkit-min-device-pixel-ratio:2) {
+
+  /* General */
+  .image-container-wrapper {
+    z-index: 9999;
+    position: fixed;
+  }
+  .image-container {
+    overflow-x: scroll;
+  }
+
+  /* 'Market' */
+  .image-1-two-image-container {
+    position: relative;
+    float: left;
+    clear: right;
+    margin-right: 38px;
+    display: block;
+  }
+  .image-2-two-image-container {
+    position: relative;
+    left: 0;
+    float: left;
+    clear: right;
+    display: block;
+  }
+  .extended-two-image {
+    width: 958px;
+    height: 337px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    position: relative;
+    margin-left: 50px;
+    overflow: auto;
+  }
+
+  /* 'Sports Technology Center' */
+  .three-images {
+    width: 1098px;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: 99999999;
+  }
+  .image-1-container {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: translateY(0);
+    float: left;
+    clear: both;
+    margin-right: 38px;
+  }
+  .image-2-container {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: translateY(0);
+    float: left;
+    clear: right;
+    margin-right: 38px;
+  }
+  .image-3-container {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: translateY(0);
+    float: left;
+    clear: right;
+  }
+}
+
+/* Landscape iPad 3 + 4 */
+
+/* Landscape */
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio:2) {
+
+  /* 'Market' */
+  .image-1-two-image-container {
+    position: absolute;
+  }
+  .image-2-two-image-container {
+    position: absolute;
+    left: 468px;
+  }
+
+  /* 'Sports Technology Center' */
+  .image-1-container {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .image-2-container {
+    position: absolute;
+    left: 359px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .image-3-container {
+    position: absolute;
+    left: 718px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+/*------------------------------------------------------
+################### iPhone 6+ Portrait And Smaller Media Queries ######################
+-------------------------------------------------------*/
+@media screen and (max-width:414px) {
+  .close-image {
+    width: 50px;
+    height: 50px;
+    background-size: 25px;
+    right: 0;
+    top: 0;
+  }
+
+  /* General */
+  .image-container {
+    overflow-x: scroll;
+  }
+  .landscape {
+    width: 100%;
+  }
+  .portrait {
+    width: 75%;
+    height: auto;
+  }
+  .portrait-image {
+
+    /*                        width: auto !important;
+        */
+  }
+  img.reference-image {
+    width: 100%;
+  }
+
+  /* 'Market' */
+  .image-1-two-image-container {
+    position: relative;
+    float: left;
+    clear: right;
+    margin-right: 38px;
+    overflow-x: scroll;
+    width: 100%;
+  }
+  .image-2-two-image-container {
+    position: relative;
+    left: 0;
+    float: left;
+    clear: right;
+    overflow-x: scroll;
+    width: 100%;
+  }
+  .extended-two-image {
+    height: 337px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    position: absolute;
+    margin-left: 0;
+    overflow-x: scroll;
+  }
+  .image-1 {
+    width: 100%;
+    height: auto;
+  }
+  .image-2 {
+    width: 100%;
+    height: auto;
+  }
+
+  /* 'Immigration Center' */
+  .extended-two-image-portrait {
+
+    /*                        width: 698px;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            position: absolute;
+            overflow-x: scroll;*/
+    width: 708px;
+    top: 50%;
+    left: 38px;
+    transform: translateY(-50%);
+    position: absolute;
+    overflow-x: scroll;
+  }
+  .image-1-two-portrait-image-container {
+    position: relative;
+    display: inline-block;
+  }
+  .image-2-two-portrait-image-container {
+    position: relative;
+    left: 0;
+    margin-left: 38px;
+    display: inline-block;
+  }
+
+  /* 'Sports Technology Center' */
+  .three-images {
+
+    /*                        width: 1098px;
+            top: 50%;
+            left: 50px;
+            transform: translateY(-50%);
+            position: absolute;
+            z-index: 99999999;*/
+    width: 1098px;
+    top: 50%;
+    left: 38px;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: 99999999;
+  }
+  .image-1-container {
+
+    /*                        position: relative;
+            left: 0;
+            top: 0;
+            transform: translateY(0);
+            float: left;
+            clear: both;
+            margin-right: 38px;
+            overflow-x: scroll;*/
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: translateY(0);
+    float: left;
+    clear: both;
+    margin-right: 38px;
+    overflow-x: scroll;
+    width: 290px;
+    height: auto;
+  }
+  .image-2-container {
+
+    /*                        position: relative;
+            left: 0;
+            top: 0;
+            transform: translateY(0);
+            float: left;
+            clear: right;
+            margin-right: 38px;
+            overflow-x: scroll;*/
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: translateY(0);
+    float: left;
+    clear: right;
+    margin-right: 38px;
+    overflow-x: scroll;
+    width: 290px;
+    height: auto;
+  }
+  .image-3-container {
+
+    /*                        position: relative;
+            left: 0;
+            top: 0;
+            transform: translateY(0);
+            float: left;
+            clear: right;
+            overflow-x: scroll;*/
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: translateY(0);
+    float: left;
+    clear: right;
+    overflow-x: scroll;
+    width: 290px;
+    height: auto;
+  }
+  body > div.image-container > div > div.image-1-container > img {
+
+    /*width: auto;
+            height: 100%;*/
+    width: 100%;
+    height: auto;
+  }
+  body > div.image-container > div > div.image-2-container > img {
+
+    /*width: auto;
+            height: 100%;*/
+    width: 100%;
+    height: auto;
+  }
+  body > div.image-container > div > div.image-3-container > img {
+
+    /*width: auto;
+            height: 100%;*/
+    width: 100%;
+    height: auto;
+  }
+
+  /* Triangle Layout */
+  .extended-triangle {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: 99999999;
+    width: 1036px;
+    height: auto;
+    overflow-x: scroll;
+  }
+  .image-1-triangle-container {
+    transform: rotate(0);
+    transform-origin: left;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: inline-block;
+  }
+  .image-2-triangle-container {
+    transform: rotate(0);
+    right: 0;
+    transform-origin: left;
+    position: relative;
+    top: 0;
+    width: 100%;
+    margin-left: 38px;
+    left: 0;
+    display: inline-block;
+  }
+  .image-3-triangle-container {
+    transform: translate(0);
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+    margin-left: 38px;
+    display: inline-block;
+  }
+}
