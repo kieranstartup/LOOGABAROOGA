@@ -76,9 +76,11 @@ jQuery(document).ready(function() {
 
         var imageWidth = windowSize * 2;
         var tripleImageWidth = windowSize * 3;
+        var quadrupleImageWidth = windowSize * 4;
 
         var multiplicationPlusMargin = imageWidth + 38;
         var multiplicationPlusMarginPlusMargin = tripleImageWidth + 76;
+        var multiplicationPlusMarginPlusMarginPlusMargin = quadrupleImageWidth + 152;
 
         //65% of window width
         var windowPercentage = Math.floor(windowSize * 0.75);
@@ -121,7 +123,7 @@ jQuery(document).ready(function() {
             jQuery('.extended-two-image').css('height', 'auto');
             jQuery('#inner-scroll').css('width', multiplicationPlusMarginPlusMargin);
 
-            jQuery('#inner-scroll > div.image-1-triangle-container').css('max-width', windowSize);
+            jQuery('#inner-scroll > div.image-1-four-image-container').css('max-width', windowSize);
             jQuery('.image-1').css('max-width', windowSize);
 
             jQuery('#inner-scroll > div.image-2-triangle-container').css('max-width', windowSize);
@@ -133,20 +135,34 @@ jQuery(document).ready(function() {
         });
 
 
+        jQuery(document.body).on('click', 'span#reference-image-object-compositions', function() {
+
+            jQuery('.extended-two-image-two-rows').css('width', '100% !important');
+            jQuery('.extended-two-image-two-rows').css('height', 'auto');
+            jQuery('#inner-scroll').css('width', multiplicationPlusMarginPlusMarginPlusMargin);
+
+            jQuery('#inner-scroll > div.image-1-four-image-container').css('width', windowSize);
+            // jQuery('.image-1').css('width', windowSize);
+
+            jQuery('#inner-scroll > div.image-2-four-image-container').css('width', windowSize);
+            // jQuery('.image-2').css('width', windowSize);
+
+            jQuery('#inner-scroll > div.image-3-four-image-container').css('width', windowSize);
+            // jQuery('.image-3').css('width', windowSize);
+
+            jQuery('#inner-scroll > div.image-4-four-image-container').css('width', windowSize);
+
+        });
+
+
+
+
+
         jQuery(document.body).on('click', 'span#reference-image-sports-technology-institute', function() {
-
-            // jQuery('.extended-two-image').css('width', '100% !important');
-            // jQuery('.extended-two-image').css('height', 'auto');
             jQuery('#inner-scroll').css('width', windowPercentageTimesThreePlusMarginPlusMargin);
-
             jQuery('#inner-scroll > div.image-1-container').css('width', windowPercentage);
-            // jQuery('.image-1').css('max-width', windowSize);
-
             jQuery('#inner-scroll > div.image-2-container').css('width', windowPercentage);
-            // jQuery('.image-2').css('max-width', windowSize);
-
             jQuery('#inner-scroll > div.image-3-container').css('width', windowPercentage);
-            // jQuery('.image-3').css('max-width', windowSize);
 
         });
 

@@ -543,20 +543,19 @@ span.number-spacing {
         height: auto;
         width: 100%;
     }
-
-.close-image-1, .close-image-2, .close-image-3, .close-image-4{
-    width: 50px;
-    height: 50px;
-    background-size: 25px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("images/Closing-Cross.png");
-    position: absolute;
-    right: 0;
-    top: 0;
-    cursor: pointer;
-    z-index: 999;
-}
+    .close-image-1, .close-image-2, .close-image-3, .close-image-4 {
+        width: 50px;
+        height: 50px;
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("images/Closing-Cross.png");
+        position: absolute;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+        z-index: 999;
+    }
     #static-image-1, #static-image-3, #static-image-4, #static-image-5, #static-image-6, #static-image-8 {
         z-index: -100;
         width: auto !important;
@@ -1202,6 +1201,40 @@ span.number-spacing {
         top: 0;
         width: 100%;
         margin-left: 38px;
+        display: inline-block;
+    }
+    .extended-two-image-two-rows {
+        left: 0;
+        transform: translateY(-50%);
+        position: absolute;
+    }
+    .image-1-four-image-container {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: inline-block;
+    }
+    .image-2-four-image-container {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-left: 38px;
+        display: inline-block;
+    }
+    .image-3-four-image-container {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-left: 38px;
+        display: inline-block;
+    }
+    .image-4-four-image-container {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-left: 38px;
+                margin-right: 38px;
+
         display: inline-block;
     }
 }
