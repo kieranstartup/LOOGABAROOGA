@@ -197,10 +197,7 @@ jQuery(window).load(function() {
         document.onkeydown = null;
     }
 
-    // function resetCSS() {
-    //     jQuery('.image-container').append('<img class="reference-image"/>');
-    //     jQuery('img.reference-image').before('<div class="close-image-1"></div>');
-    // }
+
 
     // Triangle Images
     function threeImageCSS() {
@@ -235,8 +232,6 @@ jQuery(window).load(function() {
         jQuery('.image-3-triangle-container').children().remove();
         jQuery('.image-container-wrapper').removeClass('extended-triangle');
         jQuery('.image-container').css("display", "none");
-
-        // resetCSS();
         enableScroll();
     }
 
@@ -246,8 +241,6 @@ jQuery(window).load(function() {
         jQuery('.image-2-two-image-container').children().remove();
         jQuery('.image-container').removeClass('extended-two-image');
         jQuery('.image-container').css("display", "none");
-
-        // resetCSS();
         enableScroll();
     }
 
@@ -259,8 +252,6 @@ jQuery(window).load(function() {
         jQuery('.image-4-four-image-container').children().remove();
         // jQuery('.image-container-wrapper').removeClass('extended-two-image-two-rows');
         jQuery('.image-container').css("display", "none");
-
-        // resetCSS();
         enableScroll();
     }
 
@@ -270,8 +261,6 @@ jQuery(window).load(function() {
         jQuery('.image-2-two-portrait-image-container').children().remove();
         jQuery('.image-container').removeClass('extended-two-image-portrait');
         jQuery('.image-container').css("display", "none");
-
-        // resetCSS();
         enableScroll();
     }
 
