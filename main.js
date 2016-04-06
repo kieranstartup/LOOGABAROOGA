@@ -236,7 +236,7 @@ jQuery(window).load(function() {
         jQuery('.image-container-wrapper').removeClass('extended-triangle');
         jQuery('.image-container').css("display", "none");
 
-        resetCSS();
+        // resetCSS();
         enableScroll();
     }
 
@@ -247,7 +247,7 @@ jQuery(window).load(function() {
         jQuery('.image-container').removeClass('extended-two-image');
         jQuery('.image-container').css("display", "none");
 
-        resetCSS();
+        // resetCSS();
         enableScroll();
     }
 
@@ -260,7 +260,7 @@ jQuery(window).load(function() {
         // jQuery('.image-container-wrapper').removeClass('extended-two-image-two-rows');
         jQuery('.image-container').css("display", "none");
 
-        resetCSS();
+        // resetCSS();
         enableScroll();
     }
 
@@ -271,7 +271,7 @@ jQuery(window).load(function() {
         jQuery('.image-container').removeClass('extended-two-image-portrait');
         jQuery('.image-container').css("display", "none");
 
-        resetCSS();
+        // resetCSS();
         enableScroll();
     }
 
