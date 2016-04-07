@@ -8,11 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>THE IDENTITY FACADE</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="style.min.css" rel="stylesheet" type="text/css" />
     <script src="jquery.touchSwipe.min.js"></script>
     <script src="jquery.inview.min.js"></script>
-    <script src="main.js"></script>
-    <script src="mobile-special-cases.js"></script>
+    <script src="main.min.js"></script>
+    <script src="mobile-special-cases.min.js"></script>
 
     <!--
 
