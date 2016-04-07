@@ -205,67 +205,14 @@ jQuery(window).load(function() {
     }
 
     function addLandscapeClass() {
-        // jQuery('.close-image, img.reference-image').wrapAll('<div id="inner-scroll" class="image-container-wrapper">');
         jQuery('.image-container-wrapper').addClass('landscape');
         disableScroll();
     }
 
     function addPortraitClass() {
-        // jQuery('.close-image, img.reference-image').wrapAll('<div id="inner-scroll" class="image-container-wrapper">');
         jQuery('.image-container-wrapper').addClass('portrait');
         disableScroll();
     }
-
-    // function threeImageContainerClear() {
-    //     jQuery('.image-container-wrapper').remove();
-    //     jQuery('.image-container').removeClass('extended');
-    //     jQuery('.image-container').append('<div class="close-image"></div>');
-    //     jQuery('.close-image').after('<img class="reference-image" src=""/>');
-    //     jQuery('.image-container').css("display", "none");
-    //     enableScroll();
-    // }
-
-    // function triangleImageContainerClear() {
-    //     jQuery('.image-container-wrapper').remove();
-    //     jQuery('.image-1-triangle-container').children().remove();
-    //     jQuery('.image-2-triangle-container').children().remove();
-    //     jQuery('.image-3-triangle-container').children().remove();
-    //     jQuery('.image-container-wrapper').removeClass('extended-triangle');
-    //     jQuery('.image-container').css("display", "none");
-    //     enableScroll();
-    // }
-
-    // function twoImageContainerClear() {
-    //     jQuery('.image-container-wrapper').remove();
-    //     jQuery('.image-1-two-image-container').children().remove();
-    //     jQuery('.image-2-two-image-container').children().remove();
-    //     jQuery('.image-container').removeClass('extended-two-image');
-    //     jQuery('.image-container').css("display", "none");
-    //     enableScroll();
-    // }
-
-    // function fourImageContainerClear() {
-    //     jQuery('.image-container-wrapper').remove();
-    //     jQuery('.image-1-four-image-container').children().remove();
-    //     jQuery('.image-2-four-image-container').children().remove();
-    //     jQuery('.image-3-four-image-container').children().remove();
-    //     jQuery('.image-4-four-image-container').children().remove();
-
-    //     // jQuery('.image-container').append('<div class="close-image"></div>');
-    //     // jQuery('.close-image').after('<img class="reference-image" src=""/>');
-
-    //     jQuery('.image-container').css("display", "none");
-    //     enableScroll();
-    // }
-
-    // function twoPortraitImageContainerClear() {
-    //     jQuery('.image-container-wrapper').remove();
-    //     jQuery('.image-1-two-portrait-image-container').children().remove();
-    //     jQuery('.image-2-two-portrait-image-container').children().remove();
-    //     jQuery('.image-container').removeClass('extended-two-image-portrait');
-    //     jQuery('.image-container').css("display", "none");
-    //     enableScroll();
-    // }
 
     function clearImageContainer(){
         jQuery('.image-container-wrapper').removeClass('extended');
@@ -319,7 +266,6 @@ jQuery(window).load(function() {
         jQuery('img.reference-image.image-2').attr('src', 'images/market-2.jpg');
         jQuery('.close-image-2, img.reference-image.image-2').wrapAll('<div class="image-2-two-image-container">');
 
-        // jQuery('.image-1-two-image-container, .image-2-two-image-container').wrapAll('<div id="inner-scroll" class="image-container-wrapper">');
         jQuery('.image-container-wrapper').addClass('extended-two-image');
 
 
@@ -366,7 +312,6 @@ jQuery(window).load(function() {
         jQuery('img.reference-image.image-2').attr('src', 'images/identity-consulting-2.jpg');
         jQuery('.close-image-2, img.reference-image.image-2').wrapAll('<div class="image-2-two-image-container">');
 
-        // jQuery('.image-1-two-image-container, .image-2-two-image-container').wrapAll('<div id="inner-scroll" class="image-container-wrapper">');
         jQuery('.image-container-wrapper').addClass('extended-two-image');
 
 
@@ -422,7 +367,6 @@ jQuery(window).load(function() {
         jQuery('img.reference-image.image-4').attr('src', 'images/Object.Compositions.4.jpg');
         jQuery('.close-image-4, img.reference-image.image-4').wrapAll('<div class="image-4-four-image-container">');
 
-        // jQuery('.image-1-four-image-container, .image-2-four-image-container, .image-3-four-image-container, .image-4-four-image-container').wrapAll('<div id="inner-scroll" class="image-container-wrapper">');
 
         jQuery('.image-container-wrapper').addClass('extended-two-image-two-rows');
         disableScroll();
@@ -515,7 +459,6 @@ jQuery(window).load(function() {
         jQuery('img.reference-image.image-2').attr('src', 'images/immigration-enforcement-2.jpg');
         jQuery('.close-image-2, img.reference-image.image-2').wrapAll('<div class="image-2-two-portrait-image-container">');
 
-        // jQuery('.image-1-two-portrait-image-container, .image-2-two-portrait-image-container').wrapAll('<div id="inner-scroll" class="image-container-wrapper">');
         jQuery('.image-container-wrapper').addClass('extended-two-image-portrait');
 
         disableScroll();
@@ -621,7 +564,6 @@ jQuery(window).load(function() {
         jQuery('img.reference-image.image-2-footballs').attr('src', 'images/16.Football-2.jpg');
         jQuery('.close-image-2, img.reference-image.image-2-footballs').wrapAll('<div class="image-2-two-image-container">');
 
-        // jQuery('.image-1-two-image-container, .image-2-two-image-container').wrapAll('<div id="inner-scroll" class="image-container-wrapper">');
         jQuery('.image-container-wrapper').addClass('extended-two-image');
 
 
@@ -674,7 +616,6 @@ jQuery(window).load(function() {
         jQuery('.close-image-3, img.reference-image.image-3').wrapAll('<div class="image-3-triangle-container">');
 
 
-        // jQuery('.image-1-triangle-container, .image-2-triangle-container, .image-3-triangle-container').wrapAll('<div id="inner-scroll" class="image-container-wrapper">');
         jQuery('.image-container-wrapper').addClass('extended-triangle');
 
         disableScroll();
@@ -732,7 +673,6 @@ jQuery(window).load(function() {
         jQuery('.close-image-3, img.reference-image.image-3').wrapAll('<div class="image-3-container">');
 
 
-        // jQuery('.image-1-container, .image-2-container, .image-3-container').wrapInner('<div id="inner-scroll" class="image-container-wrapper">');
         jQuery('.image-container-wrapper').addClass('three-images');
 
         threeImageCSS();
@@ -766,23 +706,11 @@ jQuery(window).load(function() {
         if (jQuery('.image-container').children().length === 0) {
         console.log("empty!!");
         jQuery('.image-container').append('<img class="reference-image"/>');
-        // jQuery('img.reference-image').before('<div class="close-image-1"></div>');
         }
     });
 
     jQuery(document.body).on('click', '.close-image', function() {
         clearImageContainer();
-        // jQuery('.image-container').css("display", "none");
-        // jQuery('img.reference-image').attr('src', '');
-        // jQuery('img').removeClass("portrait");
-        // jQuery('img').removeClass("landscape");
-        // jQuery('.image-container-wrapper').removeClass('landscape');
-        // jQuery('.image-container-wrapper').removeClass('portrait');
-        // jQuery('img.portrait-image').removeClass('portrait-image');
-        // jQuery('img').removeClass("image-1");
-        // jQuery('img.reference-image.image-2').remove();
-        // jQuery('img.reference-image.image-3').remove();
-        // jQuery('.close-image, img.reference-image').unwrap('.image-container-wrapper');
         enableScroll();
     });
 });
