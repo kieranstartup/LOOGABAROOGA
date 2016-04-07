@@ -45,8 +45,10 @@
 
     <!-- All The Images -->
     <div class="image-container">
-        <div class="close-image"></div>
-        <img class="reference-image" src="">
+        <div id="inner-scroll" class="image-container-wrapper">
+            <div class="close-image"></div>
+            <img class="reference-image" src="">
+        </div>
     </div>
 
     <div id="wrapper">
