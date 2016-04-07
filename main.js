@@ -241,6 +241,11 @@ jQuery(window).load(function() {
         jQuery('img.reference-image').before('<div class="close-image"></div>');
 
         jQuery('.image-container').css("display", "none");
+        jQuery('.image-container-wrapper').css("width", "");
+        jQuery('.image-container-wrapper').css("height", "");
+        jQuery('#inner-scroll').css("width", "");
+        jQuery('#inner-scroll').css("height", "");
+
         enableScroll();
     }
 
@@ -704,7 +709,6 @@ jQuery(window).load(function() {
 
     jQuery(document.body).on('click', function() {
         if (jQuery('.image-container').children().length === 0) {
-        console.log("empty!!");
         jQuery('.image-container').append('<img class="reference-image"/>');
         }
     });
