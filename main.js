@@ -413,7 +413,7 @@ jQuery(window).load(function() {
     // Portrait
     jQuery('span#reference-image-love-loughborough').click(function() {
         jQuery('img.reference-image').addClass('portrait-image');
-        jQuery('img.reference-image').attr('src', 'images/2.Love_Loughborough.jpg');
+        jQuery('img.reference-image').attr('src', 'images/2.Love_Loughborough.JPG');
         addPortraitClass();
         jQuery('.image-container').show();
     });
