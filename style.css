@@ -192,7 +192,9 @@ span.number-spacing {
     height: auto;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     position: fixed;
     z-index: 99999999;
 }
@@ -201,7 +203,9 @@ span.number-spacing {
     height: 680px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     position: fixed;
     z-index: 99999999;
 }
@@ -211,7 +215,9 @@ span.number-spacing {
 .image-container {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     position: fixed;
     z-index: 999999;
     width: 100%;
@@ -291,7 +297,9 @@ span.number-spacing {
     position: absolute;
     left: 0;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
 }
 .image-2-container {
     width: auto;
@@ -299,7 +307,9 @@ span.number-spacing {
     position: absolute;
     left: 359px;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
 }
 .image-3-container {
     width: auto;
@@ -307,13 +317,17 @@ span.number-spacing {
     position: absolute;
     left: 718px;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
 }
 .three-images {
     width: 1048px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     position: fixed;
     z-index: 99999999;
 }
@@ -324,7 +338,9 @@ span.number-spacing {
 .image-fixed {
     position: fixed !important;
     top: 50% !important;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     margin-top: 0 !important;
 }
 #static-image-1 {
@@ -410,28 +426,40 @@ span.number-spacing {
 .extended-triangle {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     position: fixed;
     z-index: 99999999;
     width: 1204px;
     height: 760px;
 }
 .image-1-triangle-container {
-    transform: rotate(-60deg);
-    transform-origin: left;
+    -webkit-transform: rotate(-60deg);
+        -ms-transform: rotate(-60deg);
+            transform: rotate(-60deg);
+    -webkit-transform-origin: left;
+        -ms-transform-origin: left;
+            transform-origin: left;
     position: fixed;
     top: 255px;
     left: 315px;
 }
 .image-2-triangle-container {
-    transform: rotate(60deg);
+    -webkit-transform: rotate(60deg);
+        -ms-transform: rotate(60deg);
+            transform: rotate(60deg);
     right: 316px;
-    transform-origin: right;
+    -webkit-transform-origin: right;
+        -ms-transform-origin: right;
+            transform-origin: right;
     position: fixed;
     top: 257px;
 }
 .image-3-triangle-container {
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     left: 50%;
     position: fixed;
     top: 458px;
@@ -445,7 +473,9 @@ span.number-spacing {
     height: 337px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     position: fixed;
 }
 .image-1-two-image-container {
@@ -469,7 +499,9 @@ span.number-spacing {
     height: 440px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     position: fixed;
 }
 .image-1-two-portrait-image-container {
@@ -488,7 +520,9 @@ span.number-spacing {
     height: 680px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     position: fixed;
 }
 .image-1-four-image-container {
@@ -547,7 +581,7 @@ span.number-spacing {
     .underline {
         border-bottom: 1px solid black;
     }
-    .underline::after {
+    .underline:after {
         display: none;
     }
     .footnote {
@@ -578,7 +612,9 @@ span.number-spacing {
         margin-top: 0;
         right: 0;
         left: 50%;
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
     }
     #static-image-2 {
         z-index: -100;
@@ -588,7 +624,9 @@ span.number-spacing {
         margin-top: 0;
         right: 0;
         left: 50%;
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
     }
     #static-image-7 {
         z-index: -100;
@@ -598,7 +636,9 @@ span.number-spacing {
         margin-top: 0;
         right: 0;
         left: 50%;
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
     }
     .endnote-text {
         width: 292px;
@@ -615,7 +655,9 @@ span.number-spacing {
         height: 327px;
         top: 50%;
         left: 0;
-        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
         position: relative !important;
         margin-left: 50px;
         overflow-x: scroll;
@@ -686,7 +728,9 @@ span.number-spacing {
         height: 337px;
         top: 50%;
         left: 0;
-        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
         position: relative;
         margin-left: 50px;
         overflow: auto;
@@ -697,7 +741,9 @@ span.number-spacing {
         width: 1098px;
         top: 50%;
         left: 50px;
-        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
         position: absolute;
         z-index: 99999999;
     }
@@ -705,7 +751,9 @@ span.number-spacing {
         position: relative;
         left: 0;
         top: 0;
-        transform: translateY(0);
+        -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+                transform: translateY(0);
         float: left;
         clear: both;
         margin-right: 38px;
@@ -714,7 +762,9 @@ span.number-spacing {
         position: relative;
         left: 0;
         top: 0;
-        transform: translateY(0);
+        -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+                transform: translateY(0);
         float: left;
         clear: right;
         margin-right: 38px;
@@ -723,7 +773,9 @@ span.number-spacing {
         position: relative;
         left: 0;
         top: 0;
-        transform: translateY(0);
+        -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+                transform: translateY(0);
         float: left;
         clear: right;
     }
@@ -746,19 +798,25 @@ span.number-spacing {
         position: absolute;
         left: 0;
         top: 50%;
-        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
     }
     .image-2-container {
         position: absolute;
         left: 359px;
         top: 50%;
-        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
     }
     .image-3-container {
         position: absolute;
         left: 718px;
         top: 50%;
-        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
     }
 }
 
@@ -796,7 +854,9 @@ span.number-spacing {
         height: 337px;
         top: 50%;
         left: 0;
-        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
         position: relative;
         margin-left: 50px;
         overflow: auto;
@@ -807,7 +867,9 @@ span.number-spacing {
         width: 1098px;
         top: 50%;
         left: 50px;
-        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
         position: absolute;
         z-index: 99999999;
     }
@@ -815,7 +877,9 @@ span.number-spacing {
         position: relative;
         left: 0;
         top: 0;
-        transform: translateY(0);
+        -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+                transform: translateY(0);
         float: left;
         clear: both;
         margin-right: 38px;
@@ -824,7 +888,9 @@ span.number-spacing {
         position: relative;
         left: 0;
         top: 0;
-        transform: translateY(0);
+        -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+                transform: translateY(0);
         float: left;
         clear: right;
         margin-right: 38px;
@@ -833,7 +899,9 @@ span.number-spacing {
         position: relative;
         left: 0;
         top: 0;
-        transform: translateY(0);
+        -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+                transform: translateY(0);
         float: left;
         clear: right;
     }
@@ -856,19 +924,25 @@ span.number-spacing {
         position: absolute;
         left: 0;
         top: 50%;
-        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
     }
     .image-2-container {
         position: absolute;
         left: 359px;
         top: 50%;
-        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
     }
     .image-3-container {
         position: absolute;
         left: 718px;
         top: 50%;
-        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
     }
 }
 
@@ -906,7 +980,9 @@ span.number-spacing {
         height: 337px;
         top: 50%;
         left: 0;
-        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
         position: relative;
         margin-left: 50px;
         overflow: auto;
@@ -917,7 +993,9 @@ span.number-spacing {
         width: 1098px;
         top: 50%;
         left: 50px;
-        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
         position: absolute;
         z-index: 99999999;
     }
@@ -925,7 +1003,9 @@ span.number-spacing {
         position: relative;
         left: 0;
         top: 0;
-        transform: translateY(0);
+        -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+                transform: translateY(0);
         float: left;
         clear: both;
         margin-right: 38px;
@@ -934,7 +1014,9 @@ span.number-spacing {
         position: relative;
         left: 0;
         top: 0;
-        transform: translateY(0);
+        -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+                transform: translateY(0);
         float: left;
         clear: right;
         margin-right: 38px;
@@ -943,7 +1025,9 @@ span.number-spacing {
         position: relative;
         left: 0;
         top: 0;
-        transform: translateY(0);
+        -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+                transform: translateY(0);
         float: left;
         clear: right;
     }
@@ -968,19 +1052,25 @@ span.number-spacing {
         position: absolute;
         left: 0;
         top: 50%;
-        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
     }
     .image-2-container {
         position: absolute;
         left: 359px;
         top: 50%;
-        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
     }
     .image-3-container {
         position: absolute;
         left: 718px;
         top: 50%;
-        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
     }
 }
 
@@ -1037,7 +1127,9 @@ span.number-spacing {
         height: auto;
         top: 50%;
         left: 0;
-        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
         position: absolute;
         margin-left: 0;
         overflow-x: scroll;
@@ -1063,7 +1155,9 @@ span.number-spacing {
         width: 708px;
         top: 50%;
         left: 38px;
-        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
         position: absolute;
         overflow-x: scroll;
     }
@@ -1090,7 +1184,9 @@ span.number-spacing {
         width: 1098px;
         top: 50%;
         left: 38px;
-        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
         position: absolute;
         z-index: 99999999;
     }
@@ -1107,7 +1203,9 @@ span.number-spacing {
         position: relative;
         left: 0;
         top: 0;
-        transform: translateY(0);
+        -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+                transform: translateY(0);
         float: left;
         clear: both;
         margin-right: 38px;
@@ -1128,7 +1226,9 @@ span.number-spacing {
         position: relative;
         left: 0;
         top: 0;
-        transform: translateY(0);
+        -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+                transform: translateY(0);
         float: left;
         clear: right;
         margin-right: 38px;
@@ -1148,7 +1248,9 @@ span.number-spacing {
         position: relative;
         left: 0;
         top: 0;
-        transform: translateY(0);
+        -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+                transform: translateY(0);
         float: left;
         clear: right;
         overflow-x: scroll;
@@ -1181,7 +1283,9 @@ span.number-spacing {
     .extended-triangle {
         top: 50%;
         left: 0;
-        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
         position: absolute;
         z-index: 99999999;
         width: 1036px;
@@ -1189,8 +1293,12 @@ span.number-spacing {
         overflow-x: scroll;
     }
     .image-1-triangle-container {
-        transform: rotate(0);
-        transform-origin: left;
+        -webkit-transform: rotate(0);
+            -ms-transform: rotate(0);
+                transform: rotate(0);
+        -webkit-transform-origin: left;
+            -ms-transform-origin: left;
+                transform-origin: left;
         position: relative;
         top: 0;
         left: 0;
@@ -1199,9 +1307,13 @@ span.number-spacing {
         display: inline-block;
     }
     .image-2-triangle-container {
-        transform: rotate(0);
+        -webkit-transform: rotate(0);
+            -ms-transform: rotate(0);
+                transform: rotate(0);
         right: 0;
-        transform-origin: left;
+        -webkit-transform-origin: left;
+            -ms-transform-origin: left;
+                transform-origin: left;
         position: relative;
         top: 0;
         width: 100%;
@@ -1210,7 +1322,9 @@ span.number-spacing {
         display: inline-block;
     }
     .image-3-triangle-container {
-        transform: translate(0);
+        -webkit-transform: translate(0);
+            -ms-transform: translate(0);
+                transform: translate(0);
         left: 0;
         position: relative;
         top: 0;
@@ -1219,7 +1333,9 @@ span.number-spacing {
     }
     .extended-two-image-two-rows {
         left: 0;
-        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
         position: absolute;
     }
     .image-1-four-image-container {
