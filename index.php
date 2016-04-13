@@ -197,6 +197,12 @@ What can we bring to the place through working here? We began as outsiders, look
     <script type="text/javascript">
     jQuery(document).ready(function() {
 
+
+
+        jQuery("#top-text-box:contains('billboards')").html(function(_, html) {
+            return html.replace(/(billboards)/g, '<span id="reference-image-billboards" class="underline" >billboards</span>');
+        });
+
         jQuery("#chapter-1:contains('market')").html(function(_, html) {
             return html.replace(/(market)/g, '<span id="reference-image-market" class="underline" >market</span>');
         });

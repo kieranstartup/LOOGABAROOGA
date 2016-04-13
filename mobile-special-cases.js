@@ -90,6 +90,20 @@ jQuery(document).ready(function() {
         // var multiplicationPlusMargin = imageWidth + 38;
         var windowPercentageTimesThreePlusMarginPlusMargin = (windowPercentage * 3) + 114;
 
+        jQuery(document.body).on('click', 'span#reference-image-billboards', function() {
+
+            jQuery('.extended-two-image-alt').css('width', '100% !important');
+            jQuery('.extended-two-image-alt').css('height', 'auto');
+            jQuery('#inner-scroll').css('width', multiplicationPlusMargin);
+
+            jQuery('#inner-scroll > div.image-1-two-image-container').css('max-width', windowSize);
+            jQuery('.image-1').css('max-width', windowSize);
+
+            jQuery('#inner-scroll > div.image-2-two-image-container').css('max-width', windowSize);
+            jQuery('.image-2').css('max-width', windowSize);
+
+        });
+
 
         jQuery(document.body).on('click', 'span#reference-image-market', function() {
 

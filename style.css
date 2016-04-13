@@ -492,6 +492,21 @@ span.number-spacing {
 }
 
 /*------------------------------------------------------
+############ Two Image Landscape Alternate ################
+-------------------------------------------------------*/
+
+.extended-two-image-alt {
+    width: 908px;
+    height: 293px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    position: fixed;
+}
+
+/*------------------------------------------------------
 ############ Two Image Portrait Layout ################
 -------------------------------------------------------*/
 .extended-two-image-portrait {
@@ -735,6 +750,18 @@ span.number-spacing {
         margin-left: 50px;
         overflow: auto;
     }
+    .extended-two-image-alt {
+    width: 908px;
+    height: 293px;
+    top: 50%;
+    left: 0;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+        position: relative;
+        margin-left: 50px;
+        overflow: auto;
+    }
 
     /* 'Sports Technology Center' */
     .three-images {
@@ -861,6 +888,18 @@ span.number-spacing {
         margin-left: 50px;
         overflow: auto;
     }
+        .extended-two-image-alt {
+    width: 908px;
+    height: 293px;
+    top: 50%;
+    left: 0;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+        position: relative;
+        margin-left: 50px;
+        overflow: auto;
+    }
 
     /* 'Sports Technology Center' */
     .three-images {
@@ -980,6 +1019,18 @@ span.number-spacing {
         height: 337px;
         top: 50%;
         left: 0;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+        position: relative;
+        margin-left: 50px;
+        overflow: auto;
+    }
+        .extended-two-image-alt {
+    width: 908px;
+    height: 293px;
+    top: 50%;
+    left: 0;
         -webkit-transform: translateY(-50%);
             -ms-transform: translateY(-50%);
                 transform: translateY(-50%);
@@ -1124,6 +1175,17 @@ span.number-spacing {
         width: 100%;
     }
     .extended-two-image {
+        height: auto;
+        top: 50%;
+        left: 0;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+        position: absolute;
+        margin-left: 0;
+        overflow-x: scroll;
+    }
+        .extended-two-image-alt {
         height: auto;
         top: 50%;
         left: 0;

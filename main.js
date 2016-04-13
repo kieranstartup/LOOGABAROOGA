@@ -218,6 +218,7 @@ jQuery(window).load(function() {
         jQuery('.image-container-wrapper').removeClass('extended');
         jQuery('.image-container-wrapper').removeClass('extended-triangle');
         jQuery('.image-container-wrapper').removeClass('extended-two-image');
+        jQuery('.image-container-wrapper').removeClass('extended-two-image-alt');
         jQuery('.image-container-wrapper').removeClass('extended-two-image-portrait');
         jQuery('.image-container-wrapper').removeClass('three-images');
         jQuery('.image-container-wrapper').removeClass('extended-two-image-two-rows');
@@ -248,6 +249,55 @@ jQuery(window).load(function() {
 
         enableScroll();
     }
+
+
+/////////////////////////////////////////////
+    // Two Images
+    ////////////////////////////////////////////
+    jQuery('span#reference-image-billboards').click(function() {
+
+        // This removes the old cross and adds in functionality for a new cross
+        jQuery('.close-image').remove();
+                jQuery('img').remove();
+
+        jQuery('.image-container-wrapper').append('<img class="reference-image image-1"/>');
+        jQuery('img.reference-image').attr('src', 'images/billboards-1.jpg');
+        jQuery('img.reference-image').addClass('image-1');
+        jQuery('img.reference-image').before('<div class="close-image-1"></div>');
+        jQuery('.close-image-1, img.reference-image.image-1').wrapAll('<div class="image-1-two-image-container">');
+
+
+        jQuery('.image-container-wrapper').append('<img class="reference-image image-2"/>');
+        jQuery('img.reference-image.image-2').before('<div class="close-image-2"></div>');
+        jQuery('img.reference-image.image-2').attr('src', 'images/billboards-2.jpg');
+        jQuery('.close-image-2, img.reference-image.image-2').wrapAll('<div class="image-2-two-image-container">');
+
+        jQuery('.image-container-wrapper').addClass('extended-two-image-alt');
+
+
+        disableScroll();
+        jQuery('.image-container').show();
+    });
+
+    jQuery(document.body).on('click', '.close-image-1', function() {
+        jQuery('.image-1-two-image-container').remove();
+        if (jQuery('.image-container-wrapper').children().length === 0) {
+            clearImageContainer();
+        }
+    });
+
+    jQuery(document.body).on('click', '.close-image-2', function() {
+        jQuery('.image-2-two-image-container').remove();
+        if (jQuery('.image-container-wrapper').children().length === 0) {
+            clearImageContainer();
+        }
+    });
+    /////////////////////////////////////////////
+    // Two Images
+    ////////////////////////////////////////////
+
+
+
 
 
 /////////////////////////////////////////////
