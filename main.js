@@ -261,7 +261,7 @@ jQuery(window).load(function() {
                 jQuery('img').remove();
 
         jQuery('.image-container-wrapper').append('<img class="reference-image image-1"/>');
-        jQuery('img.reference-image').attr('src', 'images/billboards-1.jpg');
+        jQuery('img.reference-image').attr('src', 'images/Billboards-1.jpg');
         jQuery('img.reference-image').addClass('image-1');
         jQuery('img.reference-image').before('<div class="close-image-1"></div>');
         jQuery('.close-image-1, img.reference-image.image-1').wrapAll('<div class="image-1-two-image-container">');
@@ -269,7 +269,7 @@ jQuery(window).load(function() {
 
         jQuery('.image-container-wrapper').append('<img class="reference-image image-2"/>');
         jQuery('img.reference-image.image-2').before('<div class="close-image-2"></div>');
-        jQuery('img.reference-image.image-2').attr('src', 'images/billboards-2.jpg');
+        jQuery('img.reference-image.image-2').attr('src', 'images/Billboards-2.jpg');
         jQuery('.close-image-2, img.reference-image.image-2').wrapAll('<div class="image-2-two-image-container">');
 
         jQuery('.image-container-wrapper').addClass('extended-two-image-alt');
