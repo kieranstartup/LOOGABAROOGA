@@ -247,6 +247,15 @@ jQuery(window).load(function() {
         jQuery('#inner-scroll').css("width", "");
         jQuery('#inner-scroll').css("height", "");
 
+// jQuery('#static-image-1').attr('src', 'images/1.Sourdough_Smileys.jpg');
+// jQuery('#static-image-2').attr('src', 'images/2.Phone_Purse.jpg');
+// jQuery('#static-image-3').attr('src', 'images/3.Spout_Ginger.jpg');
+// jQuery('#static-image-4').attr('src', 'images/4.Nails_Tiles.jpg');
+// jQuery('#static-image-5').attr('src', 'images/5.Sycamore_Rotor.jpg');
+// jQuery('#static-image-6').attr('src', 'images/6.Lace_Last.jpg');
+// jQuery('#static-image-7').attr('src', 'images/7.Jackdaw_Lemongrass.jpg');
+// jQuery('#static-image-8').attr('src', 'images/8.Sole_Flake.jpg');
+
         enableScroll();
     }
 
@@ -258,7 +267,7 @@ jQuery(window).load(function() {
 
         // This removes the old cross and adds in functionality for a new cross
         jQuery('.close-image').remove();
-                jQuery('img').remove();
+        jQuery('img.reference-image').remove();
 
         jQuery('.image-container-wrapper').append('<img class="reference-image image-1"/>');
         jQuery('img.reference-image').attr('src', 'images/Billboards-1.jpg');
@@ -307,7 +316,7 @@ jQuery(window).load(function() {
 
         // This removes the old cross and adds in functionality for a new cross
         jQuery('.close-image').remove();
-                jQuery('img').remove();
+        jQuery('img.reference-image').remove();
 
         jQuery('.image-container-wrapper').append('<img class="reference-image image-1"/>');
         jQuery('img.reference-image').attr('src', 'images/market-1.jpg');
@@ -352,7 +361,7 @@ jQuery(window).load(function() {
 
         // This removes the old cross and adds in functionality for a new cross
         jQuery('.close-image').remove();
-        jQuery('img').remove();
+        jQuery('img.reference-image').remove();
 
 
         jQuery('.image-container-wrapper').append('<img class="reference-image image-1"/>');
@@ -399,7 +408,7 @@ jQuery(window).load(function() {
 
         // This removes the old cross and adds in functionality for a new cross
         jQuery('.close-image').remove();
-        jQuery('img').remove();
+        jQuery('img.reference-image').remove();
 
         jQuery('img.reference-image').addClass('image-1');
         jQuery('.image-container-wrapper').append('<img class="reference-image image-1"/>');
@@ -499,7 +508,7 @@ jQuery(window).load(function() {
 
         // This removes the old cross and adds in functionality for a new cross
         jQuery('.close-image').remove();
-        jQuery('img').remove();
+        jQuery('img.reference-image').remove();
 
 
         jQuery('.image-container-wrapper').append('<img class="reference-image image-1"/>');
@@ -604,7 +613,7 @@ jQuery(window).load(function() {
 
         // This removes the old cross and adds in functionality for a new cross
         jQuery('.close-image').remove();
-        jQuery('img').remove();
+        jQuery('img.reference-image').remove();
 
 
         jQuery('.image-container-wrapper').append('<img class="reference-image image-1-footballs"/>');
@@ -649,7 +658,7 @@ jQuery(window).load(function() {
 
         // This removes the old cross and adds in functionality for a new cross
         jQuery('.close-image').remove();
-        jQuery('img').remove();
+        jQuery('img.reference-image').remove();
 
 
         jQuery('.image-container-wrapper').append('<img class="reference-image image-1"/>');
@@ -706,7 +715,7 @@ jQuery(window).load(function() {
 
         // This removes the old cross and adds in functionality for a new cross
         jQuery('.close-image').remove();
-        jQuery('img').remove();
+        jQuery('img.reference-image').remove();
 
 
         jQuery('.image-container-wrapper').append('<img class="reference-image image-1"/>');
